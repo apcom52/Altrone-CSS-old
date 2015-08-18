@@ -1695,13 +1695,23 @@ input[type='button'].round-borders,
 .button.round-borders {
   border-radius: 20px;
 }
-/* line 107, buttons.less */
+/* line 105, buttons.less */
+button.empty,
+input[type='submit'].empty,
+input[type='reset'].empty,
+input[type='button'].empty,
+.button.empty {
+  background-color: transparent;
+  border: none;
+  color: #333333;
+}
+/* line 112, buttons.less */
 .button-group {
   margin: 5px;
   clear: both;
   display: inline-block;
 }
-/* line 111, buttons.less */
+/* line 116, buttons.less */
 .button-group button,
 .button-group input[type='submit'],
 .button-group input[type='reset'],
@@ -1711,7 +1721,7 @@ input[type='button'].round-borders,
   float: left;
   border-radius: 0px;
 }
-/* line 116, buttons.less */
+/* line 121, buttons.less */
 .button-group button:first-child,
 .button-group input[type='submit']:first-child,
 .button-group input[type='reset']:first-child,
@@ -1719,7 +1729,7 @@ input[type='button'].round-borders,
 .button-group .button:first-child {
   border-radius: 3px 0px 0px 3px;
 }
-/* line 119, buttons.less */
+/* line 124, buttons.less */
 .button-group button:last-child,
 .button-group input[type='submit']:last-child,
 .button-group input[type='reset']:last-child,
@@ -1727,7 +1737,7 @@ input[type='button'].round-borders,
 .button-group .button:last-child {
   border-radius: 0px 3px 3px 0px;
 }
-/* line 124, buttons.less */
+/* line 129, buttons.less */
 .button-group.pin {
   clear: none;
 }
