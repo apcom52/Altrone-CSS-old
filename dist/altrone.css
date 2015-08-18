@@ -2505,7 +2505,11 @@ input[type='tel']:focus {
   padding: 10px;
   box-sizing: border-box;
 }
-/* line 36, cards.less */
+/* line 35, cards.less */
+.card .content.feed {
+  padding: 5px 0px;
+}
+/* line 37, cards.less */
 .card .content.feed .item {
   position: relative;
   width: 100%;
@@ -2515,13 +2519,13 @@ input[type='tel']:focus {
   -webkit-transition: all 0.2s linear;
           transition: all 0.2s linear;
 }
-/* line 44, cards.less */
+/* line 45, cards.less */
 .card .content.feed .item:hover {
   background-color: #f5f5f5;
   -webkit-transition: all 0.2s linear;
           transition: all 0.2s linear;
 }
-/* line 49, cards.less */
+/* line 50, cards.less */
 .card .content.feed .item .photo {
   width: 2.5em;
   height: 2.5em;
@@ -2530,25 +2534,31 @@ input[type='tel']:focus {
   float: left;
   border-radius: 4px;
 }
-/* line 59, cards.less */
+/* line 60, cards.less */
 .card .content.feed .item .content .author {
   color: #333333;
   font-weight: bold;
   display: inline-block;
 }
-/* line 65, cards.less */
+/* line 66, cards.less */
 .card .content.feed .item .content .time {
   display: inline-block;
   color: #666666;
   font-size: 0.8em;
 }
-/* line 71, cards.less */
+/* line 72, cards.less */
+.card .content.feed .item .content .meta-data {
+  display: block;
+  color: #666666;
+  font-size: 0.8em;
+}
+/* line 78, cards.less */
 .card .content.feed .item .content .text {
   margin-left: 3.5em;
   color: #333333;
   font-weight: 500;
 }
-/* line 81, cards.less */
+/* line 88, cards.less */
 .card .footer {
   width: 100%;
   background-color: #f6f6f6;
@@ -2556,41 +2566,41 @@ input[type='tel']:focus {
   box-sizing: border-box;
   display: block;
 }
-/* line 88, cards.less */
+/* line 95, cards.less */
 .card .footer.centered {
   text-align: center;
 }
-/* line 94, cards.less */
+/* line 101, cards.less */
 .card .image-box .cover {
   width: 100%;
   height: auto;
   border-radius: 2px 2px 0px 0px;
   display: block;
 }
-/* line 100, cards.less */
+/* line 107, cards.less */
 .card .image-box .content {
   padding: 10px;
   box-sizing: border-box;
 }
-/* line 103, cards.less */
+/* line 110, cards.less */
 .card .image-box .content h1 {
   font-size: 24px;
   font-weight: bold;
   margin: 5px 10px;
 }
-/* line 108, cards.less */
+/* line 115, cards.less */
 .card .image-box .content p {
   font-size: 16px;
 }
 @media (max-width: 480px) {
-  /* line 116, cards.less */
+  /* line 123, cards.less */
   .card {
     margin: 0.25em;
     width: calc(100% - 0.5em);
   }
 }
 @media (max-width: 1024px) {
-  /* line 123, cards.less */
+  /* line 130, cards.less */
   .card {
     margin: 0.5em;
     width: calc(100% - 1em);
