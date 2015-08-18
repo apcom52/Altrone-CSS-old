@@ -91,12 +91,23 @@ button, input[type='submit'], input[type='reset'], input[type='button'], .button
 		&.brown { color:@brown; }
 		&.black { color:@black; }
 	}
+
+	//1.3.3
+	&.transparent {
+		background-color: transparent !important;
+	}
+	&.no-border {
+		border: none;
+	}
+	&.round-borders {
+		border-radius: 20px;
+	}	
 }
 
 .button-group {
 	margin: 5px;
 	clear: both;
-	float: left;
+	display: inline-block;
 	button, input[type='submit'], input[type='reset'], input[type='button'], .button {
 		margin: 0px;
 		float: left;

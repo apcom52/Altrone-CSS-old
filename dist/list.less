@@ -69,4 +69,21 @@
 			}
 		}
 	}
+	
+	//1.3.3
+	&.links {
+		a {
+			display: block;
+			width: 100%;
+			color: @blue;
+			.anim(0.3s);
+			cursor: pointer;
+			margin: 3px 5px;
+
+			&:hover {
+				color: darken(@blue, 10%);
+				.anim(0.3s);
+			}
+		}
+	}
 }

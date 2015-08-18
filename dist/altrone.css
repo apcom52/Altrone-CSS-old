@@ -1672,12 +1672,36 @@ input[type='button'].ghost.black,
   color: #000000;
 }
 /* line 96, buttons.less */
+button.transparent,
+input[type='submit'].transparent,
+input[type='reset'].transparent,
+input[type='button'].transparent,
+.button.transparent {
+  background-color: transparent !important;
+}
+/* line 99, buttons.less */
+button.no-border,
+input[type='submit'].no-border,
+input[type='reset'].no-border,
+input[type='button'].no-border,
+.button.no-border {
+  border: none;
+}
+/* line 102, buttons.less */
+button.round-borders,
+input[type='submit'].round-borders,
+input[type='reset'].round-borders,
+input[type='button'].round-borders,
+.button.round-borders {
+  border-radius: 20px;
+}
+/* line 107, buttons.less */
 .button-group {
   margin: 5px;
   clear: both;
-  float: left;
+  display: inline-block;
 }
-/* line 100, buttons.less */
+/* line 111, buttons.less */
 .button-group button,
 .button-group input[type='submit'],
 .button-group input[type='reset'],
@@ -1687,7 +1711,7 @@ input[type='button'].ghost.black,
   float: left;
   border-radius: 0px;
 }
-/* line 105, buttons.less */
+/* line 116, buttons.less */
 .button-group button:first-child,
 .button-group input[type='submit']:first-child,
 .button-group input[type='reset']:first-child,
@@ -1695,7 +1719,7 @@ input[type='button'].ghost.black,
 .button-group .button:first-child {
   border-radius: 3px 0px 0px 3px;
 }
-/* line 108, buttons.less */
+/* line 119, buttons.less */
 .button-group button:last-child,
 .button-group input[type='submit']:last-child,
 .button-group input[type='reset']:last-child,
@@ -1703,7 +1727,7 @@ input[type='button'].ghost.black,
 .button-group .button:last-child {
   border-radius: 0px 3px 3px 0px;
 }
-/* line 113, buttons.less */
+/* line 124, buttons.less */
 .button-group.pin {
   clear: none;
 }
@@ -1998,6 +2022,22 @@ input[type='tel']:focus {
   color: #333333;
   -webkit-transition: all 0.15s linear;
           transition: all 0.15s linear;
+}
+/* line 75, list.less */
+.list.links a {
+  display: block;
+  width: 100%;
+  color: #2185d0;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+  cursor: pointer;
+  margin: 3px 5px;
+}
+/* line 83, list.less */
+.list.links a:hover {
+  color: #1a69a4;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
 }
 /* line 7, label.less */
 .circle {
@@ -2428,7 +2468,7 @@ input[type='tel']:focus {
 }
 /* line 1, cards.less */
 .card {
-  margin: 5px;
+  margin: 1em;
   background-color: #ffffff;
   border-radius: 1px;
   width: 100%;
@@ -2458,7 +2498,13 @@ input[type='tel']:focus {
   width: 100%;
   font-weight: normal;
 }
-/* line 30, cards.less */
+/* line 29, cards.less */
+.card .content.text {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+/* line 36, cards.less */
 .card .content.feed .item {
   position: relative;
   width: 100%;
@@ -2468,13 +2514,13 @@ input[type='tel']:focus {
   -webkit-transition: all 0.2s linear;
           transition: all 0.2s linear;
 }
-/* line 38, cards.less */
+/* line 44, cards.less */
 .card .content.feed .item:hover {
   background-color: #f5f5f5;
   -webkit-transition: all 0.2s linear;
           transition: all 0.2s linear;
 }
-/* line 43, cards.less */
+/* line 49, cards.less */
 .card .content.feed .item .photo {
   width: 2.5em;
   height: 2.5em;
@@ -2483,25 +2529,25 @@ input[type='tel']:focus {
   float: left;
   border-radius: 4px;
 }
-/* line 53, cards.less */
+/* line 59, cards.less */
 .card .content.feed .item .content .author {
   color: #333333;
   font-weight: bold;
   display: inline-block;
 }
-/* line 59, cards.less */
+/* line 65, cards.less */
 .card .content.feed .item .content .time {
   display: inline-block;
   color: #666666;
   font-size: 0.8em;
 }
-/* line 65, cards.less */
+/* line 71, cards.less */
 .card .content.feed .item .content .text {
   margin-left: 3.5em;
   color: #333333;
   font-weight: 500;
 }
-/* line 75, cards.less */
+/* line 81, cards.less */
 .card .footer {
   width: 100%;
   background-color: #f6f6f6;
@@ -2509,7 +2555,29 @@ input[type='tel']:focus {
   box-sizing: border-box;
   display: block;
 }
-/* line 82, cards.less */
+/* line 88, cards.less */
 .card .footer.centered {
   text-align: center;
+}
+/* line 94, cards.less */
+.card .image-box .cover {
+  width: 100%;
+  height: auto;
+  border-radius: 2px 2px 0px 0px;
+  display: block;
+}
+/* line 100, cards.less */
+.card .image-box .content {
+  padding: 10px;
+  box-sizing: border-box;
+}
+/* line 103, cards.less */
+.card .image-box .content h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 5px 10px;
+}
+/* line 108, cards.less */
+.card .image-box .content p {
+  font-size: 16px;
 }
