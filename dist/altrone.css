@@ -607,7 +607,7 @@ input[type='button'],
   border-radius: 3px;
   background-color: #f5f5f5;
   color: #333333;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #e8e8e8;
   -webkit-transition: all 0.2s linear;
           transition: all 0.2s linear;
   float: left;
@@ -630,7 +630,7 @@ input[type='submit']:active,
 input[type='reset']:active,
 input[type='button']:active,
 .button:active {
-  background-color: #dcdcdc;
+  background-color: #e8e8e8;
   -webkit-transition: all 0.3s linear;
           transition: all 0.3s linear;
 }
@@ -674,357 +674,847 @@ input[type='button']:disabled:active,
 .button:disabled:active {
   background-color: #ffffff;
 }
-/* line 47, buttons.less */
-button.primary,
-input[type='submit'].primary,
-input[type='reset'].primary,
-input[type='button'].primary,
-.button.primary {
-  background-color: #2185d0;
-  color: #ffffff;
-  border: 1px solid #1a69a4;
-}
-/* line 6, buttons.less */
-button.primary:hover,
-input[type='submit'].primary:hover,
-input[type='reset'].primary:hover,
-input[type='button'].primary:hover,
-.button.primary:hover {
-  background-color: #1e77ba;
-  -webkit-transition: all 0.3s linear;
-          transition: all 0.3s linear;
-}
-/* line 11, buttons.less */
-button.primary:active,
-input[type='submit'].primary:active,
-input[type='reset'].primary:active,
-input[type='button'].primary:active,
-.button.primary:active {
-  background-color: #1a69a4;
-  -webkit-transition: all 0.3s linear;
-          transition: all 0.3s linear;
-}
-/* line 16, buttons.less */
-button.primary.disabled,
-input[type='submit'].primary.disabled,
-input[type='reset'].primary.disabled,
-input[type='button'].primary.disabled,
-.button.primary.disabled,
-button.primary:disabled,
-input[type='submit'].primary:disabled,
-input[type='reset'].primary:disabled,
-input[type='button'].primary:disabled,
-.button.primary:disabled {
-  background-color: #85c0ec;
-  border: 1px solid #6fb4e8;
-}
-/* line 17, buttons.less */
-button.primary.disabled:hover,
-input[type='submit'].primary.disabled:hover,
-input[type='reset'].primary.disabled:hover,
-input[type='button'].primary.disabled:hover,
-.button.primary.disabled:hover,
-button.primary:disabled:hover,
-input[type='submit'].primary:disabled:hover,
-input[type='reset'].primary:disabled:hover,
-input[type='button'].primary:disabled:hover,
-.button.primary:disabled:hover {
-  background-color: #85c0ec;
-}
-/* line 20, buttons.less */
-button.primary.disabled:active,
-input[type='submit'].primary.disabled:active,
-input[type='reset'].primary.disabled:active,
-input[type='button'].primary.disabled:active,
-.button.primary.disabled:active,
-button.primary:disabled:active,
-input[type='submit'].primary:disabled:active,
-input[type='reset'].primary:disabled:active,
-input[type='button'].primary:disabled:active,
-.button.primary:disabled:active {
-  background-color: #85c0ec;
-}
 /* line 48, buttons.less */
-button.success,
-input[type='submit'].success,
-input[type='reset'].success,
-input[type='button'].success,
-.button.success {
-  background-color: #21ba45;
-  color: #ffffff;
-  border: 1px solid #198f35;
-}
-/* line 6, buttons.less */
-button.success:hover,
-input[type='submit'].success:hover,
-input[type='reset'].success:hover,
-input[type='button'].success:hover,
-.button.success:hover {
-  background-color: #1da43d;
-  -webkit-transition: all 0.3s linear;
-          transition: all 0.3s linear;
-}
-/* line 11, buttons.less */
-button.success:active,
-input[type='submit'].success:active,
-input[type='reset'].success:active,
-input[type='button'].success:active,
-.button.success:active {
-  background-color: #198f35;
-  -webkit-transition: all 0.3s linear;
-          transition: all 0.3s linear;
-}
-/* line 16, buttons.less */
-button.success.disabled,
-input[type='submit'].success.disabled,
-input[type='reset'].success.disabled,
-input[type='button'].success.disabled,
-.button.success.disabled,
-button.success:disabled,
-input[type='submit'].success:disabled,
-input[type='reset'].success:disabled,
-input[type='button'].success:disabled,
-.button.success:disabled {
-  background-color: #74e68f;
-  border: 1px solid #5ee37e;
-}
-/* line 17, buttons.less */
-button.success.disabled:hover,
-input[type='submit'].success.disabled:hover,
-input[type='reset'].success.disabled:hover,
-input[type='button'].success.disabled:hover,
-.button.success.disabled:hover,
-button.success:disabled:hover,
-input[type='submit'].success:disabled:hover,
-input[type='reset'].success:disabled:hover,
-input[type='button'].success:disabled:hover,
-.button.success:disabled:hover {
-  background-color: #74e68f;
-}
-/* line 20, buttons.less */
-button.success.disabled:active,
-input[type='submit'].success.disabled:active,
-input[type='reset'].success.disabled:active,
-input[type='button'].success.disabled:active,
-.button.success.disabled:active,
-button.success:disabled:active,
-input[type='submit'].success:disabled:active,
-input[type='reset'].success:disabled:active,
-input[type='button'].success:disabled:active,
-.button.success:disabled:active {
-  background-color: #74e68f;
-}
-/* line 49, buttons.less */
-button.warning,
-input[type='submit'].warning,
-input[type='reset'].warning,
-input[type='button'].warning,
-.button.warning {
-  background-color: #fbbd08;
-  color: #ffffff;
-  border: 1px solid #cd9903;
-}
-/* line 6, buttons.less */
-button.warning:hover,
-input[type='submit'].warning:hover,
-input[type='reset'].warning:hover,
-input[type='button'].warning:hover,
-.button.warning:hover {
-  background-color: #e6ac04;
-  -webkit-transition: all 0.3s linear;
-          transition: all 0.3s linear;
-}
-/* line 11, buttons.less */
-button.warning:active,
-input[type='submit'].warning:active,
-input[type='reset'].warning:active,
-input[type='button'].warning:active,
-.button.warning:active {
-  background-color: #cd9903;
-  -webkit-transition: all 0.3s linear;
-          transition: all 0.3s linear;
-}
-/* line 16, buttons.less */
-button.warning.disabled,
-input[type='submit'].warning.disabled,
-input[type='reset'].warning.disabled,
-input[type='button'].warning.disabled,
-.button.warning.disabled,
-button.warning:disabled,
-input[type='submit'].warning:disabled,
-input[type='reset'].warning:disabled,
-input[type='button'].warning:disabled,
-.button.warning:disabled {
-  background-color: #fddf85;
-  border: 1px solid #fdd86c;
-}
-/* line 17, buttons.less */
-button.warning.disabled:hover,
-input[type='submit'].warning.disabled:hover,
-input[type='reset'].warning.disabled:hover,
-input[type='button'].warning.disabled:hover,
-.button.warning.disabled:hover,
-button.warning:disabled:hover,
-input[type='submit'].warning:disabled:hover,
-input[type='reset'].warning:disabled:hover,
-input[type='button'].warning:disabled:hover,
-.button.warning:disabled:hover {
-  background-color: #fddf85;
-}
-/* line 20, buttons.less */
-button.warning.disabled:active,
-input[type='submit'].warning.disabled:active,
-input[type='reset'].warning.disabled:active,
-input[type='button'].warning.disabled:active,
-.button.warning.disabled:active,
-button.warning:disabled:active,
-input[type='submit'].warning:disabled:active,
-input[type='reset'].warning:disabled:active,
-input[type='button'].warning:disabled:active,
-.button.warning:disabled:active {
-  background-color: #fddf85;
-}
-/* line 50, buttons.less */
-button.danger,
-input[type='submit'].danger,
-input[type='reset'].danger,
-input[type='button'].danger,
-.button.danger {
+button.red,
+input[type='submit'].red,
+input[type='reset'].red,
+input[type='button'].red,
+.button.red {
   background-color: #db2828;
   color: #ffffff;
-  border: 1px solid #b21e1e;
+  border: 1px solid #c82121;
 }
 /* line 6, buttons.less */
-button.danger:hover,
-input[type='submit'].danger:hover,
-input[type='reset'].danger:hover,
-input[type='button'].danger:hover,
-.button.danger:hover {
+button.red:hover,
+input[type='submit'].red:hover,
+input[type='reset'].red:hover,
+input[type='button'].red:hover,
+.button.red:hover {
   background-color: #c82121;
   -webkit-transition: all 0.3s linear;
           transition: all 0.3s linear;
 }
 /* line 11, buttons.less */
-button.danger:active,
-input[type='submit'].danger:active,
-input[type='reset'].danger:active,
-input[type='button'].danger:active,
-.button.danger:active {
-  background-color: #b21e1e;
+button.red:active,
+input[type='submit'].red:active,
+input[type='reset'].red:active,
+input[type='button'].red:active,
+.button.red:active {
+  background-color: #c82121;
   -webkit-transition: all 0.3s linear;
           transition: all 0.3s linear;
 }
 /* line 16, buttons.less */
-button.danger.disabled,
-input[type='submit'].danger.disabled,
-input[type='reset'].danger.disabled,
-input[type='button'].danger.disabled,
-.button.danger.disabled,
-button.danger:disabled,
-input[type='submit'].danger:disabled,
-input[type='reset'].danger:disabled,
-input[type='button'].danger:disabled,
-.button.danger:disabled {
+button.red.disabled,
+input[type='submit'].red.disabled,
+input[type='reset'].red.disabled,
+input[type='button'].red.disabled,
+.button.red.disabled,
+button.red:disabled,
+input[type='submit'].red:disabled,
+input[type='reset'].red:disabled,
+input[type='button'].red:disabled,
+.button.red:disabled {
   background-color: #ed9595;
   border: 1px solid #ea7f7f;
 }
 /* line 17, buttons.less */
-button.danger.disabled:hover,
-input[type='submit'].danger.disabled:hover,
-input[type='reset'].danger.disabled:hover,
-input[type='button'].danger.disabled:hover,
-.button.danger.disabled:hover,
-button.danger:disabled:hover,
-input[type='submit'].danger:disabled:hover,
-input[type='reset'].danger:disabled:hover,
-input[type='button'].danger:disabled:hover,
-.button.danger:disabled:hover {
+button.red.disabled:hover,
+input[type='submit'].red.disabled:hover,
+input[type='reset'].red.disabled:hover,
+input[type='button'].red.disabled:hover,
+.button.red.disabled:hover,
+button.red:disabled:hover,
+input[type='submit'].red:disabled:hover,
+input[type='reset'].red:disabled:hover,
+input[type='button'].red:disabled:hover,
+.button.red:disabled:hover {
   background-color: #ed9595;
 }
 /* line 20, buttons.less */
-button.danger.disabled:active,
-input[type='submit'].danger.disabled:active,
-input[type='reset'].danger.disabled:active,
-input[type='button'].danger.disabled:active,
-.button.danger.disabled:active,
-button.danger:disabled:active,
-input[type='submit'].danger:disabled:active,
-input[type='reset'].danger:disabled:active,
-input[type='button'].danger:disabled:active,
-.button.danger:disabled:active {
+button.red.disabled:active,
+input[type='submit'].red.disabled:active,
+input[type='reset'].red.disabled:active,
+input[type='button'].red.disabled:active,
+.button.red.disabled:active,
+button.red:disabled:active,
+input[type='submit'].red:disabled:active,
+input[type='reset'].red:disabled:active,
+input[type='button'].red:disabled:active,
+.button.red:disabled:active {
   background-color: #ed9595;
 }
-/* line 51, buttons.less */
-button.inverted,
-input[type='submit'].inverted,
-input[type='reset'].inverted,
-input[type='button'].inverted,
-.button.inverted {
-  background-color: #333333;
+/* line 49, buttons.less */
+button.orange,
+input[type='submit'].orange,
+input[type='reset'].orange,
+input[type='button'].orange,
+.button.orange {
+  background-color: #f2711c;
   color: #ffffff;
-  border: 1px solid #1a1a1a;
+  border: 1px solid #e7640d;
 }
 /* line 6, buttons.less */
-button.inverted:hover,
-input[type='submit'].inverted:hover,
-input[type='reset'].inverted:hover,
-input[type='button'].inverted:hover,
-.button.inverted:hover {
-  background-color: #262626;
+button.orange:hover,
+input[type='submit'].orange:hover,
+input[type='reset'].orange:hover,
+input[type='button'].orange:hover,
+.button.orange:hover {
+  background-color: #e7640d;
   -webkit-transition: all 0.3s linear;
           transition: all 0.3s linear;
 }
 /* line 11, buttons.less */
-button.inverted:active,
-input[type='submit'].inverted:active,
-input[type='reset'].inverted:active,
-input[type='button'].inverted:active,
-.button.inverted:active {
-  background-color: #1a1a1a;
+button.orange:active,
+input[type='submit'].orange:active,
+input[type='reset'].orange:active,
+input[type='button'].orange:active,
+.button.orange:active {
+  background-color: #e7640d;
   -webkit-transition: all 0.3s linear;
           transition: all 0.3s linear;
 }
 /* line 16, buttons.less */
-button.inverted.disabled,
-input[type='submit'].inverted.disabled,
-input[type='reset'].inverted.disabled,
-input[type='button'].inverted.disabled,
-.button.inverted.disabled,
-button.inverted:disabled,
-input[type='submit'].inverted:disabled,
-input[type='reset'].inverted:disabled,
-input[type='button'].inverted:disabled,
-.button.inverted:disabled {
-  background-color: #737373;
-  border: 1px solid #666666;
+button.orange.disabled,
+input[type='submit'].orange.disabled,
+input[type='reset'].orange.disabled,
+input[type='button'].orange.disabled,
+.button.orange.disabled,
+button.orange:disabled,
+input[type='submit'].orange:disabled,
+input[type='reset'].orange:disabled,
+input[type='button'].orange:disabled,
+.button.orange:disabled {
+  background-color: #f9bc95;
+  border: 1px solid #f8ad7c;
 }
 /* line 17, buttons.less */
-button.inverted.disabled:hover,
-input[type='submit'].inverted.disabled:hover,
-input[type='reset'].inverted.disabled:hover,
-input[type='button'].inverted.disabled:hover,
-.button.inverted.disabled:hover,
-button.inverted:disabled:hover,
-input[type='submit'].inverted:disabled:hover,
-input[type='reset'].inverted:disabled:hover,
-input[type='button'].inverted:disabled:hover,
-.button.inverted:disabled:hover {
-  background-color: #737373;
+button.orange.disabled:hover,
+input[type='submit'].orange.disabled:hover,
+input[type='reset'].orange.disabled:hover,
+input[type='button'].orange.disabled:hover,
+.button.orange.disabled:hover,
+button.orange:disabled:hover,
+input[type='submit'].orange:disabled:hover,
+input[type='reset'].orange:disabled:hover,
+input[type='button'].orange:disabled:hover,
+.button.orange:disabled:hover {
+  background-color: #f9bc95;
 }
 /* line 20, buttons.less */
-button.inverted.disabled:active,
-input[type='submit'].inverted.disabled:active,
-input[type='reset'].inverted.disabled:active,
-input[type='button'].inverted.disabled:active,
-.button.inverted.disabled:active,
-button.inverted:disabled:active,
-input[type='submit'].inverted:disabled:active,
-input[type='reset'].inverted:disabled:active,
-input[type='button'].inverted:disabled:active,
-.button.inverted:disabled:active {
-  background-color: #737373;
+button.orange.disabled:active,
+input[type='submit'].orange.disabled:active,
+input[type='reset'].orange.disabled:active,
+input[type='button'].orange.disabled:active,
+.button.orange.disabled:active,
+button.orange:disabled:active,
+input[type='submit'].orange:disabled:active,
+input[type='reset'].orange:disabled:active,
+input[type='button'].orange:disabled:active,
+.button.orange:disabled:active {
+  background-color: #f9bc95;
+}
+/* line 50, buttons.less */
+button.yellow,
+input[type='submit'].yellow,
+input[type='reset'].yellow,
+input[type='button'].yellow,
+.button.yellow {
+  background-color: #fbbd08;
+  color: #ffffff;
+  border: 1px solid #e6ac04;
+}
+/* line 6, buttons.less */
+button.yellow:hover,
+input[type='submit'].yellow:hover,
+input[type='reset'].yellow:hover,
+input[type='button'].yellow:hover,
+.button.yellow:hover {
+  background-color: #e6ac04;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 11, buttons.less */
+button.yellow:active,
+input[type='submit'].yellow:active,
+input[type='reset'].yellow:active,
+input[type='button'].yellow:active,
+.button.yellow:active {
+  background-color: #e6ac04;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 16, buttons.less */
+button.yellow.disabled,
+input[type='submit'].yellow.disabled,
+input[type='reset'].yellow.disabled,
+input[type='button'].yellow.disabled,
+.button.yellow.disabled,
+button.yellow:disabled,
+input[type='submit'].yellow:disabled,
+input[type='reset'].yellow:disabled,
+input[type='button'].yellow:disabled,
+.button.yellow:disabled {
+  background-color: #fddf85;
+  border: 1px solid #fdd86c;
+}
+/* line 17, buttons.less */
+button.yellow.disabled:hover,
+input[type='submit'].yellow.disabled:hover,
+input[type='reset'].yellow.disabled:hover,
+input[type='button'].yellow.disabled:hover,
+.button.yellow.disabled:hover,
+button.yellow:disabled:hover,
+input[type='submit'].yellow:disabled:hover,
+input[type='reset'].yellow:disabled:hover,
+input[type='button'].yellow:disabled:hover,
+.button.yellow:disabled:hover {
+  background-color: #fddf85;
+}
+/* line 20, buttons.less */
+button.yellow.disabled:active,
+input[type='submit'].yellow.disabled:active,
+input[type='reset'].yellow.disabled:active,
+input[type='button'].yellow.disabled:active,
+.button.yellow.disabled:active,
+button.yellow:disabled:active,
+input[type='submit'].yellow:disabled:active,
+input[type='reset'].yellow:disabled:active,
+input[type='button'].yellow:disabled:active,
+.button.yellow:disabled:active {
+  background-color: #fddf85;
+}
+/* line 51, buttons.less */
+button.olive,
+input[type='submit'].olive,
+input[type='reset'].olive,
+input[type='button'].olive,
+.button.olive {
+  background-color: #b5cc18;
+  color: #ffffff;
+  border: 1px solid #a1b515;
+}
+/* line 6, buttons.less */
+button.olive:hover,
+input[type='submit'].olive:hover,
+input[type='reset'].olive:hover,
+input[type='button'].olive:hover,
+.button.olive:hover {
+  background-color: #a1b515;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 11, buttons.less */
+button.olive:active,
+input[type='submit'].olive:active,
+input[type='reset'].olive:active,
+input[type='button'].olive:active,
+.button.olive:active {
+  background-color: #a1b515;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 16, buttons.less */
+button.olive.disabled,
+input[type='submit'].olive.disabled,
+input[type='reset'].olive.disabled,
+input[type='button'].olive.disabled,
+.button.olive.disabled,
+button.olive:disabled,
+input[type='submit'].olive:disabled,
+input[type='reset'].olive:disabled,
+input[type='button'].olive:disabled,
+.button.olive:disabled {
+  background-color: #dfef75;
+  border: 1px solid #daec5e;
+}
+/* line 17, buttons.less */
+button.olive.disabled:hover,
+input[type='submit'].olive.disabled:hover,
+input[type='reset'].olive.disabled:hover,
+input[type='button'].olive.disabled:hover,
+.button.olive.disabled:hover,
+button.olive:disabled:hover,
+input[type='submit'].olive:disabled:hover,
+input[type='reset'].olive:disabled:hover,
+input[type='button'].olive:disabled:hover,
+.button.olive:disabled:hover {
+  background-color: #dfef75;
+}
+/* line 20, buttons.less */
+button.olive.disabled:active,
+input[type='submit'].olive.disabled:active,
+input[type='reset'].olive.disabled:active,
+input[type='button'].olive.disabled:active,
+.button.olive.disabled:active,
+button.olive:disabled:active,
+input[type='submit'].olive:disabled:active,
+input[type='reset'].olive:disabled:active,
+input[type='button'].olive:disabled:active,
+.button.olive:disabled:active {
+  background-color: #dfef75;
+}
+/* line 52, buttons.less */
+button.green,
+input[type='submit'].green,
+input[type='reset'].green,
+input[type='button'].green,
+.button.green {
+  background-color: #21ba45;
+  color: #ffffff;
+  border: 1px solid #1da43d;
+}
+/* line 6, buttons.less */
+button.green:hover,
+input[type='submit'].green:hover,
+input[type='reset'].green:hover,
+input[type='button'].green:hover,
+.button.green:hover {
+  background-color: #1da43d;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 11, buttons.less */
+button.green:active,
+input[type='submit'].green:active,
+input[type='reset'].green:active,
+input[type='button'].green:active,
+.button.green:active {
+  background-color: #1da43d;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 16, buttons.less */
+button.green.disabled,
+input[type='submit'].green.disabled,
+input[type='reset'].green.disabled,
+input[type='button'].green.disabled,
+.button.green.disabled,
+button.green:disabled,
+input[type='submit'].green:disabled,
+input[type='reset'].green:disabled,
+input[type='button'].green:disabled,
+.button.green:disabled {
+  background-color: #74e68f;
+  border: 1px solid #5ee37e;
+}
+/* line 17, buttons.less */
+button.green.disabled:hover,
+input[type='submit'].green.disabled:hover,
+input[type='reset'].green.disabled:hover,
+input[type='button'].green.disabled:hover,
+.button.green.disabled:hover,
+button.green:disabled:hover,
+input[type='submit'].green:disabled:hover,
+input[type='reset'].green:disabled:hover,
+input[type='button'].green:disabled:hover,
+.button.green:disabled:hover {
+  background-color: #74e68f;
+}
+/* line 20, buttons.less */
+button.green.disabled:active,
+input[type='submit'].green.disabled:active,
+input[type='reset'].green.disabled:active,
+input[type='button'].green.disabled:active,
+.button.green.disabled:active,
+button.green:disabled:active,
+input[type='submit'].green:disabled:active,
+input[type='reset'].green:disabled:active,
+input[type='button'].green:disabled:active,
+.button.green:disabled:active {
+  background-color: #74e68f;
 }
 /* line 53, buttons.less */
+button.teal,
+input[type='submit'].teal,
+input[type='reset'].teal,
+input[type='button'].teal,
+.button.teal {
+  background-color: #00b5ad;
+  color: #ffffff;
+  border: 1px solid #009c95;
+}
+/* line 6, buttons.less */
+button.teal:hover,
+input[type='submit'].teal:hover,
+input[type='reset'].teal:hover,
+input[type='button'].teal:hover,
+.button.teal:hover {
+  background-color: #009c95;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 11, buttons.less */
+button.teal:active,
+input[type='submit'].teal:active,
+input[type='reset'].teal:active,
+input[type='button'].teal:active,
+.button.teal:active {
+  background-color: #009c95;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 16, buttons.less */
+button.teal.disabled,
+input[type='submit'].teal.disabled,
+input[type='reset'].teal.disabled,
+input[type='button'].teal.disabled,
+.button.teal.disabled,
+button.teal:disabled,
+input[type='submit'].teal:disabled,
+input[type='reset'].teal:disabled,
+input[type='button'].teal:disabled,
+.button.teal:disabled {
+  background-color: #36fff6;
+  border: 1px solid #1cfff5;
+}
+/* line 17, buttons.less */
+button.teal.disabled:hover,
+input[type='submit'].teal.disabled:hover,
+input[type='reset'].teal.disabled:hover,
+input[type='button'].teal.disabled:hover,
+.button.teal.disabled:hover,
+button.teal:disabled:hover,
+input[type='submit'].teal:disabled:hover,
+input[type='reset'].teal:disabled:hover,
+input[type='button'].teal:disabled:hover,
+.button.teal:disabled:hover {
+  background-color: #36fff6;
+}
+/* line 20, buttons.less */
+button.teal.disabled:active,
+input[type='submit'].teal.disabled:active,
+input[type='reset'].teal.disabled:active,
+input[type='button'].teal.disabled:active,
+.button.teal.disabled:active,
+button.teal:disabled:active,
+input[type='submit'].teal:disabled:active,
+input[type='reset'].teal:disabled:active,
+input[type='button'].teal:disabled:active,
+.button.teal:disabled:active {
+  background-color: #36fff6;
+}
+/* line 54, buttons.less */
+button.blue,
+input[type='submit'].blue,
+input[type='reset'].blue,
+input[type='button'].blue,
+.button.blue {
+  background-color: #2185d0;
+  color: #ffffff;
+  border: 1px solid #1e77ba;
+}
+/* line 6, buttons.less */
+button.blue:hover,
+input[type='submit'].blue:hover,
+input[type='reset'].blue:hover,
+input[type='button'].blue:hover,
+.button.blue:hover {
+  background-color: #1e77ba;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 11, buttons.less */
+button.blue:active,
+input[type='submit'].blue:active,
+input[type='reset'].blue:active,
+input[type='button'].blue:active,
+.button.blue:active {
+  background-color: #1e77ba;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 16, buttons.less */
+button.blue.disabled,
+input[type='submit'].blue.disabled,
+input[type='reset'].blue.disabled,
+input[type='button'].blue.disabled,
+.button.blue.disabled,
+button.blue:disabled,
+input[type='submit'].blue:disabled,
+input[type='reset'].blue:disabled,
+input[type='button'].blue:disabled,
+.button.blue:disabled {
+  background-color: #85c0ec;
+  border: 1px solid #6fb4e8;
+}
+/* line 17, buttons.less */
+button.blue.disabled:hover,
+input[type='submit'].blue.disabled:hover,
+input[type='reset'].blue.disabled:hover,
+input[type='button'].blue.disabled:hover,
+.button.blue.disabled:hover,
+button.blue:disabled:hover,
+input[type='submit'].blue:disabled:hover,
+input[type='reset'].blue:disabled:hover,
+input[type='button'].blue:disabled:hover,
+.button.blue:disabled:hover {
+  background-color: #85c0ec;
+}
+/* line 20, buttons.less */
+button.blue.disabled:active,
+input[type='submit'].blue.disabled:active,
+input[type='reset'].blue.disabled:active,
+input[type='button'].blue.disabled:active,
+.button.blue.disabled:active,
+button.blue:disabled:active,
+input[type='submit'].blue:disabled:active,
+input[type='reset'].blue:disabled:active,
+input[type='button'].blue:disabled:active,
+.button.blue:disabled:active {
+  background-color: #85c0ec;
+}
+/* line 55, buttons.less */
+button.violet,
+input[type='submit'].violet,
+input[type='reset'].violet,
+input[type='button'].violet,
+.button.violet {
+  background-color: #6435c9;
+  color: #ffffff;
+  border: 1px solid #5a30b5;
+}
+/* line 6, buttons.less */
+button.violet:hover,
+input[type='submit'].violet:hover,
+input[type='reset'].violet:hover,
+input[type='button'].violet:hover,
+.button.violet:hover {
+  background-color: #5a30b5;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 11, buttons.less */
+button.violet:active,
+input[type='submit'].violet:active,
+input[type='reset'].violet:active,
+input[type='button'].violet:active,
+.button.violet:active {
+  background-color: #5a30b5;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 16, buttons.less */
+button.violet.disabled,
+input[type='submit'].violet.disabled,
+input[type='reset'].violet.disabled,
+input[type='button'].violet.disabled,
+.button.violet.disabled,
+button.violet:disabled,
+input[type='submit'].violet:disabled,
+input[type='reset'].violet:disabled,
+input[type='button'].violet:disabled,
+.button.violet:disabled {
+  background-color: #b199e4;
+  border: 1px solid #a285df;
+}
+/* line 17, buttons.less */
+button.violet.disabled:hover,
+input[type='submit'].violet.disabled:hover,
+input[type='reset'].violet.disabled:hover,
+input[type='button'].violet.disabled:hover,
+.button.violet.disabled:hover,
+button.violet:disabled:hover,
+input[type='submit'].violet:disabled:hover,
+input[type='reset'].violet:disabled:hover,
+input[type='button'].violet:disabled:hover,
+.button.violet:disabled:hover {
+  background-color: #b199e4;
+}
+/* line 20, buttons.less */
+button.violet.disabled:active,
+input[type='submit'].violet.disabled:active,
+input[type='reset'].violet.disabled:active,
+input[type='button'].violet.disabled:active,
+.button.violet.disabled:active,
+button.violet:disabled:active,
+input[type='submit'].violet:disabled:active,
+input[type='reset'].violet:disabled:active,
+input[type='button'].violet:disabled:active,
+.button.violet:disabled:active {
+  background-color: #b199e4;
+}
+/* line 56, buttons.less */
+button.purple,
+input[type='submit'].purple,
+input[type='reset'].purple,
+input[type='button'].purple,
+.button.purple {
+  background-color: #a333c8;
+  color: #ffffff;
+  border: 1px solid #922eb4;
+}
+/* line 6, buttons.less */
+button.purple:hover,
+input[type='submit'].purple:hover,
+input[type='reset'].purple:hover,
+input[type='button'].purple:hover,
+.button.purple:hover {
+  background-color: #922eb4;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 11, buttons.less */
+button.purple:active,
+input[type='submit'].purple:active,
+input[type='reset'].purple:active,
+input[type='button'].purple:active,
+.button.purple:active {
+  background-color: #922eb4;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 16, buttons.less */
+button.purple.disabled,
+input[type='submit'].purple.disabled,
+input[type='reset'].purple.disabled,
+input[type='button'].purple.disabled,
+.button.purple.disabled,
+button.purple:disabled,
+input[type='submit'].purple:disabled,
+input[type='reset'].purple:disabled,
+input[type='button'].purple:disabled,
+.button.purple:disabled {
+  background-color: #d196e4;
+  border: 1px solid #c882df;
+}
+/* line 17, buttons.less */
+button.purple.disabled:hover,
+input[type='submit'].purple.disabled:hover,
+input[type='reset'].purple.disabled:hover,
+input[type='button'].purple.disabled:hover,
+.button.purple.disabled:hover,
+button.purple:disabled:hover,
+input[type='submit'].purple:disabled:hover,
+input[type='reset'].purple:disabled:hover,
+input[type='button'].purple:disabled:hover,
+.button.purple:disabled:hover {
+  background-color: #d196e4;
+}
+/* line 20, buttons.less */
+button.purple.disabled:active,
+input[type='submit'].purple.disabled:active,
+input[type='reset'].purple.disabled:active,
+input[type='button'].purple.disabled:active,
+.button.purple.disabled:active,
+button.purple:disabled:active,
+input[type='submit'].purple:disabled:active,
+input[type='reset'].purple:disabled:active,
+input[type='button'].purple:disabled:active,
+.button.purple:disabled:active {
+  background-color: #d196e4;
+}
+/* line 57, buttons.less */
+button.pink,
+input[type='submit'].pink,
+input[type='reset'].pink,
+input[type='button'].pink,
+.button.pink {
+  background-color: #e03997;
+  color: #ffffff;
+  border: 1px solid #dd238b;
+}
+/* line 6, buttons.less */
+button.pink:hover,
+input[type='submit'].pink:hover,
+input[type='reset'].pink:hover,
+input[type='button'].pink:hover,
+.button.pink:hover {
+  background-color: #dd238b;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 11, buttons.less */
+button.pink:active,
+input[type='submit'].pink:active,
+input[type='reset'].pink:active,
+input[type='button'].pink:active,
+.button.pink:active {
+  background-color: #dd238b;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 16, buttons.less */
+button.pink.disabled,
+input[type='submit'].pink.disabled,
+input[type='reset'].pink.disabled,
+input[type='button'].pink.disabled,
+.button.pink.disabled,
+button.pink:disabled,
+input[type='submit'].pink:disabled,
+input[type='reset'].pink:disabled,
+input[type='button'].pink:disabled,
+.button.pink:disabled {
+  background-color: #f1a7d1;
+  border: 1px solid #ee91c5;
+}
+/* line 17, buttons.less */
+button.pink.disabled:hover,
+input[type='submit'].pink.disabled:hover,
+input[type='reset'].pink.disabled:hover,
+input[type='button'].pink.disabled:hover,
+.button.pink.disabled:hover,
+button.pink:disabled:hover,
+input[type='submit'].pink:disabled:hover,
+input[type='reset'].pink:disabled:hover,
+input[type='button'].pink:disabled:hover,
+.button.pink:disabled:hover {
+  background-color: #f1a7d1;
+}
+/* line 20, buttons.less */
+button.pink.disabled:active,
+input[type='submit'].pink.disabled:active,
+input[type='reset'].pink.disabled:active,
+input[type='button'].pink.disabled:active,
+.button.pink.disabled:active,
+button.pink:disabled:active,
+input[type='submit'].pink:disabled:active,
+input[type='reset'].pink:disabled:active,
+input[type='button'].pink:disabled:active,
+.button.pink:disabled:active {
+  background-color: #f1a7d1;
+}
+/* line 58, buttons.less */
+button.brown,
+input[type='submit'].brown,
+input[type='reset'].brown,
+input[type='button'].brown,
+.button.brown {
+  background-color: #a5673f;
+  color: #ffffff;
+  border: 1px solid #935b38;
+}
+/* line 6, buttons.less */
+button.brown:hover,
+input[type='submit'].brown:hover,
+input[type='reset'].brown:hover,
+input[type='button'].brown:hover,
+.button.brown:hover {
+  background-color: #935b38;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 11, buttons.less */
+button.brown:active,
+input[type='submit'].brown:active,
+input[type='reset'].brown:active,
+input[type='button'].brown:active,
+.button.brown:active {
+  background-color: #935b38;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 16, buttons.less */
+button.brown.disabled,
+input[type='submit'].brown.disabled,
+input[type='reset'].brown.disabled,
+input[type='button'].brown.disabled,
+.button.brown.disabled,
+button.brown:disabled,
+input[type='submit'].brown:disabled,
+input[type='reset'].brown:disabled,
+input[type='button'].brown:disabled,
+.button.brown:disabled {
+  background-color: #d4aa8f;
+  border: 1px solid #cd9c7d;
+}
+/* line 17, buttons.less */
+button.brown.disabled:hover,
+input[type='submit'].brown.disabled:hover,
+input[type='reset'].brown.disabled:hover,
+input[type='button'].brown.disabled:hover,
+.button.brown.disabled:hover,
+button.brown:disabled:hover,
+input[type='submit'].brown:disabled:hover,
+input[type='reset'].brown:disabled:hover,
+input[type='button'].brown:disabled:hover,
+.button.brown:disabled:hover {
+  background-color: #d4aa8f;
+}
+/* line 20, buttons.less */
+button.brown.disabled:active,
+input[type='submit'].brown.disabled:active,
+input[type='reset'].brown.disabled:active,
+input[type='button'].brown.disabled:active,
+.button.brown.disabled:active,
+button.brown:disabled:active,
+input[type='submit'].brown:disabled:active,
+input[type='reset'].brown:disabled:active,
+input[type='button'].brown:disabled:active,
+.button.brown:disabled:active {
+  background-color: #d4aa8f;
+}
+/* line 59, buttons.less */
+button.black,
+input[type='submit'].black,
+input[type='reset'].black,
+input[type='button'].black,
+.button.black {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+}
+/* line 6, buttons.less */
+button.black:hover,
+input[type='submit'].black:hover,
+input[type='reset'].black:hover,
+input[type='button'].black:hover,
+.button.black:hover {
+  background-color: #000000;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 11, buttons.less */
+button.black:active,
+input[type='submit'].black:active,
+input[type='reset'].black:active,
+input[type='button'].black:active,
+.button.black:active {
+  background-color: #000000;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 16, buttons.less */
+button.black.disabled,
+input[type='submit'].black.disabled,
+input[type='reset'].black.disabled,
+input[type='button'].black.disabled,
+.button.black.disabled,
+button.black:disabled,
+input[type='submit'].black:disabled,
+input[type='reset'].black:disabled,
+input[type='button'].black:disabled,
+.button.black:disabled {
+  background-color: #404040;
+  border: 1px solid #333333;
+}
+/* line 17, buttons.less */
+button.black.disabled:hover,
+input[type='submit'].black.disabled:hover,
+input[type='reset'].black.disabled:hover,
+input[type='button'].black.disabled:hover,
+.button.black.disabled:hover,
+button.black:disabled:hover,
+input[type='submit'].black:disabled:hover,
+input[type='reset'].black:disabled:hover,
+input[type='button'].black:disabled:hover,
+.button.black:disabled:hover {
+  background-color: #404040;
+}
+/* line 20, buttons.less */
+button.black.disabled:active,
+input[type='submit'].black.disabled:active,
+input[type='reset'].black.disabled:active,
+input[type='button'].black.disabled:active,
+.button.black.disabled:active,
+button.black:disabled:active,
+input[type='submit'].black:disabled:active,
+input[type='reset'].black:disabled:active,
+input[type='button'].black:disabled:active,
+.button.black:disabled:active {
+  background-color: #404040;
+}
+/* line 61, buttons.less */
 button.icon,
 input[type='submit'].icon,
 input[type='reset'].icon,
@@ -1033,7 +1523,7 @@ input[type='button'].icon,
   font-size: 26px;
   padding: 2.5px 5px;
 }
-/* line 58, buttons.less */
+/* line 66, buttons.less */
 button.fit,
 input[type='submit'].fit,
 input[type='reset'].fit,
@@ -1041,7 +1531,7 @@ input[type='button'].fit,
 .button.fit {
   width: calc(100% - 10px);
 }
-/* line 60, buttons.less */
+/* line 68, buttons.less */
 button.small,
 input[type='submit'].small,
 input[type='reset'].small,
@@ -1050,7 +1540,7 @@ input[type='button'].small,
   font-size: 12px;
   height: auto;
 }
-/* line 61, buttons.less */
+/* line 69, buttons.less */
 button.big,
 input[type='submit'].big,
 input[type='reset'].big,
@@ -1059,7 +1549,7 @@ input[type='button'].big,
   font-size: 24px;
   height: auto;
 }
-/* line 62, buttons.less */
+/* line 70, buttons.less */
 button.very-big,
 input[type='submit'].very-big,
 input[type='reset'].very-big,
@@ -1068,13 +1558,126 @@ input[type='button'].very-big,
   font-size: 30px;
   height: auto;
 }
-/* line 65, buttons.less */
+/* line 73, buttons.less */
+button.square,
+input[type='submit'].square,
+input[type='reset'].square,
+input[type='button'].square,
+.button.square {
+  border-radius: 0px;
+}
+/* line 77, buttons.less */
+button.ghost,
+input[type='submit'].ghost,
+input[type='reset'].ghost,
+input[type='button'].ghost,
+.button.ghost {
+  background-color: transparent !important;
+  border-width: 2px;
+}
+/* line 81, buttons.less */
+button.ghost.red,
+input[type='submit'].ghost.red,
+input[type='reset'].ghost.red,
+input[type='button'].ghost.red,
+.button.ghost.red {
+  color: #db2828;
+}
+/* line 82, buttons.less */
+button.ghost.orange,
+input[type='submit'].ghost.orange,
+input[type='reset'].ghost.orange,
+input[type='button'].ghost.orange,
+.button.ghost.orange {
+  color: #f2711c;
+}
+/* line 83, buttons.less */
+button.ghost.yellow,
+input[type='submit'].ghost.yellow,
+input[type='reset'].ghost.yellow,
+input[type='button'].ghost.yellow,
+.button.ghost.yellow {
+  color: #fbbd08;
+}
+/* line 84, buttons.less */
+button.ghost.olive,
+input[type='submit'].ghost.olive,
+input[type='reset'].ghost.olive,
+input[type='button'].ghost.olive,
+.button.ghost.olive {
+  color: #b5cc18;
+}
+/* line 85, buttons.less */
+button.ghost.green,
+input[type='submit'].ghost.green,
+input[type='reset'].ghost.green,
+input[type='button'].ghost.green,
+.button.ghost.green {
+  color: #21ba45;
+}
+/* line 86, buttons.less */
+button.ghost.teal,
+input[type='submit'].ghost.teal,
+input[type='reset'].ghost.teal,
+input[type='button'].ghost.teal,
+.button.ghost.teal {
+  color: #00b5ad;
+}
+/* line 87, buttons.less */
+button.ghost.blue,
+input[type='submit'].ghost.blue,
+input[type='reset'].ghost.blue,
+input[type='button'].ghost.blue,
+.button.ghost.blue {
+  color: #2185d0;
+}
+/* line 88, buttons.less */
+button.ghost.violet,
+input[type='submit'].ghost.violet,
+input[type='reset'].ghost.violet,
+input[type='button'].ghost.violet,
+.button.ghost.violet {
+  color: #6435c9;
+}
+/* line 89, buttons.less */
+button.ghost.purple,
+input[type='submit'].ghost.purple,
+input[type='reset'].ghost.purple,
+input[type='button'].ghost.purple,
+.button.ghost.purple {
+  color: #a333c8;
+}
+/* line 90, buttons.less */
+button.ghost.pink,
+input[type='submit'].ghost.pink,
+input[type='reset'].ghost.pink,
+input[type='button'].ghost.pink,
+.button.ghost.pink {
+  color: #e03997;
+}
+/* line 91, buttons.less */
+button.ghost.brown,
+input[type='submit'].ghost.brown,
+input[type='reset'].ghost.brown,
+input[type='button'].ghost.brown,
+.button.ghost.brown {
+  color: #a5673f;
+}
+/* line 92, buttons.less */
+button.ghost.black,
+input[type='submit'].ghost.black,
+input[type='reset'].ghost.black,
+input[type='button'].ghost.black,
+.button.ghost.black {
+  color: #000000;
+}
+/* line 96, buttons.less */
 .button-group {
   margin: 5px;
   clear: both;
   float: left;
 }
-/* line 69, buttons.less */
+/* line 100, buttons.less */
 .button-group button,
 .button-group input[type='submit'],
 .button-group input[type='reset'],
@@ -1084,7 +1687,7 @@ input[type='button'].very-big,
   float: left;
   border-radius: 0px;
 }
-/* line 74, buttons.less */
+/* line 105, buttons.less */
 .button-group button:first-child,
 .button-group input[type='submit']:first-child,
 .button-group input[type='reset']:first-child,
@@ -1092,7 +1695,7 @@ input[type='button'].very-big,
 .button-group .button:first-child {
   border-radius: 3px 0px 0px 3px;
 }
-/* line 77, buttons.less */
+/* line 108, buttons.less */
 .button-group button:last-child,
 .button-group input[type='submit']:last-child,
 .button-group input[type='reset']:last-child,
@@ -1100,7 +1703,7 @@ input[type='button'].very-big,
 .button-group .button:last-child {
   border-radius: 0px 3px 3px 0px;
 }
-/* line 82, buttons.less */
+/* line 113, buttons.less */
 .button-group.pin {
   clear: none;
 }
@@ -1481,7 +2084,7 @@ input[type='tel']:focus {
   font-family: 'PT Sans', 'Segoe UI', sans-serif;
   display: inline-block;
   border-radius: 3px;
-  font-size: 1em;
+  font-size: 75%;
   padding: 2px 4px;
   background-color: #333333;
   color: #ffffff;
