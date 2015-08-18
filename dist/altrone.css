@@ -1901,28 +1901,29 @@ input[type='tel']:focus {
   width: calc(100% - 10px);
   margin: 5px;
   height: 30px;
+  font-size: 0.8em;
 }
-/* line 41, tabs.less */
+/* line 42, tabs.less */
 .tabs.mobile-tabs.one > li {
   width: 100%;
 }
-/* line 42, tabs.less */
+/* line 43, tabs.less */
 .tabs.mobile-tabs.two > li {
   width: 50%;
 }
-/* line 43, tabs.less */
+/* line 44, tabs.less */
 .tabs.mobile-tabs.three > li {
   width: 33.33%;
 }
-/* line 44, tabs.less */
+/* line 45, tabs.less */
 .tabs.mobile-tabs.four > li {
   width: 25%;
 }
-/* line 45, tabs.less */
+/* line 46, tabs.less */
 .tabs.mobile-tabs.five > li {
   width: 20%;
 }
-/* line 47, tabs.less */
+/* line 48, tabs.less */
 .tabs.mobile-tabs li {
   border: 1px solid #2185d0;
   color: #2185d0;
@@ -1932,21 +1933,21 @@ input[type='tel']:focus {
   float: left;
   box-sizing: border-box;
 }
-/* line 56, tabs.less */
+/* line 57, tabs.less */
 .tabs.mobile-tabs li.active {
   background-color: #2185d0;
   color: #ffffff;
 }
-/* line 61, tabs.less */
+/* line 62, tabs.less */
 .tabs.mobile-tabs li:active {
   background-color: #439de1;
   color: #ffffff;
 }
-/* line 66, tabs.less */
+/* line 67, tabs.less */
 .tabs.mobile-tabs li:first-child {
   border-radius: 5px 0px 0px 5px;
 }
-/* line 69, tabs.less */
+/* line 70, tabs.less */
 .tabs.mobile-tabs li:last-child {
   border-radius: 0px 5px 5px 0;
 }
@@ -2468,10 +2469,10 @@ input[type='tel']:focus {
 }
 /* line 1, cards.less */
 .card {
-  margin: 1em;
+  margin: 0.8em;
   background-color: #ffffff;
   border-radius: 1px;
-  width: 100%;
+  width: calc(100% - 1.6em);
   box-sizing: border-box;
   font-family: 'PT Sans', 'Segoe UI', sans-serif;
 }
@@ -2580,4 +2581,18 @@ input[type='tel']:focus {
 /* line 108, cards.less */
 .card .image-box .content p {
   font-size: 16px;
+}
+@media (max-width: 480px) {
+  /* line 116, cards.less */
+  .card {
+    margin: 0.25em;
+    width: calc(100% - 0.5em);
+  }
+}
+@media (max-width: 1024px) {
+  /* line 123, cards.less */
+  .card {
+    margin: 0.5em;
+    width: calc(100% - 1em);
+  }
 }
