@@ -2477,39 +2477,43 @@ input[type='tel']:focus {
   font-family: 'PT Sans', 'Segoe UI', sans-serif;
 }
 /* line 9, cards.less */
+.card .card {
+  border: 1px solid #f5f5f5;
+}
+/* line 13, cards.less */
 .card .header {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
 }
-/* line 13, cards.less */
+/* line 17, cards.less */
 .card .header h1 {
   font-weight: 100;
   font-size: 24px;
   margin: 3px 5px;
 }
-/* line 18, cards.less */
+/* line 22, cards.less */
 .card .header .meta {
   list-style: none;
   color: #666666;
   font-size: 14px;
 }
-/* line 25, cards.less */
+/* line 29, cards.less */
 .card .content {
   width: 100%;
   font-weight: normal;
 }
-/* line 29, cards.less */
+/* line 33, cards.less */
 .card .content.text {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
 }
-/* line 35, cards.less */
+/* line 39, cards.less */
 .card .content.feed {
   padding: 5px 0px;
 }
-/* line 37, cards.less */
+/* line 41, cards.less */
 .card .content.feed .item {
   position: relative;
   width: 100%;
@@ -2519,13 +2523,13 @@ input[type='tel']:focus {
   -webkit-transition: all 0.2s linear;
           transition: all 0.2s linear;
 }
-/* line 45, cards.less */
+/* line 49, cards.less */
 .card .content.feed .item:hover {
   background-color: #f5f5f5;
   -webkit-transition: all 0.2s linear;
           transition: all 0.2s linear;
 }
-/* line 50, cards.less */
+/* line 54, cards.less */
 .card .content.feed .item .photo {
   width: 2.5em;
   height: 2.5em;
@@ -2534,31 +2538,31 @@ input[type='tel']:focus {
   float: left;
   border-radius: 4px;
 }
-/* line 60, cards.less */
+/* line 64, cards.less */
 .card .content.feed .item .content .author {
   color: #333333;
   font-weight: bold;
   display: inline-block;
 }
-/* line 66, cards.less */
+/* line 70, cards.less */
 .card .content.feed .item .content .time {
   display: inline-block;
   color: #666666;
   font-size: 0.8em;
 }
-/* line 72, cards.less */
+/* line 76, cards.less */
 .card .content.feed .item .content .meta-data {
   display: block;
   color: #666666;
   font-size: 0.8em;
 }
-/* line 78, cards.less */
+/* line 82, cards.less */
 .card .content.feed .item .content .text {
   margin-left: 3.5em;
   color: #333333;
   font-weight: 500;
 }
-/* line 88, cards.less */
+/* line 92, cards.less */
 .card .footer {
   width: 100%;
   background-color: #f6f6f6;
@@ -2566,41 +2570,41 @@ input[type='tel']:focus {
   box-sizing: border-box;
   display: block;
 }
-/* line 95, cards.less */
+/* line 99, cards.less */
 .card .footer.centered {
   text-align: center;
 }
-/* line 101, cards.less */
+/* line 105, cards.less */
 .card .image-box .cover {
   width: 100%;
   height: auto;
   border-radius: 2px 2px 0px 0px;
   display: block;
 }
-/* line 107, cards.less */
+/* line 111, cards.less */
 .card .image-box .content {
   padding: 10px;
   box-sizing: border-box;
 }
-/* line 110, cards.less */
+/* line 114, cards.less */
 .card .image-box .content h1 {
   font-size: 24px;
   font-weight: bold;
   margin: 5px 10px;
 }
-/* line 115, cards.less */
+/* line 119, cards.less */
 .card .image-box .content p {
   font-size: 16px;
 }
 @media (max-width: 480px) {
-  /* line 123, cards.less */
+  /* line 127, cards.less */
   .card {
     margin: 0.25em;
     width: calc(100% - 0.5em);
   }
 }
 @media (max-width: 1024px) {
-  /* line 130, cards.less */
+  /* line 134, cards.less */
   .card {
     margin: 0.5em;
     width: calc(100% - 1em);
