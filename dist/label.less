@@ -57,3 +57,51 @@
 .set-label-color(@color){
 	background-color: @color;
 }
+
+.set-tag-color(@color){
+	background-color: @color;
+	color: white;
+	&::before {
+		border-right-color: @color;
+	}
+}
+
+.tag {
+	background-color: darken(@u-gray, 5%);
+	color: @d-gray;
+	cursor: pointer;
+	.pt();
+	padding: 5px 10px;
+	box-sizing: border-box;
+	display: inline-block;
+	margin-left: 1em;
+	margin-top: 5px;
+	border-radius: 0px 5px 5px 0px;
+	position: relative;
+	height: 28px;
+	font-weight: 600;
+	font-size: 14px;
+
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: -28px;
+		top: -.5px;
+		border: 14px solid transparent;
+		border-right: 14px solid darken(@u-gray, 5%);;
+	}
+
+	&.red { .set-tag-color(@red); }
+	&.orange { .set-tag-color(@orange); }
+	&.yellow { .set-tag-color(@yellow); }
+	&.olive { .set-tag-color(@olive); }
+	&.green { .set-tag-color(@green); }
+	&.teal { .set-tag-color(@teal); }
+	&.blue { .set-tag-color(@blue); }
+	&.violet { .set-tag-color(@violet); }
+	&.purple { .set-tag-color(@purple); }
+	&.pink { .set-tag-color(@pink); }
+	&.brown { .set-tag-color(@brown); }
+	&.black { .set-tag-color(@black); }
+}

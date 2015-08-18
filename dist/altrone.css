@@ -1868,6 +1868,142 @@ input[type='tel']:focus {
   border: 1px solid #8c8c8c;
   color: #333333;
 }
+/* line 1, table.less */
+table {
+  width: 100%;
+  height: auto;
+  font-family: 'PT Sans', 'Segoe UI', sans-serif;
+}
+/* line 7, table.less */
+table tr td {
+  width: auto;
+  padding: 4px 8px;
+  box-sizing: border-box;
+}
+/* line 12, table.less */
+table tr td.red {
+  background-color: #e66a6a;
+}
+/* line 13, table.less */
+table tr td.orange {
+  background-color: #f69e64;
+}
+/* line 14, table.less */
+table tr td.yellow {
+  background-color: #fcd153;
+}
+/* line 15, table.less */
+table tr td.olive {
+  background-color: #d5e947;
+}
+/* line 16, table.less */
+table tr td.green {
+  background-color: #49df6c;
+}
+/* line 17, table.less */
+table tr td.teal {
+  background-color: #02fff4;
+}
+/* line 18, table.less */
+table tr td.blue {
+  background-color: #59a9e5;
+}
+/* line 19, table.less */
+table tr td.violet {
+  background-color: #9271da;
+}
+/* line 20, table.less */
+table tr td.purple {
+  background-color: #bf6eda;
+}
+/* line 21, table.less */
+table tr td.pink {
+  background-color: #ea7bba;
+}
+/* line 22, table.less */
+table tr td.brown {
+  background-color: #c68e6a;
+}
+/* line 23, table.less */
+table tr td.black {
+  background-color: #262626;
+}
+/* line 26, table.less */
+table tr.red {
+  background-color: #e66a6a;
+}
+/* line 27, table.less */
+table tr.orange {
+  background-color: #f69e64;
+}
+/* line 28, table.less */
+table tr.yellow {
+  background-color: #fcd153;
+}
+/* line 29, table.less */
+table tr.olive {
+  background-color: #d5e947;
+}
+/* line 30, table.less */
+table tr.green {
+  background-color: #49df6c;
+}
+/* line 31, table.less */
+table tr.teal {
+  background-color: #02fff4;
+}
+/* line 32, table.less */
+table tr.blue {
+  background-color: #59a9e5;
+}
+/* line 33, table.less */
+table tr.violet {
+  background-color: #9271da;
+}
+/* line 34, table.less */
+table tr.purple {
+  background-color: #bf6eda;
+}
+/* line 35, table.less */
+table tr.pink {
+  background-color: #ea7bba;
+}
+/* line 36, table.less */
+table tr.brown {
+  background-color: #c68e6a;
+}
+/* line 37, table.less */
+table tr.black {
+  background-color: #262626;
+}
+/* line 41, table.less */
+table.striped tr:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+/* line 47, table.less */
+table.striped-2 tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+/* line 52, table.less */
+table.centered tr td {
+  text-align: center;
+}
+/* line 53, table.less */
+table.align-left tr td {
+  text-align: left;
+}
+/* line 54, table.less */
+table.align-right tr td {
+  text-align: right;
+}
+/* line 55, table.less */
+table.justify tr td {
+  text-align: justify;
+}
+/* line 58, table.less */
+table.with-border td {
+  border: 1px solid #999999;
+}
 /* Модули */
 /* line 1, tabs.less */
 .tabs {
@@ -2192,6 +2328,140 @@ input[type='tel']:focus {
 /* line 52, label.less */
 .label.square {
   border-radius: 0px;
+}
+/* line 69, label.less */
+.tag {
+  background-color: #e8e8e8;
+  color: #333333;
+  cursor: pointer;
+  font-family: 'PT Sans', 'Segoe UI', sans-serif;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-left: 1em;
+  margin-top: 5px;
+  border-radius: 0px 5px 5px 0px;
+  position: relative;
+  height: 28px;
+  font-weight: 600;
+  font-size: 14px;
+}
+/* line 86, label.less */
+.tag::before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  top: -0.5px;
+  border: 14px solid transparent;
+  border-right: 14px solid #e8e8e8;
+}
+/* line 95, label.less */
+.tag.red {
+  background-color: #db2828;
+  color: white;
+}
+/* line 64, label.less */
+.tag.red::before {
+  border-right-color: #db2828;
+}
+/* line 96, label.less */
+.tag.orange {
+  background-color: #f2711c;
+  color: white;
+}
+/* line 64, label.less */
+.tag.orange::before {
+  border-right-color: #f2711c;
+}
+/* line 97, label.less */
+.tag.yellow {
+  background-color: #fbbd08;
+  color: white;
+}
+/* line 64, label.less */
+.tag.yellow::before {
+  border-right-color: #fbbd08;
+}
+/* line 98, label.less */
+.tag.olive {
+  background-color: #b5cc18;
+  color: white;
+}
+/* line 64, label.less */
+.tag.olive::before {
+  border-right-color: #b5cc18;
+}
+/* line 99, label.less */
+.tag.green {
+  background-color: #21ba45;
+  color: white;
+}
+/* line 64, label.less */
+.tag.green::before {
+  border-right-color: #21ba45;
+}
+/* line 100, label.less */
+.tag.teal {
+  background-color: #00b5ad;
+  color: white;
+}
+/* line 64, label.less */
+.tag.teal::before {
+  border-right-color: #00b5ad;
+}
+/* line 101, label.less */
+.tag.blue {
+  background-color: #2185d0;
+  color: white;
+}
+/* line 64, label.less */
+.tag.blue::before {
+  border-right-color: #2185d0;
+}
+/* line 102, label.less */
+.tag.violet {
+  background-color: #6435c9;
+  color: white;
+}
+/* line 64, label.less */
+.tag.violet::before {
+  border-right-color: #6435c9;
+}
+/* line 103, label.less */
+.tag.purple {
+  background-color: #a333c8;
+  color: white;
+}
+/* line 64, label.less */
+.tag.purple::before {
+  border-right-color: #a333c8;
+}
+/* line 104, label.less */
+.tag.pink {
+  background-color: #e03997;
+  color: white;
+}
+/* line 64, label.less */
+.tag.pink::before {
+  border-right-color: #e03997;
+}
+/* line 105, label.less */
+.tag.brown {
+  background-color: #a5673f;
+  color: white;
+}
+/* line 64, label.less */
+.tag.brown::before {
+  border-right-color: #a5673f;
+}
+/* line 106, label.less */
+.tag.black {
+  background-color: #000000;
+  color: white;
+}
+/* line 64, label.less */
+.tag.black::before {
+  border-right-color: #000000;
 }
 /* line 1, progress.less */
 .progress {
