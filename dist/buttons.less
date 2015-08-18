@@ -1,7 +1,7 @@
-.button-color(@color, @f-color) {
+.button-color(@color, @f-color: @white) {
 	background-color: @color;
 	color: @f-color;
-	border: 1px solid darken(@color, 10%);
+	border: 1px solid darken(@color, 5%);
 
 	&:hover {
 		background-color: darken(@color, 5%);
@@ -9,7 +9,7 @@
 	}
 
 	&:active {
-		background-color: darken(@color, 10%);
+		background-color: darken(@color, 5%);
 		.anim(0.3s);
 	}
 
@@ -43,12 +43,20 @@ button, input[type='submit'], input[type='reset'], input[type='button'], .button
 	float:left;
 	height: 36px;
 	box-sizing: border-box;
-
-	&.primary {	.button-color(@blue, @white); }
-	&.success {	.button-color(@green, @white); }
-	&.warning {	.button-color(@yellow, @white); }
-	&.danger {	.button-color(@red, @white); }
-	&.inverted { .button-color(@d-gray, @white); }
+	
+	//1.3.2
+	&.red { .button-color(@red); }
+	&.orange { .button-color(@orange); }
+	&.yellow { .button-color(@yellow); }
+	&.olive { .button-color(@olive); }
+	&.green { .button-color(@green); }
+	&.teal { .button-color(@teal); }
+	&.blue { .button-color(@blue); }
+	&.violet { .button-color(@violet); }
+	&.purple { .button-color(@purple); }
+	&.pink { .button-color(@pink); }
+	&.brown { .button-color(@brown); }
+	&.black { .button-color(@black); }
 
 	&.icon {
 		font-size: 26px;		
@@ -60,6 +68,29 @@ button, input[type='submit'], input[type='reset'], input[type='button'], .button
 	&.small { .button-size(12px, 22px);	}
 	&.big { .button-size(24px, 44px);	}
 	&.very-big { .button-size(30px, 50px);	}
+
+	//1.3.1
+	&.square {
+		border-radius: 0px;
+	}
+	//1.3.1
+	&.ghost {
+		background-color: transparent !important;
+		border-width: 2px;
+
+		&.red { color:@red; }
+		&.orange { color:@orange; }
+		&.yellow { color:@yellow; }
+		&.olive { color:@olive; }
+		&.green { color:@green; }
+		&.teal { color:@teal; }
+		&.blue { color:@blue; }
+		&.violet { color:@violet; }
+		&.purple { color:@purple; }
+		&.pink { color:@pink; }
+		&.brown { color:@brown; }
+		&.black { color:@black; }
+	}
 }
 
 .button-group {
