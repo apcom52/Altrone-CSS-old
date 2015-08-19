@@ -1,0 +1,29 @@
+.breadcrumb {
+	list-style: none;
+	overflow: hidden;
+	.pt();
+
+	li {
+		float: left;
+
+		a {
+			color: @blue;
+			text-decoration: none;
+
+			&:after {
+				content: " /\00a0";
+				color: @m-gray;
+			}
+		}
+
+		&.active {
+			font-weight: bold;
+		}
+	}
+
+	&.arrow {
+		li a:after {
+			content: " >\00a0";
+		}
+	}
+}

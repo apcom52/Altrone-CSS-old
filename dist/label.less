@@ -24,3 +24,36 @@
 	&.brown { .set-color(@brown); }
 	&.black { .set-color(@black); }
 }
+
+//1.3.0
+.label {
+	.pt();
+	display: inline-block;
+	border-radius: 3px;
+	font-size: 1em;
+	padding: 2px 4px;
+	background-color: @d-gray;
+	color: @white;
+	margin: 2px;
+
+	&.red { .set-label-color(@red); }
+	&.orange { .set-label-color(@orange); }
+	&.yellow { .set-label-color(@yellow); }
+	&.olive { .set-label-color(@olive); }
+	&.green { .set-label-color(@green); }
+	&.teal { .set-label-color(@teal); }
+	&.blue { .set-label-color(@blue); }
+	&.violet { .set-label-color(@violet); }
+	&.purple { .set-label-color(@purple); }
+	&.pink { .set-label-color(@pink); }
+	&.brown { .set-label-color(@brown); }
+	&.black { .set-label-color(@black); }
+
+	&.square {
+		border-radius: 0px;
+	}
+}
+
+.set-label-color(@color){
+	background-color: @color;
+}

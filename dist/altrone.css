@@ -1231,6 +1231,7 @@ input[type='tel']:focus {
   border: 1px solid #8c8c8c;
   color: #333333;
 }
+/* Модули */
 /* line 1, tabs.less */
 .tabs {
   width: 100%;
@@ -1474,6 +1475,69 @@ input[type='tel']:focus {
   background-color: #262626;
   border: 1px solid #000000;
   box-sizing: border-box;
+}
+/* line 29, label.less */
+.label {
+  font-family: 'PT Sans', 'Segoe UI', sans-serif;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 1em;
+  padding: 2px 4px;
+  background-color: #333333;
+  color: #ffffff;
+  margin: 2px;
+}
+/* line 39, label.less */
+.label.red {
+  background-color: #db2828;
+}
+/* line 40, label.less */
+.label.orange {
+  background-color: #f2711c;
+}
+/* line 41, label.less */
+.label.yellow {
+  background-color: #fbbd08;
+}
+/* line 42, label.less */
+.label.olive {
+  background-color: #b5cc18;
+}
+/* line 43, label.less */
+.label.green {
+  background-color: #21ba45;
+}
+/* line 44, label.less */
+.label.teal {
+  background-color: #00b5ad;
+}
+/* line 45, label.less */
+.label.blue {
+  background-color: #2185d0;
+}
+/* line 46, label.less */
+.label.violet {
+  background-color: #6435c9;
+}
+/* line 47, label.less */
+.label.purple {
+  background-color: #a333c8;
+}
+/* line 48, label.less */
+.label.pink {
+  background-color: #e03997;
+}
+/* line 49, label.less */
+.label.brown {
+  background-color: #a5673f;
+}
+/* line 50, label.less */
+.label.black {
+  background-color: #000000;
+}
+/* line 52, label.less */
+.label.square {
+  border-radius: 0px;
 }
 /* line 1, progress.less */
 .progress {
@@ -1730,4 +1794,32 @@ input[type='tel']:focus {
 /* line 36, alerts.less */
 .alert.square {
   border-radius: 0px;
+}
+/* line 1, breadcrumbs.less */
+.breadcrumb {
+  list-style: none;
+  overflow: hidden;
+  font-family: 'PT Sans', 'Segoe UI', sans-serif;
+}
+/* line 6, breadcrumbs.less */
+.breadcrumb li {
+  float: left;
+}
+/* line 9, breadcrumbs.less */
+.breadcrumb li a {
+  color: #2185d0;
+  text-decoration: none;
+}
+/* line 13, breadcrumbs.less */
+.breadcrumb li a:after {
+  content: " /\00a0";
+  color: #666666;
+}
+/* line 19, breadcrumbs.less */
+.breadcrumb li.active {
+  font-weight: bold;
+}
+/* line 25, breadcrumbs.less */
+.breadcrumb.arrow li a:after {
+  content: " >\00a0";
 }
