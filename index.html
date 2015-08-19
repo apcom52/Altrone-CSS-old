@@ -14,10 +14,15 @@
 			border: 1px solid #666;
 			box-sizing: border-box;
 		}
+		.flex-grid .col {
+			background-color: #999;
+			border: 1px solid #666;
+			box-sizing: border-box;
+		}
 	</style>
 </head>
 <body>
-<h1>Сетка</h1>
+<h1>Cетка</h1>
 <div class="container group">
 	<div class="col col-1 col-color">.col .col-1</div>
 	<div class="col col-1 col-color">.col .col-1</div>
@@ -57,6 +62,21 @@
 </div>
 <div class="container group">
 	<div class="col col-12 col-color">.col .col-12</div>
+</div>
+
+<h1>Flex-сетка</h1>
+<div class="flex-grid column">
+	<div class="row">
+		<div class="col">Заголовок</div>
+	</div>
+	<div class="row is-column">
+		<div class="col">Левый столбец<br><br><br></div>
+		<div class="col">Центральный столбец</div>
+		<div class="col">Правый столбец</div>
+	</div>
+	<div class="row">
+		<div class="col">Подвал</div>
+	</div>
 </div>
 
 <h1>Кнопки</h1>
@@ -538,16 +558,6 @@
 			<div class="header"><h1>Вложенные карточки</h1></div>
 			<div class="content feed">
 				<div class="card">
-					<div class="header"><h1>Card #1</h1></div>
-					<div class="content text">
-						<div class="list links">
-							<a>Follow me</a>
-							<a>Help</a>
-							<a>Quit</a>
-						</div>
-					</div>
-				</div>
-				<div class="card">
 					<div class="header"><h1>Card #2</h1></div>
 					<div class="content text">
 						<div class="list links">
@@ -560,6 +570,21 @@
 						<p><i class="fa fa-chrome"></i>Special for Google Chrome!</p>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class="card">		
+			<div class="header">
+				<h1>Yosemite National Park</h1>
+				<div class="meta">Very beautiful place!</div>
+			</div>	
+			<img src="http://www.thedesertreview.com/wp-content/upLoads/2015/08/12305_12567_Yosemite_Valley_md.jpg" class="responsive-img">
+			<div class="content">	
+				<p>Nullam maximus ac ipsum vel scelerisque. Curabitur congue faucibus urna id tempus. Quisque feugiat orci</p>
+				<p>Nullam maximus ac ipsum vel scelerisque. Curabitur congue faucibus urna id tempus. Quisque feugiat orci</p>
+				<p>Nullam maximus ac ipsum vel scelerisque. Curabitur congue faucibus urna id tempus. Quisque feugiat orci</p>
+			</div>
+			<div class="footer">
+				<p>Только сегодня! Скидка <span class="red label">-10%!</span></p>
 			</div>
 		</div>
 	</div>
@@ -614,6 +639,36 @@
 				<td>Бангкок</td>
 			</tr>
 		</table>
+	</div>
+</div>
+
+<h1>Панели навигации</h1>
+<div class="container group">
+	<div class="col col-12 col-t-6 col-m-4 no-padding">
+		<div class="taskbar">
+			<div class="items">
+				<div class="item logo align-left">Microsoft</div>
+				<div class="item">Store</div>
+				<div class="item">Windows</div>
+				<div class="item">Office</div>
+				<div class="item">Xbox</div>
+				<div class="item">Support</div>			
+				<div class="item full no-hover"><input type="text" placeholder="Cortana..." style="width: 100%;"></div>			
+			</div>
+		</div>
+		<div class="taskbar invert">
+			<div class="item">Добавить музыку</div>
+			<div class="item">Поиск</div>
+			<div class="item logo no-hover">Pied Piper</div>
+			<div class="item">О технологии</div>
+			<div class="item">Карта сайта</div>			
+		</div>
+		<div class="taskbar invert">
+			<div class="items">
+				<div class="item logo"><i class="ios ios-menu"></i></div>
+				<div class="item no-hover"><button>Добавить заметку</button></div>
+			</div>
+		</div>
 	</div>
 </div>
 </body>

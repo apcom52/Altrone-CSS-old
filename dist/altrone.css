@@ -604,6 +604,14 @@ th {
 .white-fg {
   color: #ffffff !important;
 }
+/* line 72, functions.less */
+.no-padding {
+  padding: 0px !important;
+}
+/* line 73, functions.less */
+.no-margin {
+  margin: 0px !important;
+}
 /* Базовые классы */
 @media (max-width: 1024px) {
   /* line 2, grid.less */
@@ -638,55 +646,71 @@ th {
   .col-* {
     width: 100% !important;
   }
+  /* line 15, grid.less */
+  .flex-grid .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 @media (max-width: 480px) {
-  /* line 16, grid.less */
+  /* line 22, grid.less */
   .col {
     margin: 1% 0px !important;
   }
-  /* line 19, grid.less */
+  /* line 25, grid.less */
   .col-m-1 {
     width: 25% !important;
   }
-  /* line 20, grid.less */
+  /* line 26, grid.less */
   .col-m-2 {
     width: 50% !important;
   }
-  /* line 21, grid.less */
+  /* line 27, grid.less */
   .col-m-3 {
     width: 75% !important;
   }
-  /* line 22, grid.less */
+  /* line 28, grid.less */
   .col-m-4 {
     width: 100% !important;
   }
-  /* line 23, grid.less */
+  /* line 29, grid.less */
   .col-* {
     width: 100% !important;
   }
+  /* line 32, grid.less */
+  .flex-grid .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
-/* line 27, grid.less */
+/* line 38, grid.less */
 .container {
   clear: both;
   padding: 0px;
   margin: 0px;
   font-size: 0;
 }
-/* line 33, grid.less */
+/* line 44, grid.less */
 .container.group {
   zoom: 1;
 }
-/* line 36, grid.less */
+/* line 47, grid.less */
 .container.group:before,
 .container.group:after {
   content: "";
   display: table;
 }
-/* line 40, grid.less */
+/* line 51, grid.less */
 .container.group:after {
   clear: both;
 }
-/* line 45, grid.less */
+/* line 56, grid.less */
 .container .col {
   vertical-align: top;
   font-size: medium;
@@ -695,57 +719,84 @@ th {
   box-sizing: border-box;
   padding: 5px;
 }
-/* line 56, grid.less */
+/* line 67, grid.less */
 .container .col:first-child {
   margin-left: 0px;
 }
-/* line 60, grid.less */
+/* line 71, grid.less */
 .container .col-1 {
   width: 8.333%;
 }
-/* line 61, grid.less */
+/* line 72, grid.less */
 .container .col-2 {
   width: 16.66%;
 }
-/* line 62, grid.less */
+/* line 73, grid.less */
 .container .col-3 {
   width: 25%;
 }
-/* line 63, grid.less */
+/* line 74, grid.less */
 .container .col-4 {
   width: 33.333%;
 }
-/* line 64, grid.less */
+/* line 75, grid.less */
 .container .col-5 {
   width: 40.73%;
 }
-/* line 65, grid.less */
+/* line 76, grid.less */
 .container .col-6 {
   width: 50%;
 }
-/* line 66, grid.less */
+/* line 77, grid.less */
 .container .col-7 {
   width: 57.66%;
 }
-/* line 67, grid.less */
+/* line 78, grid.less */
 .container .col-8 {
   width: 66.13%;
 }
-/* line 68, grid.less */
+/* line 79, grid.less */
 .container .col-9 {
   width: 75%;
 }
-/* line 69, grid.less */
+/* line 80, grid.less */
 .container .col-10 {
   width: 83.06%;
 }
-/* line 70, grid.less */
+/* line 81, grid.less */
 .container .col-11 {
   width: 91.53%;
 }
-/* line 71, grid.less */
+/* line 82, grid.less */
 .container .col-12 {
   width: 100%;
+}
+/* line 87, grid.less */
+.flex-grid .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 90, grid.less */
+.flex-grid .row.as-column {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+  -webkit-flex-direction: column !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+/* line 95, grid.less */
+.flex-grid .col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 12px;
+  -webkit-box-align: top;
+  -webkit-align-items: top;
+      -ms-flex-align: top;
+          align-items: top;
 }
 /* line 1, headers.less */
 h1,
@@ -755,8 +806,9 @@ h4,
 h5,
 h6 {
   font-family: 'PT Sans', 'Segoe UI', sans-serif;
+  margin: 0.5em;
 }
-/* line 4, headers.less */
+/* line 5, headers.less */
 h1.centered,
 h2.centered,
 h3.centered,
@@ -3072,10 +3124,14 @@ table.with-border td {
   box-sizing: border-box;
 }
 /* line 39, cards.less */
+.card .content p {
+  padding: 2px 7px;
+}
+/* line 43, cards.less */
 .card .content.feed {
   padding: 5px 0px;
 }
-/* line 41, cards.less */
+/* line 45, cards.less */
 .card .content.feed .item {
   position: relative;
   width: 100%;
@@ -3085,13 +3141,13 @@ table.with-border td {
   -webkit-transition: all 0.2s linear;
           transition: all 0.2s linear;
 }
-/* line 49, cards.less */
+/* line 53, cards.less */
 .card .content.feed .item:hover {
   background-color: #f5f5f5;
   -webkit-transition: all 0.2s linear;
           transition: all 0.2s linear;
 }
-/* line 54, cards.less */
+/* line 58, cards.less */
 .card .content.feed .item .photo {
   width: 2.5em;
   height: 2.5em;
@@ -3100,31 +3156,31 @@ table.with-border td {
   float: left;
   border-radius: 4px;
 }
-/* line 64, cards.less */
+/* line 68, cards.less */
 .card .content.feed .item .content .author {
   color: #333333;
   font-weight: bold;
   display: inline-block;
 }
-/* line 70, cards.less */
+/* line 74, cards.less */
 .card .content.feed .item .content .time {
   display: inline-block;
   color: #666666;
   font-size: 0.8em;
 }
-/* line 76, cards.less */
+/* line 80, cards.less */
 .card .content.feed .item .content .meta-data {
   display: block;
   color: #666666;
   font-size: 0.8em;
 }
-/* line 82, cards.less */
+/* line 86, cards.less */
 .card .content.feed .item .content .text {
   margin-left: 3.5em;
   color: #333333;
   font-weight: 500;
 }
-/* line 92, cards.less */
+/* line 96, cards.less */
 .card .footer {
   width: 100%;
   background-color: #f6f6f6;
@@ -3133,51 +3189,164 @@ table.with-border td {
   display: block;
   font-family: 'PT Sans', 'Segoe UI', sans-serif;
 }
-/* line 100, cards.less */
+/* line 104, cards.less */
 .card .footer.centered {
   text-align: center;
 }
-/* line 104, cards.less */
+/* line 108, cards.less */
 .card .footer p {
   color: #666666;
 }
-/* line 108, cards.less */
+/* line 112, cards.less */
 .card .footer i.fa {
   margin: 0px 5px;
 }
-/* line 114, cards.less */
+/* line 118, cards.less */
 .card .image-box .cover {
   width: 100%;
   height: auto;
   border-radius: 2px 2px 0px 0px;
   display: block;
 }
-/* line 120, cards.less */
+/* line 124, cards.less */
 .card .image-box .content {
   padding: 10px;
   box-sizing: border-box;
 }
-/* line 123, cards.less */
+/* line 127, cards.less */
 .card .image-box .content h1 {
   font-size: 24px;
   font-weight: bold;
   margin: 5px 10px;
 }
-/* line 128, cards.less */
+/* line 132, cards.less */
 .card .image-box .content p {
   font-size: 16px;
 }
 @media (max-width: 480px) {
-  /* line 136, cards.less */
+  /* line 140, cards.less */
   .card {
     margin: 0.25em;
     width: calc(100% - 0.5em);
   }
 }
 @media (max-width: 1024px) {
-  /* line 143, cards.less */
+  /* line 147, cards.less */
   .card {
     margin: 0.5em;
     width: calc(100% - 1em);
   }
+}
+/* line 1, taskbar.less */
+.taskbar {
+  width: 100%;
+  display: table;
+  background-color: #f5f5f5;
+  font-family: 'PT Sans', 'Segoe UI', sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/* line 10, taskbar.less */
+.taskbar .item-list:after {
+  display: table-cell;
+  background-color: transparent;
+  width: 100%;
+}
+/* line 16, taskbar.less */
+.taskbar .item {
+  display: table-cell;
+  white-space: nowrap;
+  vertical-align: middle;
+  color: #333333;
+  cursor: pointer;
+  text-align: center;
+  padding: 8px 16px;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 27, taskbar.less */
+.taskbar .item.logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+/* line 32, taskbar.less */
+.taskbar .item.align-left {
+  text-align: left;
+}
+/* line 33, taskbar.less */
+.taskbar .item.align-right {
+  text-align: right;
+}
+/* line 35, taskbar.less */
+.taskbar .item.full {
+  width: 100%;
+}
+/* line 38, taskbar.less */
+.taskbar .item.no-hover:hover {
+  background-color: #f5f5f5;
+}
+/* line 43, taskbar.less */
+.taskbar .item:hover {
+  background-color: #e8e8e8;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 49, taskbar.less */
+.taskbar.invert {
+  background-color: #333333;
+}
+/* line 52, taskbar.less */
+.taskbar.invert .item {
+  color: #f5f5f5;
+}
+/* line 55, taskbar.less */
+.taskbar.invert .item.no-hover:hover {
+  background-color: #333333;
+}
+/* line 59, taskbar.less */
+.taskbar.invert .item:hover {
+  background-color: #404040;
+}
+/* line 65, taskbar.less */
+.taskbar.fixed {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+/* line 72, taskbar.less */
+.flex-taskbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f5f5f5;
+  color: #333333;
+  font-family: 'PT Sans', 'Segoe UI', sans-serif;
+}
+/* line 78, taskbar.less */
+.flex-taskbar .item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 12px 16px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 83, taskbar.less */
+.flex-taskbar .item.logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+/* line 88, taskbar.less */
+.flex-taskbar .item:hover {
+  background-color: #e8e8e8;
+}
+/* line 93, taskbar.less */
+.flex-taskbar .item.search input[type="text"] {
+  width: 100%;
 }

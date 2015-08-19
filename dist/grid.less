@@ -10,6 +10,12 @@
 		&-t-6 { width: 100% !important;}
 		&-* { width: 100% !important}		
 	}
+
+	.flex-grid {
+		.row {
+			flex-direction: row;
+		}
+	}
 }
 
 @media (max-width: @mobile) {
@@ -22,6 +28,11 @@
 		&-m-4 { width: 100% !important;}
 		&-* { width: 100% !important}	
 	}
+	.flex-grid {
+		.row {
+			flex-direction: row;
+		}
+	}	
 }
 
 .container {
@@ -69,5 +80,21 @@
 		&-10 { width: 83.06%;	}
 		&-11{ width: 91.53%;	}
 		&-12 { width: 100%;	}
+	}
+}
+
+.flex-grid {
+	.row {
+		display: flex;
+
+		&.as-column {
+			flex-direction: column !important;
+		}
+	}
+
+	.col {
+		flex: 1;
+		padding: 12px;
+		align-items: top;
 	}
 }
