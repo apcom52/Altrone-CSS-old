@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<title>Altrone CSS</title>
+	<link rel="stylesheet" type="text/css" href="dist/altrone.css">
+
+	<style>
+		.col-color {
+			background-color: #999;
+			border: 1px solid #666;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+<h1>Сетка</h1>
+<div class="container group">
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+</div>
+<div class="container group">
+	<div class="col col-2 col-color">.col .col-2</div>
+	<div class="col col-2 col-color">.col .col-2</div>
+	<div class="col col-2 col-color">.col .col-2</div>
+	<div class="col col-2 col-color">.col .col-2</div>
+	<div class="col col-2 col-color">.col .col-2</div>
+	<div class="col col-2 col-color">.col .col-2</div>
+</div>
+<div class="container group">
+	<div class="col col-3 col-color">.col .col-3</div>
+	<div class="col col-3 col-color">.col .col-3</div>
+	<div class="col col-3 col-color col-color">.col .col-3</div>
+	<div class="col col-3 col-color">.col .col-3</div>
+</div>
+<div class="container group">
+	<div class="col col-4 col-color">.col .col-4</div>
+	<div class="col col-4 col-color">.col .col-4</div>
+	<div class="col col-4 col-color">.col .col-4</div>
+</div>
+<div class="container group">
+	<div class="col col-6 col-color">.col .col-6</div>
+	<div class="col col-6 col-color">.col .col-6</div>
+</div>
+<div class="container group">
+	<div class="col col-12 col-color">.col .col-12</div>
+</div>
+
+<h1>Кнопки</h1>
+<div class="container group">
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3>Обычное состояние</h3>
+		<button>Обычная кнопка</button><button class="primary">Primary Button</button><button class="success">Success Button</button><button class="warning">Warning Button</button><button class="danger">Danger Button</button><button class="inverted">Inverted Button</button>
+	</div>
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3>Disabled состояние</h3>
+		<button class="disabled">Обычная кнопка</button><button class="primary disabled">Primary Button</button><button class="success disabled">Success Button</button><button class="warning disabled">Warning Button</button><button class="danger" disabled>Danger Button</button><button class="inverted" disabled>Inverted Button</button>
+	</div>
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3>Группа кнопок</h3>
+		<div class="button-group">
+			<button class="primary">New</button>
+			<button>Open</button>
+			<button>Save</button>
+			<button class="danger">Close</button>
+		</div>
+		<br>
+		<div class="button-group">
+			<button><<</button>
+			<button>1</button>
+			<button>2</button>
+			<button>3</button>
+			<button>4</button>
+			<button>>></button>
+		</div><br>
+		<div class="button-group">
+			<button class="icon"><i class="icon-angle-left"></i></button>
+			<button class="icon"><i class="icon-angle-right"></i></button>
+		</div>
+		<div class="button-group pin">
+			<button class="icon"><i class="fa fa-angle-left"></i></button>
+			<button class="icon"><i class="fa fa-angle-right"></i></button>
+		</div>
+		<button class="success icon"><i class="fa fa-refresh"></i></button>
+	</div>
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3>Fit кнопки</h3>
+		<button class="fit">Обычная жирная кнопка</button>
+		<button class="primary fit">Primary жирная кнопка</button>
+		<button class="success fit">Success жирная кнопка</button>
+		<button class="warning fit">Warning жирная кнопка</button>
+		<button class="danger fit">Danger жирная кнопка</button>
+		<button class="success icon fit"><i class="icon-play"></i></button>
+	</div>
+</div>
+<div class="container group">
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3>Размеры кнопок</h3>
+		<button class="primary small">Маленькая кнопка</button>
+		<button class="primary">Обычная кнопка</button>
+		<button class="primary big">Большая кнопка</button>
+		<button class="primary very-big">Очень большая кнопка</button>
+	</div>
+</div>
+<h1>Картинки</h1>
+<div class="container group">
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3>"Резиновая картинка"</h3>
+		<img src="http://eveningsends.com/wp-content/uploads/2014/09/wallpaper-of-the-yosemite-valley.jpg" class="responsive-img">
+	</div>
+	<div class="col col-3 col-t-2 col-m-4">
+		<h3>Скругленные углы</h3>
+		<img src="http://images.qwrt.ru/images/2014/04/25/%D0%9B%D1%83%D0%BD%D0%B0-NASA-%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F-518981.jpg" width="140" height="140" class="rounded-img">
+	</div>
+	<div class="col col-3 col-t-2 col-m-4">
+		<h3>Круглая картинка</h3>
+		<img src="http://images.qwrt.ru/images/2014/04/25/%D0%9B%D1%83%D0%BD%D0%B0-NASA-%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F-518981.jpg" width="140" height="140" class="circle-img">
+	</div>
+	<div class="col col-3 col-t-2 col-m-4">
+		<h3>Картинка с рамкой</h3>
+		<img src="http://images.qwrt.ru/images/2014/04/25/%D0%9B%D1%83%D0%BD%D0%B0-NASA-%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F-518981.jpg" width="140" height="140" class="thumbnail-img">
+	</div>
+</div>
+<h1>Утилиты</h1>
+<div class="only-d">Эта надпись видна только на десктопах</div>
+<div class="only-t">Эта надпись видна только на планшетах</div>
+<div class="only-m">Эта надпись видна только на мобильных устройствах</div>
+<h1>Формы</h1>
+<div class="container group">
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3 class="centered">Basic centered form</h3>
+		<form class="form center">
+			<label for="email1">Электронная почта:</label>
+			<input type="email" placeholder="E-mail" id="email1">
+			<label for="password1">Пароль:</label>
+			<input type="password" placeholder="Password" id="password1">
+			<input type="submit" class="success" value="Sign In">
+		</form>
+	</div>
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3 class="centered">Fit form</h3>
+		<form class="form fit">
+			<label for="email2">Ваше имя:</label>
+			<input type="email" placeholder="Имя" id="email2">
+			<label for="password2">Комментарий:</label>
+			<textarea placeholder="Комментарий" id="password2"></textarea>
+			<input type="submit" class="success fit" value="Опубликовать">
+		</form>
+	</div>
+	<div class="col col-6 col-t-6 only-d only-t">
+		<h3 class="centered">Inline form</h3>
+		<form class="form inline">
+			<label for="email3">Почта:</label>
+			<input type="email" placeholder="E-mail" id="email3">
+			<label for="password3">Пароль:</label>
+			<input type="password" placeholder="Password" id="password3">
+			<input type="submit" class="success" value="Sign In">
+		</form>
+	</div>
+</div>
+<h1>Вкладки</h1>
+<div class="container grid">
+	<div class="col col-6 col-t-6 col-m-4">
+		<h3>Обычные вкладки</h3>
+		<ul class="tabs tabs-normal">
+			<li class="active">Подробности</li>
+			<li>Расписание</li>
+			<li>Контакты</li>
+		</ul>
+	</div>
+	<div class="col col-6 col-t-6 col-m-4">
+		<h3>Вкладки в стиле iOS</h3>
+		<ul class="tabs mobile-tabs three">
+			<li>Подробности</li>
+			<li class="active">Расписание</li>
+			<li>Контакты</li>
+		</ul>
+	</div>
+</div>
+<h1>Списки</h1>
+<div class="container grid">
+	<div class="col col-4 col-t-3 col-m-4">
+		<h3>Список-навигация</h3>
+		<ul class="list list-nav">
+			<li class="active">Главная</li>
+			<li>Расписание</li>
+			<li>Опросы</li>
+			<li>Заметки</li>
+			<li>Настройки</li>
+		</ul>
+		<ul class="list list-nav icon">
+			<li class="active"><i class="fa fa-home"></i>Главная</li>
+			<li><i class="fa fa-calendar"></i>Расписание</li>
+			<li><i class="fa fa-list-ul"></i>Опросы</li>
+			<li><i class="fa fa-file-text-o"></i>Заметки</li>
+			<li><i class="fa fa-wrench"></i>Настройки</li>
+		</ul>
+	</div>
+	<div class="col col-4 col-t-3 col-m-4">
+		<h3>Списки с серым акцентным цветом</h3>
+		<ul class="list list-nav gray-accent">
+			<li class="active"><span class="red circle"></span>Красный цвет</li>
+			<li><span class="blue circle"></span>Синий цвет</li>
+			<li><span class="orange circle"></span>Оранжевый цвет</li>
+			<li><span class="purple circle"></span>Фиолетовый цвет</li>
+			<li><span class="olive circle"></span>Оливковый цвет</li>
+		</ul>
+	</div>
+</div>
+
+<h1>Progress-бары</h1>
+<div class="container grid">
+	<div class="col col-4 col-t-3 col-m-4">
+		<h3>Обычный прогресс-бар</h3>
+		<div class="progress"><span style="width:30%"></span></div>
+		<div class="progress red"><span style="width:25%"></span></div>
+		<div class="progress orange"><span style="width:20%"></span></div>
+		<div class="progress yellow"><span style="width:15%"></span></div>
+		<div class="progress olive"><span style="width:41%"></span></div>
+		<div class="progress green"><span style="width:57%"></span></div>
+		<div class="progress teal"><span style="width:33%"></span></div>
+		<div class="progress blue"><span style="width:27%"></span></div>
+		<div class="progress violet"><span style="width:64%"></span></div>
+		<div class="progress purple"><span style="width:32%"></span></div>
+		<div class="progress pink"><span style="width:35%"></span></div>
+		<div class="progress brown"><span style="width:18%"></span></div>
+	</div>
+	<div class="col col-4 col-t-3 col-m-4">
+		<h3>Светлые прогресс-бары</h3>
+		<div class="progress light"><span style="width:30%"></span></div>
+		<div class="progress light red"><span style="width:25%"></span></div>
+		<div class="progress light orange"><span style="width:20%"></span></div>
+		<div class="progress light yellow"><span style="width:15%"></span></div>
+		<div class="progress light olive"><span style="width:41%"></span></div>
+		<div class="progress light green"><span style="width:57%"></span></div>
+		<div class="progress light teal"><span style="width:33%"></span></div>
+		<div class="progress light blue"><span style="width:27%"></span></div>
+		<div class="progress light violet"><span style="width:64%"></span></div>
+		<div class="progress light purple"><span style="width:32%"></span></div>
+		<div class="progress light pink"><span style="width:35%"></span></div>
+		<div class="progress light brown"><span style="width:18%"></span></div>
+	</div>
+	<div class="col col-4 col-t-3 col-m-4">
+		<h3>Дополнительные классы</h3>
+		<p><code>.square</code> - убирает скругление краев у прогресс бара:<br>
+		<div class="progress red square"><span style="width:30%"></span></div></p>
+		<p><code>.fit</code> - прогресс-бар подстраивается под размер родительского блока (100px / 32px):<br>
+		<div class="parent" style="width: 100px; height: 32px;">
+			<div class="progress olive fit square"><span style="width:74%"></span></div></p>
+		</div>		
+	</div>
+</div>
+</body>
+</html>

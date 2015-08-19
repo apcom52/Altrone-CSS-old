@@ -1,0 +1,75 @@
+.form {
+	input[type='text'], input[type='email'], input[type='password'], input[type='num'], input[type='tel'], textarea {
+		.pt();
+		margin: 3px 4px;
+		padding: 6px 12px;
+		background-color: @white;
+		border: 1px solid @l-gray;
+		border-radius: 4px;
+		color: lighten(@d-gray, 10%);
+		box-sizing: border-box;
+		line-height: 1.5;
+		outline: none;
+		display: block;
+
+		&:hover {
+			border: 1px solid darken(@l-gray, 15%);
+		}
+		&:focus {
+			border: 1px solid darken(@l-gray, 15%);
+			color: @d-gray;
+		}
+	}
+
+	label {
+		font-weight: bold;
+		display: block;
+		font-size: 0.8em;
+	}
+
+	textarea {
+		resize: vertical;
+	}
+
+	&.fit {
+		input[type='text'], input[type='email'], input[type='password'], input[type='num'], input[type='tel'], textarea {
+			width: ~'calc(100% - 12px)';
+		}
+	}
+
+	&.inline {
+		label {
+			display: inline-block;
+			float: left;
+			padding-top: 14px;
+		}
+		input, button, .button {
+			display: inline-block;
+			float: left;
+			width: auto;
+		}
+	}
+
+	&.center {
+		display: table;
+		margin: 0px auto;
+	}
+}
+
+input[type='text'], input[type='email'], input[type='password'], input[type='num'], input[type='tel'] {
+	.pt();
+	margin: 3px 4px;
+	padding: 3px 5px;
+	background-color: @white;
+	border: 1px solid @l-gray;
+	border-radius: 3px;
+	color: lighten(@d-gray, 10%);
+
+	&:hover {
+		border: 1px solid darken(@l-gray, 5%);
+	}
+	&:focus {
+		border: 1px solid darken(@l-gray, 5%);
+		color: @d-gray;
+	}
+}

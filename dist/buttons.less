@@ -1,0 +1,85 @@
+.button-color(@color, @f-color) {
+	background-color: @color;
+	color: @f-color;
+	border: 1px solid darken(@color, 10%);
+
+	&:hover {
+		background-color: darken(@color, 5%);
+		.anim(0.3s);
+	}
+
+	&:active {
+		background-color: darken(@color, 10%);
+		.anim(0.3s);
+	}
+
+	&.disabled, &:disabled {
+		&:hover {
+			background-color: lighten(@color, 25%);
+		}
+		&:active {
+			background-color: lighten(@color, 25%);
+		}
+		background-color: lighten(@color, 25%);		
+		border: 1px solid lighten(@color, 20%);
+	}
+}
+
+.button-size(@font-size, @height) {
+	font-size: @font-size;
+	height: auto;
+}
+
+button, input[type='submit'], input[type='reset'], input[type='button'], .button {
+	margin: 5px;
+	.pt();
+	text-align: center;
+	padding: 5px 10px;	
+	outline: none;
+	cursor: pointer;	
+	border-radius: 3px;
+	.button-color(@u-gray, @d-gray);
+	.anim(0.2s);
+	float:left;
+	height: 36px;
+	box-sizing: border-box;
+
+	&.primary {	.button-color(@blue, @white); }
+	&.success {	.button-color(@green, @white); }
+	&.warning {	.button-color(@yellow, @white); }
+	&.danger {	.button-color(@red, @white); }
+	&.inverted { .button-color(@d-gray, @white); }
+
+	&.icon {
+		font-size: 26px;		
+		padding: 2.5px 5px;
+	}
+
+	&.fit {	width: ~'calc(100% - 10px)'; }
+
+	&.small { .button-size(12px, 22px);	}
+	&.big { .button-size(24px, 44px);	}
+	&.very-big { .button-size(30px, 50px);	}
+}
+
+.button-group {
+	margin: 5px;
+	clear: both;
+	float: left;
+	button, input[type='submit'], input[type='reset'], input[type='button'], .button {
+		margin: 0px;
+		float: left;
+		border-radius: 0px;
+
+		&:first-child {
+			border-radius: 3px 0px 0px 3px;
+		}
+		&:last-child {
+			border-radius: 0px 3px 3px 0px;
+		}
+	}
+
+	&.pin {
+		clear: none;
+	}
+}

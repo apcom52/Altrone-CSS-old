@@ -1,0 +1,26 @@
+.set-color(@color) {
+	background-color: lighten(@color, 15%);
+	border: 1px solid darken(@color, 5%);
+	box-sizing: border-box;
+}
+
+.circle {
+	width: 1em;
+	height: 1em;
+	display: inline-block;
+	border-radius: 50%;
+	margin: 0px 1em;
+	
+	&.red { .set-color(@red); }
+	&.orange { .set-color(@orange); }
+	&.yellow { .set-color(@yellow); }
+	&.olive { .set-color(@olive); }
+	&.green { .set-color(@green); }
+	&.teal { .set-color(@teal); }
+	&.blue { .set-color(@blue); }
+	&.violet { .set-color(@violet); }
+	&.purple { .set-color(@purple); }
+	&.pink { .set-color(@pink); }
+	&.brown { .set-color(@brown); }
+	&.black { .set-color(@black); }
+}

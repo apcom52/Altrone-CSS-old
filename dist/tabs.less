@@ -1,0 +1,74 @@
+.tabs {
+	width: 100%;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	clear: both;
+
+	&.tabs-normal {	
+		border-bottom: 1px solid @tab-border;
+		li {
+			display: inline-block;
+			color: @blue;
+			padding: 8px 16px;
+			cursor: pointer;
+			margin: 0px 3px;
+			border-radius: 3px 3px 0px 0px;
+			border: 1px solid transparent;
+			margin-bottom: -1px;
+
+			&:hover {
+				background-color: @u-gray;
+				border-bottom: 1px solid @tab-border;
+			}
+
+			&.active {
+				background-color: @white;
+				border: 1px solid @tab-border;
+				color: @d-gray;
+				border-bottom: 1px solid @white;
+				font-weight: bold;
+			}
+		}
+	}
+
+	&.mobile-tabs {
+		width: ~'calc(100% - 10px)';
+		margin: 5px;
+		height: 30px;
+		
+		&.one {	> li { width: 100%; }	}
+		&.two {	> li { width: 50%; }	}
+		&.three {	> li { width: 33.33%; }	}
+		&.four {	> li { width: 25%; }	}
+		&.five {	> li { width: 20%; }	}
+
+		li {
+			border: 1px solid @blue;
+			color: @blue;
+			padding: 5px 10px;
+			text-align: center;
+			cursor: pointer;
+			float: left;
+			box-sizing: border-box;
+
+			&.active {
+				background-color: @blue;
+				color: @white;
+			}
+
+			&:active {
+				background-color: lighten(@blue, 10%);
+				color: @white;
+			}
+
+			&:first-child {
+				border-radius: 5px 0px 0px 5px;
+			}
+			&:last-child {
+				border-radius: 0px 5px 5px 0;
+			}
+		}
+	}
+}

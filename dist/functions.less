@@ -1,0 +1,22 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:700,400);
+
+.pt {
+	font-family: 'PT Sans', 'Segoe UI', sans-serif;
+}
+
+.anim(@sec) {	
+	transition: all @sec linear;
+}
+
+.only-d { display: block; }
+.only-m, .only-t { display: none;}
+
+@media (max-width: @tablet) {
+	.only-d, .only-m { display: none; }
+	.only-t { display: block; }
+}
+
+@media (max-width: @mobile) {
+	.only-d, .only-t { display: none; }
+	.only-m { display: block; }
+}

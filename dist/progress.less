@@ -1,0 +1,54 @@
+.progress {
+	background-color: @d-gray;
+	border-radius: 3px;
+	width: 100%;
+	height: 8px;
+	display: block;
+	margin: 3px 2px;
+
+	&.light {
+		background-color: darken(@u-gray, 10%);
+
+		span {
+			background-color: @m-gray;
+		}
+	}
+
+	span {
+		display: block;
+		background-color: @l-gray;
+		border-radius: 3px 0px 0px 3px;
+		height: 8px;
+	}
+
+	&.red { .set-progress-color-without-bg(@red); }
+	&.orange { .set-progress-color-without-bg(@orange); }
+	&.yellow { .set-progress-color-without-bg(@yellow); }
+	&.olive { .set-progress-color-without-bg(@olive); }
+	&.green { .set-progress-color-without-bg(@green); }
+	&.teal { .set-progress-color-without-bg(@teal); }
+	&.blue { .set-progress-color-without-bg(@blue); }
+	&.violet { .set-progress-color-without-bg(@violet); }
+	&.purple { .set-progress-color-without-bg(@purple); }
+	&.pink { .set-progress-color-without-bg(@pink); }
+	&.brown { .set-progress-color-without-bg(@brown); }
+
+	&.square {
+		border-radius: 0px;
+		span {
+			border-radius: 0px;
+		}
+	}
+
+	&.fit {
+		width: 100%;
+		height: 100%;
+		span {
+			height: 100%;
+		}
+	}
+}
+
+.set-progress-color-without-bg(@color) {
+	span { background-color: @color; }
+}
