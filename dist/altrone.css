@@ -1560,3 +1560,174 @@ input[type='tel']:focus {
 .progress.fit span {
   height: 100%;
 }
+/* line 1, alerts.less */
+.alert {
+  width: 100%;
+  height: auto;
+  padding: 5px 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin: 5px 0px;
+  font-family: 'PT Sans', 'Segoe UI', sans-serif;
+}
+/* line 12, alerts.less */
+.alert h1 {
+  color: #333333;
+  font-size: 18px;
+  margin: 1px 5px;
+}
+/* line 18, alerts.less */
+.alert p {
+  color: #666666;
+  font-size: 16px;
+  margin: 1px 5px;
+}
+/* line 24, alerts.less */
+.alert.red {
+  background-color: #f1abab;
+  border-color: #e25454;
+}
+/* line 44, alerts.less */
+.alert.red h1 {
+  color: #b21e1e;
+}
+/* line 45, alerts.less */
+.alert.red p {
+  color: #db2828;
+}
+/* line 25, alerts.less */
+.alert.orange {
+  background-color: #faccad;
+  border-color: #f58f4c;
+}
+/* line 44, alerts.less */
+.alert.orange h1 {
+  color: #cf590c;
+}
+/* line 45, alerts.less */
+.alert.orange p {
+  color: #f2711c;
+}
+/* line 26, alerts.less */
+.alert.yellow {
+  background-color: #fde59f;
+  border-color: #fcca3a;
+}
+/* line 44, alerts.less */
+.alert.yellow h1 {
+  color: #cd9903;
+}
+/* line 45, alerts.less */
+.alert.yellow p {
+  color: #fbbd08;
+}
+/* line 27, alerts.less */
+.alert.olive {
+  background-color: #e4f18c;
+  border-color: #cfe730;
+}
+/* line 44, alerts.less */
+.alert.olive h1 {
+  color: #8d9e13;
+}
+/* line 45, alerts.less */
+.alert.olive p {
+  color: #b5cc18;
+}
+/* line 28, alerts.less */
+.alert.green {
+  background-color: #8aeaa0;
+  border-color: #33db5b;
+}
+/* line 44, alerts.less */
+.alert.green h1 {
+  color: #198f35;
+}
+/* line 45, alerts.less */
+.alert.green p {
+  color: #21ba45;
+}
+/* line 29, alerts.less */
+.alert.teal {
+  background-color: #4ffff7;
+  border-color: #00e8de;
+}
+/* line 44, alerts.less */
+.alert.teal h1 {
+  color: #00827c;
+}
+/* line 45, alerts.less */
+.alert.teal p {
+  color: #00b5ad;
+}
+/* line 30, alerts.less */
+.alert.blue {
+  background-color: #9bcbef;
+  border-color: #439de1;
+}
+/* line 44, alerts.less */
+.alert.blue h1 {
+  color: #1a69a4;
+}
+/* line 45, alerts.less */
+.alert.blue p {
+  color: #2185d0;
+}
+/* line 31, alerts.less */
+.alert.violet {
+  background-color: #c1adea;
+  border-color: #835dd4;
+}
+/* line 44, alerts.less */
+.alert.violet h1 {
+  color: #502aa1;
+}
+/* line 45, alerts.less */
+.alert.violet p {
+  color: #6435c9;
+}
+/* line 32, alerts.less */
+.alert.purple {
+  background-color: #daabe9;
+  border-color: #b659d5;
+}
+/* line 44, alerts.less */
+.alert.purple h1 {
+  color: #82299f;
+}
+/* line 45, alerts.less */
+.alert.purple p {
+  color: #a333c8;
+}
+/* line 33, alerts.less */
+.alert.pink {
+  background-color: #f5bddc;
+  border-color: #e765ae;
+}
+/* line 44, alerts.less */
+.alert.pink h1 {
+  color: #c71f7e;
+}
+/* line 45, alerts.less */
+.alert.pink p {
+  color: #e03997;
+}
+/* line 34, alerts.less */
+.alert.brown {
+  background-color: #dbb8a2;
+  border-color: #bf8058;
+}
+/* line 44, alerts.less */
+.alert.brown h1 {
+  color: #805031;
+}
+/* line 45, alerts.less */
+.alert.brown p {
+  color: #a5673f;
+}
+/* line 36, alerts.less */
+.alert.square {
+  border-radius: 0px;
+}
