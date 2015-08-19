@@ -15,8 +15,12 @@
 			cursor: pointer;
 			margin: 0px 3px;
 			border-radius: 3px 3px 0px 0px;
-			border: 1px solid transparent;
 			margin-bottom: -1px;
+			box-sizing: border-box;
+
+			&:first-child {
+				margin-left: 0px;
+			}
 
 			&:hover {
 				background-color: @u-gray;
@@ -69,6 +73,44 @@
 			}
 			&:last-child {
 				border-radius: 0px 5px 5px 0;
+			}
+		}
+	}
+
+	&.invert {
+		&.tabs-normal {	
+			border-bottom: 1px solid @u-gray;
+			li {
+				color: @l-gray;
+
+				&:hover {
+					background-color: lighten(@d-gray, 5%);
+					border: transparent;
+				}
+
+				&.active {
+					background-color: @u-gray;
+					border: 1px solid @u-gray;
+					color: @d-gray;
+					border-bottom: 1px solid transparent;
+				}
+			}
+		}
+
+		&.mobile-tabs {
+			li {
+				border: 1px solid @u-gray;
+				color: @u-gray;
+
+				&.active {
+					background-color: @u-gray;
+					color: @d-gray;
+				}
+
+				&:active {
+					background-color: darken(@u-gray, 10%);
+					color: @d-gray;
+				}
 			}
 		}
 	}
