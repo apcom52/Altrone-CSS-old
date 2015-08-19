@@ -26,4 +26,15 @@
 			content: " >\00a0";
 		}
 	}
+
+	&.invert {
+		li {
+			a {
+				color: darken(@u-gray, 15%);
+			}
+			&.active {
+				color: @u-gray;
+			}
+		}
+	}
 }

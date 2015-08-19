@@ -2363,7 +2363,11 @@ table.with-border td {
   border: 1px solid #000000;
   box-sizing: border-box;
 }
-/* line 29, label.less */
+/* line 27, label.less */
+.circle.square {
+  border-radius: 0px;
+}
+/* line 33, label.less */
 .label {
   font-family: 'PT Sans', 'Segoe UI', sans-serif;
   display: inline-block;
@@ -2374,59 +2378,59 @@ table.with-border td {
   color: #ffffff;
   margin: 2px;
 }
-/* line 39, label.less */
+/* line 43, label.less */
 .label.red {
   background-color: #db2828;
 }
-/* line 40, label.less */
+/* line 44, label.less */
 .label.orange {
   background-color: #f2711c;
 }
-/* line 41, label.less */
+/* line 45, label.less */
 .label.yellow {
   background-color: #fbbd08;
 }
-/* line 42, label.less */
+/* line 46, label.less */
 .label.olive {
   background-color: #b5cc18;
 }
-/* line 43, label.less */
+/* line 47, label.less */
 .label.green {
   background-color: #21ba45;
 }
-/* line 44, label.less */
+/* line 48, label.less */
 .label.teal {
   background-color: #00b5ad;
 }
-/* line 45, label.less */
+/* line 49, label.less */
 .label.blue {
   background-color: #2185d0;
 }
-/* line 46, label.less */
+/* line 50, label.less */
 .label.violet {
   background-color: #6435c9;
 }
-/* line 47, label.less */
+/* line 51, label.less */
 .label.purple {
   background-color: #a333c8;
 }
-/* line 48, label.less */
+/* line 52, label.less */
 .label.pink {
   background-color: #e03997;
 }
-/* line 49, label.less */
+/* line 53, label.less */
 .label.brown {
   background-color: #a5673f;
 }
-/* line 50, label.less */
+/* line 54, label.less */
 .label.black {
   background-color: #000000;
 }
-/* line 52, label.less */
+/* line 56, label.less */
 .label.square {
   border-radius: 0px;
 }
-/* line 69, label.less */
+/* line 73, label.less */
 .tag {
   background-color: #e8e8e8;
   color: #333333;
@@ -2443,7 +2447,7 @@ table.with-border td {
   font-weight: 600;
   font-size: 14px;
 }
-/* line 86, label.less */
+/* line 90, label.less */
 .tag::before {
   content: '';
   position: absolute;
@@ -2452,111 +2456,111 @@ table.with-border td {
   border: 14px solid transparent;
   border-right: 14px solid #e8e8e8;
 }
-/* line 95, label.less */
+/* line 99, label.less */
 .tag.red {
   background-color: #db2828;
   color: white;
 }
-/* line 64, label.less */
+/* line 68, label.less */
 .tag.red::before {
   border-right-color: #db2828;
 }
-/* line 96, label.less */
+/* line 100, label.less */
 .tag.orange {
   background-color: #f2711c;
   color: white;
 }
-/* line 64, label.less */
+/* line 68, label.less */
 .tag.orange::before {
   border-right-color: #f2711c;
 }
-/* line 97, label.less */
+/* line 101, label.less */
 .tag.yellow {
   background-color: #fbbd08;
   color: white;
 }
-/* line 64, label.less */
+/* line 68, label.less */
 .tag.yellow::before {
   border-right-color: #fbbd08;
 }
-/* line 98, label.less */
+/* line 102, label.less */
 .tag.olive {
   background-color: #b5cc18;
   color: white;
 }
-/* line 64, label.less */
+/* line 68, label.less */
 .tag.olive::before {
   border-right-color: #b5cc18;
 }
-/* line 99, label.less */
+/* line 103, label.less */
 .tag.green {
   background-color: #21ba45;
   color: white;
 }
-/* line 64, label.less */
+/* line 68, label.less */
 .tag.green::before {
   border-right-color: #21ba45;
 }
-/* line 100, label.less */
+/* line 104, label.less */
 .tag.teal {
   background-color: #00b5ad;
   color: white;
 }
-/* line 64, label.less */
+/* line 68, label.less */
 .tag.teal::before {
   border-right-color: #00b5ad;
 }
-/* line 101, label.less */
+/* line 105, label.less */
 .tag.blue {
   background-color: #2185d0;
   color: white;
 }
-/* line 64, label.less */
+/* line 68, label.less */
 .tag.blue::before {
   border-right-color: #2185d0;
 }
-/* line 102, label.less */
+/* line 106, label.less */
 .tag.violet {
   background-color: #6435c9;
   color: white;
 }
-/* line 64, label.less */
+/* line 68, label.less */
 .tag.violet::before {
   border-right-color: #6435c9;
 }
-/* line 103, label.less */
+/* line 107, label.less */
 .tag.purple {
   background-color: #a333c8;
   color: white;
 }
-/* line 64, label.less */
+/* line 68, label.less */
 .tag.purple::before {
   border-right-color: #a333c8;
 }
-/* line 104, label.less */
+/* line 108, label.less */
 .tag.pink {
   background-color: #e03997;
   color: white;
 }
-/* line 64, label.less */
+/* line 68, label.less */
 .tag.pink::before {
   border-right-color: #e03997;
 }
-/* line 105, label.less */
+/* line 109, label.less */
 .tag.brown {
   background-color: #a5673f;
   color: white;
 }
-/* line 64, label.less */
+/* line 68, label.less */
 .tag.brown::before {
   border-right-color: #a5673f;
 }
-/* line 106, label.less */
+/* line 110, label.less */
 .tag.black {
   background-color: #000000;
   color: white;
 }
-/* line 64, label.less */
+/* line 68, label.less */
 .tag.black::before {
   border-right-color: #000000;
 }
@@ -2843,6 +2847,14 @@ table.with-border td {
 /* line 25, breadcrumbs.less */
 .breadcrumb.arrow li a:after {
   content: " >\00a0";
+}
+/* line 32, breadcrumbs.less */
+.breadcrumb.invert li a {
+  color: #cfcfcf;
+}
+/* line 35, breadcrumbs.less */
+.breadcrumb.invert li.active {
+  color: #f5f5f5;
 }
 /* line 1, cards.less */
 .card {
