@@ -14,7 +14,7 @@
 			border: 1px solid #666;
 			box-sizing: border-box;
 		}
-		.flex-grid .col {
+		.flex-grid.color .col {
 			background-color: #999;
 			border: 1px solid #666;
 			box-sizing: border-box;
@@ -65,7 +65,7 @@
 </div>
 
 <h1>Flex-сетка</h1>
-<div class="flex-grid column">
+<div class="flex-grid color column">
 	<div class="row">
 		<div class="col">Заголовок</div>
 	</div>
@@ -669,6 +669,125 @@
 				<div class="item no-hover"><button>Добавить заметку</button></div>
 			</div>
 		</div>
+	</div>
+</div>
+
+<h1>Боковая панель</h1>
+<div class="container group">
+	<div class="col col-4 col-t-6 col-m-4">
+		<div class="sidebar" style="min-height: 700px;">			
+			<div class="category">
+				<div class="title">Навигация</div>
+				<ul class="list list-nav">
+					<li>Главная</li>
+					<li>Расписание</li>
+					<li>Заметки</li>
+					<li>Опросы</li>
+					<li>Мероприятия</li>
+					<li>Достижения</li>
+				</ul>
+			</div>		
+			<button class="green fit icon ghost"><i class="fa fa-cloud-upload"></i>Загрузить</button>
+			<div class="separator"></div>
+			<div class="category">
+				<div class="title">Теги</div>
+				<ul class="list list-nav gray-accent">
+					<li><span class="red circle"></span>Учебники</li>
+					<li><span class="blue circle"></span>Документы</li>
+					<li><span class="orange circle"></span>Методички</li>
+					<li><span class="purple circle"></span>Конспекты</li>
+					<li><span class="olive circle"></span>Прочее</li>
+					<li>Все теги</li>
+				</ul>
+			</div>	
+		</div>		
+	</div>
+	<div class="col col-4 col-t-6 col-m-4">
+		<div class="sidebar invert" style="min-height: 700px;">			
+			<div class="category">
+				<div class="title">Навигация</div>
+				<ul class="list list-nav invert">
+					<li>Главная</li>
+					<li>Расписание</li>
+					<li>Заметки</li>
+					<li>Опросы</li>
+					<li>Мероприятия</li>
+					<li>Достижения</li>
+				</ul>
+			</div>		
+			<button class="green fit icon ghost"><i class="fa fa-cloud-upload"></i>Загрузить</button>
+			<div class="separator"></div>
+			<div class="category">
+				<div class="title">Теги</div>
+				<ul class="list list-nav gray-accent invert">
+					<li><span class="red circle"></span>Учебники</li>
+					<li><span class="blue circle"></span>Документы</li>
+					<li><span class="orange circle"></span>Методички</li>
+					<li><span class="purple circle"></span>Конспекты</li>
+					<li><span class="olive circle"></span>Прочее</li>
+					<li>Все теги</li>
+				</ul>
+			</div>	
+		</div>		
+	</div>
+	<div class="col col-4 col-t-6 col-m-4">
+		<div class="sidebar invert" style="min-height: 700px;">			
+			<div class="category">
+				<div class="title">Поиск</div>
+				<form class="form fit invert">
+					<input type="text" class="round" placeholder="Поиск...">
+				</form>
+			</div>		
+			<div class="button-group fit">
+				<button class="green icon ghost"><i class="fa fa-cloud-upload"></i>Добавить</button>
+				<button class="teal icon ghost"><i class="fa fa-cloud-download"></i>Загрузить</button>
+			</div>			
+			<div class="separator"></div>
+			<div class="alert">
+				<h1>Новое уведомление!</h1>
+				<p>Сходить к зубному</p>
+			</div>
+			<div class="alert yellow">
+				<h1>Не удалось добавить документ</h1>
+				<p>Повторите попытку</p>
+			</div>
+			<div class="separator"></div>
+			<div class="card">
+				<div class="header"><h1>Мои друзья</h1></div>
+				<div class="content feed">
+					<div class="item">
+						<img src="http://1avatara.ru/pic/game/game0001.gif" class="photo">
+						<div class="content">
+							<div class="author">Matt Bool</div>
+							<div class="meta-data">mattbool@mail.com</div>
+						</div>	
+					</div>	
+					<div class="item">
+						<img src="http://1avatara.ru/pic/game/game0001.gif" class="photo">
+						<div class="content">
+							<div class="author">Matt Bool</div>
+							<div class="meta-data">mattbool@mail.com</div>
+						</div>	
+					</div>	
+					<div class="item">
+						<img src="http://1avatara.ru/pic/game/game0001.gif" class="photo">
+						<div class="content">
+							<div class="author">Matt Bool</div>
+							<div class="meta-data">mattbool@mail.com</div>
+						</div>	
+					</div>			
+				</div>
+			</div>
+			<div class="separator"></div>
+			<div class="category">
+				<div class="title">Авторизация</div>
+				<ul class="list list-nav invert">
+					<li>Вход</li>
+					<li>Регистрация</li>
+				</ul>
+			</div>
+		</div>
+		</div>		
 	</div>
 </div>
 </body>

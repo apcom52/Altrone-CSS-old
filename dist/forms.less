@@ -19,6 +19,14 @@
 			border: 1px solid darken(@l-gray, 15%);
 			color: @d-gray;
 		}
+
+		&.round {
+			border-radius: 1em;
+		}
+
+		&.fit {
+			width: 100%;
+		}
 	}
 
 	label {
@@ -53,6 +61,14 @@
 	&.center {
 		display: table;
 		margin: 0px auto;
+	}
+
+	&.invert {
+		input[type='text'], input[type='email'], input[type='password'], input[type='num'], input[type='tel'] {
+			color: @u-gray;
+			background-color: lighten(@d-gray, 10%);
+			border-color: lighten(@d-gray, 5%);
+		}
 	}
 }
 

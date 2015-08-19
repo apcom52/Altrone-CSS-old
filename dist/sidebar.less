@@ -1,0 +1,37 @@
+.sidebar {
+	width: 300px;
+	height: 100%;
+	background-color: @u-gray;
+	color: @d-gray;
+	.pt();
+	padding: 10px 0px;
+
+	.separator {
+		width: 40%;
+		margin: 10px 30%;
+		border-top: 1px solid darken(@u-gray, 5%);
+		height: 1px;
+		box-sizing: border-box;
+	}
+
+	.category {
+		margin: 10px 0px;
+		display: block;
+		.title {
+			text-transform: uppercase;
+			color: @m-gray;
+			font-size: 14px;
+			font-weight: bold;
+			padding: 10px 15px;
+		}
+	}
+
+	&.invert {
+		background-color: @d-gray;
+		color: @u-gray;
+
+		.separator {
+			border-top-color: lighten(@d-gray, 5%);
+		}
+	}
+}
