@@ -157,7 +157,7 @@
 			<input type="email" placeholder="E-mail" id="email1">
 			<label for="password1">Пароль:</label>
 			<input type="password" placeholder="Password" id="password1">
-			<input type="submit" class="success" value="Sign In">
+			<input type="submit" class="black" value="Sign In">
 		</form>
 	</div>
 	<div class="col col-3 col-t-3 col-m-4">
@@ -167,7 +167,7 @@
 			<input type="email" placeholder="Имя" id="email2">
 			<label for="password2">Комментарий:</label>
 			<textarea placeholder="Комментарий" id="password2"></textarea>
-			<input type="submit" class="success fit" value="Опубликовать">
+			<input type="submit" class="green fit" value="Опубликовать">
 		</form>
 	</div>
 	<div class="col col-6 col-t-6 only-d only-t">
@@ -177,7 +177,7 @@
 			<input type="email" placeholder="E-mail" id="email3">
 			<label for="password3">Пароль:</label>
 			<input type="password" placeholder="Password" id="password3">
-			<input type="submit" class="success" value="Sign In">
+			<input type="submit" class="olive" value="Sign In">
 		</form>
 	</div>
 </div>
@@ -211,6 +211,7 @@
 			<li>Заметки</li>
 			<li>Настройки</li>
 		</ul>
+		<h3>Список с иконками</h3>
 		<ul class="list list-nav icon">
 			<li class="active"><i class="fa fa-home"></i>Главная</li>
 			<li><i class="fa fa-calendar"></i>Расписание</li>
@@ -228,8 +229,6 @@
 			<li><span class="purple circle"></span>Фиолетовый цвет</li>
 			<li><span class="olive circle"></span>Оливковый цвет</li>
 		</ul>
-	</div>
-	<div class="col col-4 col-t-3 col-m-4">
 		<h3>Списки-ссылки</h3>
 		<div class="list links">
 			<a href="">Создать</a>
@@ -238,6 +237,30 @@
 			<a href="">Настройки</a>
 			<a href="">Удалить</a>
 		</div>
+	</div>
+	<div class="col col-4 col-t-3 col-m-4">
+		<h3>Инвертированные цвета</h3>
+		<ul class="list list-nav icon invert">
+			<li><i class="fa fa-home"></i>Главная</li>
+			<li><i class="fa fa-calendar"></i>Расписание</li>
+			<li class="active"><i class="fa fa-list-ul"></i>Опросы</li>
+			<li>Заметки</li>
+			<li>Настройки</li>
+		</ul>
+		<div class="list links invert">
+			<a href="">Создать</a>
+			<a href="">Открыть</a>
+			<a href="">Изменить</a>
+			<a href="">Настройки</a>
+			<a href="">Удалить</a>
+		</div>
+		<ul class="list list-nav gray-accent invert">
+			<li class="active"><span class="red circle"></span>Красный цвет</li>
+			<li><span class="blue circle"></span>Синий цвет</li>
+			<li><span class="orange circle"></span>Оранжевый цвет</li>
+			<li><span class="purple circle"></span>Фиолетовый цвет</li>
+			<li><span class="olive circle"></span>Оливковый цвет</li>
+		</ul>
 	</div>
 </div>
 
@@ -280,6 +303,9 @@
 		<p><code>.fit</code> - прогресс-бар подстраивается под размер родительского блока (100px / 32px):<br>
 		<div class="parent" style="width: 100px; height: 32px;">
 			<div class="progress olive fit square"><span style="width:74%"></span></div></p>
+		</div>		
+		<div class="parent" style="width: 100px; height: 100px;">
+			<div class="progress pink fit"><span style="width:37%;"></span></div></p>
 		</div>		
 	</div>
 </div>

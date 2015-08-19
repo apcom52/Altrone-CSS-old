@@ -15,7 +15,8 @@
 			color: @d-gray;
 			cursor: pointer;
 			box-sizing: border-box;
-			.anim(0.15s);
+			.anim(0.3s);
+			user-select: none;
 			
 			&.active {
 				background-color: @blue;
@@ -33,7 +34,7 @@
 			&:active {
 				background-color: lighten(@blue, 10%);
 				color: @white;
-				.anim(0.15s);
+				.anim(0.3s);
 			}
 		}
 
@@ -64,7 +65,57 @@
 				&:active {
 					background-color: darken(@u-gray, 2%);
 					color: @d-gray;
-					.anim(0.15s);
+					.anim(0.3s);
+				}
+			}
+		}
+	}
+
+	//1.3.5.1
+	&.invert {
+		background-color: @d-gray;
+		color: @u-gray;
+		.pt();
+
+		&.list-nav {
+			li {
+				color: @u-gray;
+
+				&.active {
+					background-color: @blue;
+					color: @white;
+
+					&:hover {
+						background-color: @blue;
+						color: @white;
+					}
+				}
+
+				&:active {
+					background-color: darken(@blue, 10%) !important;
+					color: @white;
+				}
+				&:hover {
+					background-color: lighten(@d-gray, 5%);
+				}
+			}
+
+			&.gray-accent {
+				li {
+					&.active {
+						background-color: lighten(@d-gray, 10%);
+					}
+					&:active {
+						background-color: lighten(@d-gray, 7%) !important;
+					}
+				}
+			}
+		}
+
+		&.links {
+			a {
+				&:hover {
+					color: lighten(@blue, 10%) !important;
 				}
 			}
 		}
@@ -72,6 +123,7 @@
 	
 	//1.3.3
 	&.links {
+		padding: 3px 0px;
 		a {
 			display: block;
 			width: 100%;
