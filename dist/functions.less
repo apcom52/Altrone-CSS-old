@@ -11,12 +11,60 @@
 .only-d { display: block; }
 .only-m, .only-t { display: none;}
 
+.hide-d { display: none; }
+.hide-m { display: block; }
+.hide-t { display: block; }
+
 @media (max-width: @tablet) {
 	.only-d, .only-m { display: none; }
 	.only-t { display: block; }
+
+	.hide-d { display: block; }
+	.hide-m { display: block; }
+	.hide-t { display: none; }
 }
 
 @media (max-width: @mobile) {
 	.only-d, .only-t { display: none; }
 	.only-m { display: block; }
+
+	.hide-d { display: block; }
+	.hide-m { display: none; }
+	.hide-t { display: block; }
 }
+
+.reg-bg { background-color: @red !important; }
+.orange-bg { background-color: @orange !important; }
+.yellow-bg { background-color: @yellow !important; }
+.olive-bg { background-color: @olive !important; }
+.green-bg { background-color: @green !important; }
+.teal-bg { background-color: @teal !important; }
+.blue-bg { background-color: @blue !important; }
+.violet-bg { background-color: @violet !important; }
+.purple-bg { background-color: @purple !important; }
+.pink-bg { background-color: @pink !important; }
+.brown-bg { background-color: @brown !important; }
+.u-gray-bg { background-color: @u-gray !important; }
+.l-gray-bg { background-color: @l-gray !important; }
+.m-gray-bg { background-color: @m-gray !important; }
+.d-gray-bg { background-color: @d-gray !important; }
+.black-bg { background-color: @black !important; }
+.white-bg { background-color: @white !important; }
+
+.reg-fg { color: @red !important; }
+.orange-fg { color: @orange !important; }
+.yellow-fg { color: @yellow !important; }
+.olive-fg { color: @olive !important; }
+.green-fg { color: @green !important; }
+.teal-fg { color: @teal !important; }
+.blue-fg { color: @blue !important; }
+.violet-fg { color: @violet !important; }
+.purple-fg { color: @purple !important; }
+.pink-fg { color: @pink !important; }
+.brown-fg { color: @brown !important; }
+.u-gray-fg { color: @u-gray !important; }
+.l-gray-fg { color: @l-gray !important; }
+.m-gray-fg { color: @m-gray !important; }
+.d-gray-fg { color: @d-gray !important; }
+.black-fg { color: @black !important; }
+.white-fg { color: @white !important; }

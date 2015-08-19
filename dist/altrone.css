@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:700,400);
 @import "icons3.css";
 @import "font-awesome.css";
+@import "line-icons.css";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -409,27 +410,199 @@ th {
 .only-t {
   display: none;
 }
+/* line 14, functions.less */
+.hide-d {
+  display: none;
+}
+/* line 15, functions.less */
+.hide-m {
+  display: block;
+}
+/* line 16, functions.less */
+.hide-t {
+  display: block;
+}
 @media (max-width: 1024px) {
-  /* line 15, functions.less */
+  /* line 19, functions.less */
   .only-d,
   .only-m {
     display: none;
   }
-  /* line 16, functions.less */
+  /* line 20, functions.less */
   .only-t {
     display: block;
+  }
+  /* line 22, functions.less */
+  .hide-d {
+    display: block;
+  }
+  /* line 23, functions.less */
+  .hide-m {
+    display: block;
+  }
+  /* line 24, functions.less */
+  .hide-t {
+    display: none;
   }
 }
 @media (max-width: 480px) {
-  /* line 20, functions.less */
+  /* line 28, functions.less */
   .only-d,
   .only-t {
     display: none;
   }
-  /* line 21, functions.less */
+  /* line 29, functions.less */
   .only-m {
     display: block;
   }
+  /* line 31, functions.less */
+  .hide-d {
+    display: block;
+  }
+  /* line 32, functions.less */
+  .hide-m {
+    display: none;
+  }
+  /* line 33, functions.less */
+  .hide-t {
+    display: block;
+  }
+}
+/* line 36, functions.less */
+.reg-bg {
+  background-color: #db2828 !important;
+}
+/* line 37, functions.less */
+.orange-bg {
+  background-color: #f2711c !important;
+}
+/* line 38, functions.less */
+.yellow-bg {
+  background-color: #fbbd08 !important;
+}
+/* line 39, functions.less */
+.olive-bg {
+  background-color: #b5cc18 !important;
+}
+/* line 40, functions.less */
+.green-bg {
+  background-color: #21ba45 !important;
+}
+/* line 41, functions.less */
+.teal-bg {
+  background-color: #00b5ad !important;
+}
+/* line 42, functions.less */
+.blue-bg {
+  background-color: #2185d0 !important;
+}
+/* line 43, functions.less */
+.violet-bg {
+  background-color: #6435c9 !important;
+}
+/* line 44, functions.less */
+.purple-bg {
+  background-color: #a333c8 !important;
+}
+/* line 45, functions.less */
+.pink-bg {
+  background-color: #e03997 !important;
+}
+/* line 46, functions.less */
+.brown-bg {
+  background-color: #a5673f !important;
+}
+/* line 47, functions.less */
+.u-gray-bg {
+  background-color: #f5f5f5 !important;
+}
+/* line 48, functions.less */
+.l-gray-bg {
+  background-color: #999999 !important;
+}
+/* line 49, functions.less */
+.m-gray-bg {
+  background-color: #666666 !important;
+}
+/* line 50, functions.less */
+.d-gray-bg {
+  background-color: #333333 !important;
+}
+/* line 51, functions.less */
+.black-bg {
+  background-color: #000000 !important;
+}
+/* line 52, functions.less */
+.white-bg {
+  background-color: #ffffff !important;
+}
+/* line 54, functions.less */
+.reg-fg {
+  color: #db2828 !important;
+}
+/* line 55, functions.less */
+.orange-fg {
+  color: #f2711c !important;
+}
+/* line 56, functions.less */
+.yellow-fg {
+  color: #fbbd08 !important;
+}
+/* line 57, functions.less */
+.olive-fg {
+  color: #b5cc18 !important;
+}
+/* line 58, functions.less */
+.green-fg {
+  color: #21ba45 !important;
+}
+/* line 59, functions.less */
+.teal-fg {
+  color: #00b5ad !important;
+}
+/* line 60, functions.less */
+.blue-fg {
+  color: #2185d0 !important;
+}
+/* line 61, functions.less */
+.violet-fg {
+  color: #6435c9 !important;
+}
+/* line 62, functions.less */
+.purple-fg {
+  color: #a333c8 !important;
+}
+/* line 63, functions.less */
+.pink-fg {
+  color: #e03997 !important;
+}
+/* line 64, functions.less */
+.brown-fg {
+  color: #a5673f !important;
+}
+/* line 65, functions.less */
+.u-gray-fg {
+  color: #f5f5f5 !important;
+}
+/* line 66, functions.less */
+.l-gray-fg {
+  color: #999999 !important;
+}
+/* line 67, functions.less */
+.m-gray-fg {
+  color: #666666 !important;
+}
+/* line 68, functions.less */
+.d-gray-fg {
+  color: #333333 !important;
+}
+/* line 69, functions.less */
+.black-fg {
+  color: #000000 !important;
+}
+/* line 70, functions.less */
+.white-fg {
+  color: #ffffff !important;
 }
 /* Базовые классы */
 @media (max-width: 1024px) {
@@ -2958,42 +3131,51 @@ table.with-border td {
   padding: 5px;
   box-sizing: border-box;
   display: block;
+  font-family: 'PT Sans', 'Segoe UI', sans-serif;
 }
-/* line 99, cards.less */
+/* line 100, cards.less */
 .card .footer.centered {
   text-align: center;
 }
-/* line 105, cards.less */
+/* line 104, cards.less */
+.card .footer p {
+  color: #666666;
+}
+/* line 108, cards.less */
+.card .footer i.fa {
+  margin: 0px 5px;
+}
+/* line 114, cards.less */
 .card .image-box .cover {
   width: 100%;
   height: auto;
   border-radius: 2px 2px 0px 0px;
   display: block;
 }
-/* line 111, cards.less */
+/* line 120, cards.less */
 .card .image-box .content {
   padding: 10px;
   box-sizing: border-box;
 }
-/* line 114, cards.less */
+/* line 123, cards.less */
 .card .image-box .content h1 {
   font-size: 24px;
   font-weight: bold;
   margin: 5px 10px;
 }
-/* line 119, cards.less */
+/* line 128, cards.less */
 .card .image-box .content p {
   font-size: 16px;
 }
 @media (max-width: 480px) {
-  /* line 127, cards.less */
+  /* line 136, cards.less */
   .card {
     margin: 0.25em;
     width: calc(100% - 0.5em);
   }
 }
 @media (max-width: 1024px) {
-  /* line 134, cards.less */
+  /* line 143, cards.less */
   .card {
     margin: 0.5em;
     width: calc(100% - 1em);
