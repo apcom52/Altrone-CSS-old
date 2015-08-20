@@ -7,6 +7,8 @@
 	<meta name="HandheldFriendly" content="true">
 	<title>Altrone CSS</title>
 	<link rel="stylesheet" type="text/css" href="dist/altrone.css">
+	<script src="dist/js/jquery-2.1.4.min.js"></script>
+	<script src="dist/js/altrone.js"></script>
 
 	<style>
 		.col-color {
@@ -808,6 +810,80 @@
 			</div>
 		</div>
 		</div>		
+	</div>
+</div>
+<h1>Информационные панели</h1>
+<div class="container group">
+	<div class="col col-3 col-t-3 col-m-4">
+		<div class="panel">
+			<div class="header">Заголовок панели</div>
+			<div class="content">А здесь находится ее контент</div>
+		</div>
+		<div class="panel red">			
+			<div class="content">А здесь находится ее контент</div>
+			<div class="footer">Подвал панели</div>
+		</div>
+	</div>
+	<div class="col col-3 col-t-3 col-m-4">
+		<div class="panel olive">
+			<div class="header">Заголовок панели</div>
+			<div class="content">А здесь находится ее контент</div>
+			<div class="footer">Подвал панели</div>
+		</div>
+		<div class="panel black">			
+			<div class="header">Заголовок панели</div>
+			<div class="footer">Подвал панели</div>
+		</div>
+	</div>
+	<div class="col col-3 col-t-3 col-m-4">
+		<div class="panel olive">
+			<div class="header">Новые сообщения <span class="badge">+1</span></div>
+			<div class="content">Привет, как дела?</div>
+			<div class="footer centered"><button class="olive small">Ответить</button><button class="small">Удалить</button></div>
+		</div>
+		<div class="panel black">			
+			<div class="header">Заголовок панели</div>
+			<div class="footer">Подвал панели</div>
+		</div>
+	</div>
+</div>
+<h1> = = = = Javascript (jQuery) Плагины = = = =</h1>
+<div class="container group">
+	<div class="col col-4 col-t-3 col-m-4">
+		<h2>Модальные окна</h2>
+		<button class="blue modal-open" data-modal-id="demo-modal1">Обычное модальное окно</button>
+		<button class="blue modal-open" data-modal-id="demo-modal2">Темное модальное окно</button>
+		<div class="modal" id="demo-modal1">
+			<div class="header">
+				<h1>Подтверждение удаления</h1>
+				<span class="right"><span class="closeModal"><i class="fa fa-remove"></i></span></span>
+			</div>
+			<div class="content">
+				<p>Вы действительно хотите удалить данный документ?</p>
+			</div>
+			<div class="footer">
+				<div class="right">
+					<button class="green">Да</button>
+					<button class="red">Нет</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal invert" id="demo-modal2">
+			<div class="header">
+				<h1>Подтверждение удаления</h1>
+				<span class="right"><span class="closeModal"><i class="fa fa-remove"></i></span></span>
+			</div>
+			<div class="content">
+				<p>Вы действительно хотите удалить данный документ?</p>
+			</div>
+			<div class="footer">
+				<div class="right">
+					<button class="green">Да</button>
+					<button class="red">Нет</button>
+				</div>
+			</div>
+		</div>
+		<div class="overlay"></div>
 	</div>
 </div>
 </body>

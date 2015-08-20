@@ -1,0 +1,59 @@
+.panel {
+	width: 100%;
+	border: 1px solid darken(@u-gray, 5%);
+	border-radius: 4px;
+	.pt();
+	margin: 5px;
+	display: block;
+
+	.header {
+		background-color: darken(@u-gray, 5%);
+		display: block;
+		border-radius: 4px 4px 0px 0px;
+		padding: 0.5em;
+		box-sizing: border-box;
+
+		.badge {
+			float: right;
+			margin-top: -1px;
+		}
+	}
+
+	.content {
+		padding: 1em 0.5em;
+	}
+
+	.footer {
+		background-color: darken(@u-gray, 5%);
+		display: block;
+		border-radius: 0px 0px 4px 4px;
+		padding: 0.5em;
+		box-sizing: border-box;
+
+		&.centered {
+			text-align: center;
+		}
+	}
+
+	&.red { .set-panel-color(@red); }
+	&.orange { .set-panel-color(@orange); }
+	&.yellow { .set-panel-color(@yellow); }
+	&.olive { .set-panel-color(@olive); }
+	&.green { .set-panel-color(@green); }
+	&.teal { .set-panel-color(@teal); }
+	&.blue { .set-panel-color(@blue); }
+	&.violet { .set-panel-color(@violet); }
+	&.purple { .set-panel-color(@purple); }
+	&.pink { .set-panel-color(@pink); }
+	&.brown { .set-panel-color(@brown); }
+	&.black { .set-panel-color(@d-gray); }
+}
+
+.set-panel-color(@color) {
+	border-color: @color;
+
+	.header, .footer {
+		background-color: @color;
+		color: white;
+	}
+}

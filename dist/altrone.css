@@ -1679,10 +1679,9 @@ input[type='submit'].black,
 input[type='reset'].black,
 input[type='button'].black,
 .button.black {
-  background-color: #080808;
+  background-color: #3b3b3b;
   color: #ffffff;
-  border: 1px solid #000000;
-  background-color: #333333;
+  border: 1px solid #262626;
 }
 /* line 6, buttons.less */
 button.black:hover,
@@ -1690,7 +1689,7 @@ input[type='submit'].black:hover,
 input[type='reset'].black:hover,
 input[type='button'].black:hover,
 .button.black:hover {
-  background-color: #000000;
+  background-color: #262626;
   -webkit-transition: all 0.3s linear;
           transition: all 0.3s linear;
 }
@@ -1700,7 +1699,7 @@ input[type='submit'].black:active,
 input[type='reset'].black:active,
 input[type='button'].black:active,
 .button.black:active {
-  background-color: #000000;
+  background-color: #262626;
   -webkit-transition: all 0.3s linear;
           transition: all 0.3s linear;
 }
@@ -1715,8 +1714,8 @@ input[type='submit'].black:disabled,
 input[type='reset'].black:disabled,
 input[type='button'].black:disabled,
 .button.black:disabled {
-  background-color: #404040;
-  border: 1px solid #333333;
+  background-color: #737373;
+  border: 1px solid #666666;
 }
 /* line 17, buttons.less */
 button.black.disabled:hover,
@@ -1729,7 +1728,7 @@ input[type='submit'].black:disabled:hover,
 input[type='reset'].black:disabled:hover,
 input[type='button'].black:disabled:hover,
 .button.black:disabled:hover {
-  background-color: #404040;
+  background-color: #737373;
 }
 /* line 20, buttons.less */
 button.black.disabled:active,
@@ -1742,7 +1741,7 @@ input[type='submit'].black:disabled:active,
 input[type='reset'].black:disabled:active,
 input[type='button'].black:disabled:active,
 .button.black:disabled:active {
-  background-color: #404040;
+  background-color: #737373;
 }
 /* line 63, buttons.less */
 button.icon i,
@@ -1898,7 +1897,7 @@ input[type='submit'].ghost.black,
 input[type='reset'].ghost.black,
 input[type='button'].ghost.black,
 .button.ghost.black {
-  color: #000000;
+  color: #333333;
 }
 /* line 98, buttons.less */
 button.transparent,
@@ -3528,4 +3527,255 @@ table.with-border td {
 /* line 33, sidebar.less */
 .sidebar.invert .separator {
   border-top-color: #404040;
+}
+/* line 1, panels.less */
+.panel {
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  font-family: 'PT Sans', 'Segoe UI', sans-serif;
+  margin: 5px;
+  display: block;
+}
+/* line 9, panels.less */
+.panel .header {
+  background-color: #e8e8e8;
+  display: block;
+  border-radius: 4px 4px 0px 0px;
+  padding: 0.5em;
+  box-sizing: border-box;
+}
+/* line 16, panels.less */
+.panel .header .badge {
+  float: right;
+  margin-top: -1px;
+}
+/* line 22, panels.less */
+.panel .content {
+  padding: 1em 0.5em;
+}
+/* line 26, panels.less */
+.panel .footer {
+  background-color: #e8e8e8;
+  display: block;
+  border-radius: 0px 0px 4px 4px;
+  padding: 0.5em;
+  box-sizing: border-box;
+}
+/* line 33, panels.less */
+.panel .footer.centered {
+  text-align: center;
+}
+/* line 38, panels.less */
+.panel.red {
+  border-color: #db2828;
+}
+/* line 55, panels.less */
+.panel.red .header,
+.panel.red .footer {
+  background-color: #db2828;
+  color: white;
+}
+/* line 39, panels.less */
+.panel.orange {
+  border-color: #f2711c;
+}
+/* line 55, panels.less */
+.panel.orange .header,
+.panel.orange .footer {
+  background-color: #f2711c;
+  color: white;
+}
+/* line 40, panels.less */
+.panel.yellow {
+  border-color: #fbbd08;
+}
+/* line 55, panels.less */
+.panel.yellow .header,
+.panel.yellow .footer {
+  background-color: #fbbd08;
+  color: white;
+}
+/* line 41, panels.less */
+.panel.olive {
+  border-color: #b5cc18;
+}
+/* line 55, panels.less */
+.panel.olive .header,
+.panel.olive .footer {
+  background-color: #b5cc18;
+  color: white;
+}
+/* line 42, panels.less */
+.panel.green {
+  border-color: #21ba45;
+}
+/* line 55, panels.less */
+.panel.green .header,
+.panel.green .footer {
+  background-color: #21ba45;
+  color: white;
+}
+/* line 43, panels.less */
+.panel.teal {
+  border-color: #00b5ad;
+}
+/* line 55, panels.less */
+.panel.teal .header,
+.panel.teal .footer {
+  background-color: #00b5ad;
+  color: white;
+}
+/* line 44, panels.less */
+.panel.blue {
+  border-color: #2185d0;
+}
+/* line 55, panels.less */
+.panel.blue .header,
+.panel.blue .footer {
+  background-color: #2185d0;
+  color: white;
+}
+/* line 45, panels.less */
+.panel.violet {
+  border-color: #6435c9;
+}
+/* line 55, panels.less */
+.panel.violet .header,
+.panel.violet .footer {
+  background-color: #6435c9;
+  color: white;
+}
+/* line 46, panels.less */
+.panel.purple {
+  border-color: #a333c8;
+}
+/* line 55, panels.less */
+.panel.purple .header,
+.panel.purple .footer {
+  background-color: #a333c8;
+  color: white;
+}
+/* line 47, panels.less */
+.panel.pink {
+  border-color: #e03997;
+}
+/* line 55, panels.less */
+.panel.pink .header,
+.panel.pink .footer {
+  background-color: #e03997;
+  color: white;
+}
+/* line 48, panels.less */
+.panel.brown {
+  border-color: #a5673f;
+}
+/* line 55, panels.less */
+.panel.brown .header,
+.panel.brown .footer {
+  background-color: #a5673f;
+  color: white;
+}
+/* line 49, panels.less */
+.panel.black {
+  border-color: #333333;
+}
+/* line 55, panels.less */
+.panel.black .header,
+.panel.black .footer {
+  background-color: #333333;
+  color: white;
+}
+/* JS-компоненты */
+/* line 1, modal.less */
+.modal {
+  width: 40%;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  border: none;
+  position: fixed;
+  top: 45%;
+  left: 30%;
+  display: none;
+  z-index: 3;
+  font-family: 'PT Sans', 'Segoe UI', sans-serif;
+  color: #333333;
+}
+/* line 15, modal.less */
+.modal .header {
+  width: 100%;
+  border-radius: 4px 4px 0px 0px;
+  padding: 1em;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: #f2f2f2;
+}
+/* line 23, modal.less */
+.modal .header h1 {
+  display: inline-block;
+  font-size: 24px;
+}
+/* line 28, modal.less */
+.modal .header .closeModal {
+  cursor: pointer;
+}
+/* line 33, modal.less */
+.modal .content {
+  padding: 1em;
+  box-sizing: border-box;
+  width: 100%;
+}
+/* line 39, modal.less */
+.modal .footer {
+  padding: 0.5em;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-radius: 0px 0px 4px 4px;
+  background-color: #e8e8e8;
+  border-top: 1px solid #e3e3e3;
+}
+/* line 50, modal.less */
+.modal .header,
+.modal .footer {
+  overflow: hidden;
+}
+/* line 52, modal.less */
+.modal .header .right,
+.modal .footer .right {
+  float: right;
+  overflow: hidden;
+  margin-top: -1px;
+}
+/* line 59, modal.less */
+.modal.invert {
+  background-color: #333333;
+  color: #f5f5f5;
+}
+/* line 63, modal.less */
+.modal.invert .header {
+  background-color: #3b3b3b;
+  border-bottom-color: #3b3b3b;
+}
+/* line 68, modal.less */
+.modal.invert .footer {
+  background-color: #363636;
+  border-top-color: #3b3b3b;
+}
+/* line 75, modal.less */
+.overlay {
+  z-index: 2;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: .9;
+  cursor: pointer;
+  display: none;
+}
+/* line 87, modal.less */
+.overlay.white {
+  background-color: #ffffff;
 }
