@@ -109,3 +109,36 @@
 	&.brown { .set-tag-color(@brown); }
 	&.black { .set-tag-color(@black); }
 }
+
+.set-badge-color(@color){
+	background-color: @color;
+	color: white;
+}
+
+.badge {
+	display: inline-block;
+	.pt();
+	background-color: @u-gray;
+	color: @d-gray;
+	padding: 0.1em 0.5em;
+	font-size: 1em;
+	box-sizing: border-box;
+	border-radius: 1em;
+
+	&.red { .set-badge-color(@red); }
+	&.orange { .set-badge-color(@orange); }
+	&.yellow { .set-badge-color(@yellow); }
+	&.olive { .set-badge-color(@olive); }
+	&.green { .set-badge-color(@green); }
+	&.teal { .set-badge-color(@teal); }
+	&.blue { .set-badge-color(@blue); }
+	&.violet { .set-badge-color(@violet); }
+	&.purple { .set-badge-color(@purple); }
+	&.pink { .set-badge-color(@pink); }
+	&.brown { .set-badge-color(@brown); }
+	&.black { .set-badge-color(@black); }
+
+	i.fa {
+		padding: 0px;
+	}
+}

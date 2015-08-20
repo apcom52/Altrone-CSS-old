@@ -28,13 +28,18 @@
 				}
 			}
 			&:hover {
-				background-color: @u-gray;
+				background-color: darken(@u-gray, 5%);
 				.anim(0.3s);
 			}
 			&:active {
 				background-color: lighten(@blue, 10%);
 				color: @white;
 				.anim(0.3s);
+			}
+
+			.badge {
+				float: right;
+				margin-top: -1px;
 			}
 		}
 

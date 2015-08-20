@@ -2380,37 +2380,51 @@ table.with-border td {
 .tabs.mobile-tabs li:last-child {
   border-radius: 0px 5px 5px 0;
 }
+/* line 80, tabs.less */
+.tabs.mobile-tabs.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 /* line 82, tabs.less */
+.tabs.mobile-tabs.flex li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+/* line 89, tabs.less */
 .tabs.invert.tabs-normal {
   border-bottom: 1px solid #f5f5f5;
 }
-/* line 84, tabs.less */
+/* line 91, tabs.less */
 .tabs.invert.tabs-normal li {
   color: #999999;
 }
-/* line 87, tabs.less */
+/* line 94, tabs.less */
 .tabs.invert.tabs-normal li:hover {
   background-color: #404040;
   border: transparent;
 }
-/* line 92, tabs.less */
+/* line 99, tabs.less */
 .tabs.invert.tabs-normal li.active {
   background-color: #f5f5f5;
   border: 1px solid #f5f5f5;
   color: #333333;
   border-bottom: 1px solid transparent;
 }
-/* line 102, tabs.less */
+/* line 109, tabs.less */
 .tabs.invert.mobile-tabs li {
   border: 1px solid #f5f5f5;
   color: #f5f5f5;
 }
-/* line 106, tabs.less */
+/* line 113, tabs.less */
 .tabs.invert.mobile-tabs li.active {
   background-color: #f5f5f5;
   color: #333333;
 }
-/* line 111, tabs.less */
+/* line 118, tabs.less */
 .tabs.invert.mobile-tabs li:active {
   background-color: #dcdcdc;
   color: #333333;
@@ -2452,7 +2466,7 @@ table.with-border td {
 }
 /* line 30, list.less */
 .list.list-nav li:hover {
-  background-color: #f5f5f5;
+  background-color: #e8e8e8;
   -webkit-transition: all 0.3s linear;
           transition: all 0.3s linear;
 }
@@ -2463,81 +2477,86 @@ table.with-border td {
   -webkit-transition: all 0.3s linear;
           transition: all 0.3s linear;
 }
-/* line 43, list.less */
+/* line 40, list.less */
+.list.list-nav li .badge {
+  float: right;
+  margin-top: -1px;
+}
+/* line 48, list.less */
 .list.list-nav.icon li i {
   width: 40px !important;
   padding: 0px 10px;
   box-sizing: none;
 }
-/* line 53, list.less */
+/* line 58, list.less */
 .list.list-nav.gray-accent li.active {
   background-color: #e8e8e8;
   color: #333333;
 }
-/* line 56, list.less */
+/* line 61, list.less */
 .list.list-nav.gray-accent li.active:hover {
   background-color: #e8e8e8;
   color: #333333;
 }
-/* line 61, list.less */
+/* line 66, list.less */
 .list.list-nav.gray-accent li:hover {
   background-color: #f5f5f5;
   -webkit-transition: all 0.3s linear;
           transition: all 0.3s linear;
 }
-/* line 65, list.less */
+/* line 70, list.less */
 .list.list-nav.gray-accent li:active {
   background-color: #f0f0f0;
   color: #333333;
   -webkit-transition: all 0.3s linear;
           transition: all 0.3s linear;
 }
-/* line 75, list.less */
+/* line 80, list.less */
 .list.invert {
   background-color: #333333;
   color: #f5f5f5;
   font-family: 'PT Sans', 'Segoe UI', sans-serif;
 }
-/* line 81, list.less */
+/* line 86, list.less */
 .list.invert.list-nav li {
   color: #f5f5f5;
 }
-/* line 84, list.less */
+/* line 89, list.less */
 .list.invert.list-nav li.active {
   background-color: #2185d0;
   color: #ffffff;
 }
-/* line 88, list.less */
+/* line 93, list.less */
 .list.invert.list-nav li.active:hover {
   background-color: #2185d0;
   color: #ffffff;
 }
-/* line 94, list.less */
+/* line 99, list.less */
 .list.invert.list-nav li:active {
   background-color: #1a69a4 !important;
   color: #ffffff;
 }
-/* line 98, list.less */
+/* line 103, list.less */
 .list.invert.list-nav li:hover {
   background-color: #404040;
 }
-/* line 105, list.less */
+/* line 110, list.less */
 .list.invert.list-nav.gray-accent li.active {
   background-color: #4d4d4d;
 }
-/* line 108, list.less */
+/* line 113, list.less */
 .list.invert.list-nav.gray-accent li:active {
   background-color: #454545 !important;
 }
-/* line 117, list.less */
+/* line 122, list.less */
 .list.invert.links a:hover {
   color: #439de1 !important;
 }
-/* line 125, list.less */
+/* line 130, list.less */
 .list.links {
   padding: 3px 0px;
 }
-/* line 127, list.less */
+/* line 132, list.less */
 .list.links a {
   display: block;
   width: 100%;
@@ -2547,7 +2566,7 @@ table.with-border td {
   cursor: pointer;
   margin: 3px 5px;
 }
-/* line 135, list.less */
+/* line 140, list.less */
 .list.links a:hover {
   color: #1a69a4;
   -webkit-transition: all 0.3s linear;
@@ -2833,6 +2852,81 @@ table.with-border td {
 /* line 68, label.less */
 .tag.black::before {
   border-right-color: #000000;
+}
+/* line 118, label.less */
+.badge {
+  display: inline-block;
+  font-family: 'PT Sans', 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333333;
+  padding: 0.1em 0.5em;
+  font-size: 1em;
+  box-sizing: border-box;
+  border-radius: 1em;
+}
+/* line 128, label.less */
+.badge.red {
+  background-color: #db2828;
+  color: white;
+}
+/* line 129, label.less */
+.badge.orange {
+  background-color: #f2711c;
+  color: white;
+}
+/* line 130, label.less */
+.badge.yellow {
+  background-color: #fbbd08;
+  color: white;
+}
+/* line 131, label.less */
+.badge.olive {
+  background-color: #b5cc18;
+  color: white;
+}
+/* line 132, label.less */
+.badge.green {
+  background-color: #21ba45;
+  color: white;
+}
+/* line 133, label.less */
+.badge.teal {
+  background-color: #00b5ad;
+  color: white;
+}
+/* line 134, label.less */
+.badge.blue {
+  background-color: #2185d0;
+  color: white;
+}
+/* line 135, label.less */
+.badge.violet {
+  background-color: #6435c9;
+  color: white;
+}
+/* line 136, label.less */
+.badge.purple {
+  background-color: #a333c8;
+  color: white;
+}
+/* line 137, label.less */
+.badge.pink {
+  background-color: #e03997;
+  color: white;
+}
+/* line 138, label.less */
+.badge.brown {
+  background-color: #a5673f;
+  color: white;
+}
+/* line 139, label.less */
+.badge.black {
+  background-color: #000000;
+  color: white;
+}
+/* line 141, label.less */
+.badge i.fa {
+  padding: 0px;
 }
 /* line 1, progress.less */
 .progress {
@@ -3398,7 +3492,7 @@ table.with-border td {
 }
 /* line 1, sidebar.less */
 .sidebar {
-  width: 300px;
+  width: 100%;
   height: 100%;
   background-color: #f5f5f5;
   color: #333333;
