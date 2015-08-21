@@ -42,4 +42,43 @@ $(document).ready(function() {
 	$('[data-tooltip]').mouseout(function() {
 		$('.tooltip').fadeOut(100).html('');
 	})
+
+
+
+	/* Accordion Plugin */
+	function disableAccordion(accordion) {
+		accordion.find('.item .header').removeClass('active');
+		accordion.find('.item .content').slideUp(300);
+	}
+
+	$('.accordion .item .header').click(function() {
+		parentAccordion = $(this).parent().parent();
+		is_multi_selectable = parentAccordion.data('accordionMultiSelectable');
+		if ($(this).hasClass('active')) {
+			if (!is_multi_selectable) {
+				disableAccordion(parentAccordion);
+			} else {
+				currentItem = $(this).parent();
+				currentItem.find('.header').removeClass('active');
+				currentItem.find('.content').slideUp(300);
+			}
+		} else {
+			if (!is_multi_selectable) {
+				disableAccordion(parentAccordion);
+			} 
+			currentItem = $(this).parent();
+			currentItem.find('.header').addClass('active');
+			currentItem.find('.content').slideDown(300);
+		}
+	});
+
+	/* Tabs Plugin */
+	function disableTabs(tabs) {
+		tabs.find('li').removeClass('active');
+	}
+	$('[data-tabs] li').click(function() {
+		tabs = $(this).parent();
+		disableTabs(tabs);
+		$(this).addClass('active');
+	});
 });

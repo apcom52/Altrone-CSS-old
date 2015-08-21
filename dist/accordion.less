@@ -1,0 +1,52 @@
+.accordion {
+	width: 100%;
+	height: auto;
+	display: block;
+	.pt();
+
+	.item {
+		width: 100%;
+		display: block;
+
+		.header {
+			background-color: darken(@u-gray, 10%);
+			padding: 0.5em 1em;
+			font-weight: bold;
+			font-size: 1.2em;
+			color: @d-gray;
+			box-sizing: border-box;
+			cursor: pointer;
+			.anim(0.3s);
+
+			&:hover {
+				background-color: darken(@u-gray, 12%);
+				.anim(0.3s);
+			}
+
+			&.active {
+				background-color: darken(@u-gray, 12%);
+			}
+		}
+
+		.content {
+			display: none;
+			background-color: @u-gray;
+			color: @d-gray;
+			padding: 0.5em 1em;
+			box-sizing: border-box;			
+		}
+	}
+
+	&.invert {
+		.item {
+			.header {
+				background-color: @d-gray;
+				color: @u-gray;
+
+				&:hover {
+					background-color: lighten(@d-gray, 2%);
+				}
+			}
+		}
+	}
+}
