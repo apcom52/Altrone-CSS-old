@@ -74,11 +74,14 @@ $(document).ready(function() {
 
 	/* Tabs Plugin */
 	function disableTabs(tabs) {
-		tabs.find('li').removeClass('active');
+		tabs.find('li.active').removeClass('active');
 	}
 	$('[data-tabs] li').click(function() {
 		tabs = $(this).parent();
 		disableTabs(tabs);
+		if ($(this).data('link')) {
+			document.location.href=$(this).data('link');
+		}
 		$(this).addClass('active');
 	});
 });
