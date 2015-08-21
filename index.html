@@ -8,8 +8,8 @@
 	<title>Altrone CSS</title>
 	<link rel="stylesheet" type="text/css" href="dist/altrone.css">
 	<script src="dist/js/jquery-2.1.4.min.js"></script>
+	<!--<script src="dist/js/altrone.modal.js"></script>-->
 	<script src="dist/js/altrone.js"></script>
-
 	<style>
 		.col-color {
 			background-color: #999;
@@ -851,8 +851,8 @@
 <div class="container group">
 	<div class="col col-4 col-t-3 col-m-4">
 		<h2>Модальные окна</h2>
-		<button class="blue modal-open" data-modal-id="demo-modal1">Обычное модальное окно</button>
-		<button class="blue modal-open" data-modal-id="demo-modal2">Темное модальное окно</button>
+		<button class="blue" id="modal1" data-tooltip="Щелкните, чтобы открыть обычное модальное окно" data-modal-href="demo-modal1" data-tooltip-title="Привет, мир!">Обычное модальное окно</button><br>
+		<button class="blue" id="modal2" data-modal-href="demo-modal2" data-overlay-disable="true">Темное модальное окно</button>
 		<div class="modal" id="demo-modal1">
 			<div class="header">
 				<h1>Подтверждение удаления</h1>
@@ -883,8 +883,21 @@
 				</div>
 			</div>
 		</div>
-		<div class="overlay"></div>
+		<div class="overlay white"></div>
+	</div>
+	<div class="col col-4 col-t-3 col-m-4">
+		<h2>Всплывающие подсказки</h2>
+		<a href="" data-tooltip="Пример всплывающей подсказки" id="tooltip1">Наведи на меня!</a>
+		<div class="tooltip"></div>
 	</div>
 </div>
+
+<script>
+	$(document).ready(function() {
+		/*$('#modal1').modal();
+		$('#modal2').modal();
+		$('#modal2').tooltip();*/
+	});
+</script>
 </body>
 </html>
