@@ -31,9 +31,18 @@
 		.content {
 			display: none;
 			background-color: @u-gray;
-			color: @d-gray;
-			padding: 0.5em 1em;
-			box-sizing: border-box;			
+			color: @d-gray;			
+			box-sizing: border-box;	
+
+			ul.list {
+				margin: 0px;
+			}
+
+			p {
+				padding: 0.5em 1em;
+				margin: 0px;
+				box-sizing: border-box;	
+			}
 		}
 	}
 
@@ -44,6 +53,10 @@
 				color: @u-gray;
 
 				&:hover {
+					background-color: lighten(@d-gray, 2%);
+				}
+
+				&.active {
 					background-color: lighten(@d-gray, 2%);
 				}
 			}

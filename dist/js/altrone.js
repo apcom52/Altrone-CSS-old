@@ -89,5 +89,24 @@ $(document).ready(function() {
 	$('[data-button-toggle]').click(function() {
 		$(this).toggleClass('active');
 		console.log('toogle');
-	})
+	});
+
+
+	/* Dropdown Plugin */
+	$('*:not(:has([data-dropdown-target]))').click(function() {
+		$('.dropdown').slideUp(150);
+	});
+
+	$('[data-dropdown-target]').click(function() {
+		//$('.dropdown').slideUp(150);		
+		dropdown = $('#' + $(this).data('dropdownTarget'));
+		if (!dropdown.is(':visible')) {
+			var position = $(this).position();
+			dropdown.css({'top': position.top + $(this).outerHeight() + 10, 'left': position.left});
+			dropdown.slideDown(150);	
+		}	
+	});
+	/*$(':not(.dropdown), :not([data-dropdown-target=""])').click(function() {
+		$('.dropdown').slideUp(150);
+	})*/
 });

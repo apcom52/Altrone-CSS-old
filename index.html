@@ -790,23 +790,30 @@
 							<div class="author">Matt Bool</div>
 							<div class="meta-data">mattbool@mail.com</div>
 						</div>	
-					</div>	
-					<div class="item">
-						<img src="http://1avatara.ru/pic/game/game0001.gif" class="photo">
-						<div class="content">
-							<div class="author">Matt Bool</div>
-							<div class="meta-data">mattbool@mail.com</div>
-						</div>	
-					</div>			
+					</div>		
 				</div>
 			</div>
 			<div class="separator"></div>
-			<div class="category">
-				<div class="title">Авторизация</div>
-				<ul class="list list-nav invert">
-					<li>Вход</li>
-					<li>Регистрация</li>
-				</ul>
+			<div class="accordion invert">
+				<div class="item">
+					<div class="header">Авторизация</div>
+					<div class="content">
+						<ul class="list list-nav invert">
+							<li>Вход</li>
+							<li>Регистрация</li>
+						</ul>
+					</div>
+				</div>
+				<div class="item">
+					<div class="header">Навигация</div>
+					<div class="content">
+						<ul class="list list-nav invert">
+							<li>Главная</li>
+							<li>Новости</li>
+							<li>Мои друзья</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		</div>		
@@ -889,6 +896,19 @@
 		<h2>Всплывающие подсказки</h2>
 		<a href="" data-tooltip="Пример всплывающей подсказки" id="tooltip1">Наведи на меня!</a>
 		<div class="tooltip"></div>
+		<h2>Выпадающее меню</h2>
+		<button class="teal icon ghost dd" data-dropdown-target="dropdown1">Редактирование <i class="fa fa-caret-down"></i></button><br>
+		<button class="violet ghost icon" data-dropdown-target="dropdown2">Редактирование <i class="fa fa-caret-down"></i></button>
+		<ul class="dropdown" id="dropdown1">
+			<li>Вырезать</li>
+			<li>Копировать</li>
+			<li>Вставить</li>
+		</ul>
+		<ul class="dropdown invert" id="dropdown2">
+			<li>Вырезать</li>
+			<li>Копировать</li>
+			<li>Вставить</li>
+		</ul>
 	</div>
 	<div class="col col-4 col-t-3 col-m-4">
 		<h2>Accordion</h2>
@@ -896,28 +916,28 @@
 			<div class="item">
 				<div class="header">Содержание</div>
 				<div class="content">
-					<ol>
+					<p><ol>
 						<li>Что такое HTML?</li>
 						<li>Что такое CSS?</li>
 						<li>Что такое JavaScript?</li>
 						<li>Подробнее о jQuery</li>
-					</ol>
+					</ol></p>
 				</div>
 			</div>
 			<div class="item">
 				<div class="header">Сведения</div>
 				<div class="content">
-					<b>Автор публикации: </b> Leonard Mitte
+					<p><b>Автор публикации: </b> Leonard Mitte</p>
 				</div>
 			</div>
 			<div class="item">
 				<div class="header">Управление</div>
 				<div class="content">
-					<div class="button-group fit">
+					<p><div class="button-group fit">
 						<button>Редактировать</button>
 						<button>Статистика</button>
 						<button>Удалить</button>
-					</div>
+					</div></p>
 				</div>
 			</div>
 		</div>
@@ -925,28 +945,28 @@
 			<div class="item">
 				<div class="header">Содержание</div>
 				<div class="content">
-					<ol>
+					<p><ol>
 						<li>Что такое HTML?</li>
 						<li>Что такое CSS?</li>
 						<li>Что такое JavaScript?</li>
 						<li>Подробнее о jQuery</li>
-					</ol>
+					</ol></p>
 				</div>
 			</div>
 			<div class="item">
 				<div class="header">Сведения</div>
 				<div class="content">
-					<b>Автор публикации: </b> Leonard Mitte
+					<p><b>Автор публикации: </b> Leonard Mitte</p>
 				</div>
 			</div>
 			<div class="item">
 				<div class="header">Управление</div>
 				<div class="content">
-					<div class="button-group fit">
+					<p><div class="button-group fit">
 						<button>Редактировать</button>
 						<button>Статистика</button>
 						<button>Удалить</button>
-					</div>
+					</div></p>
 				</div>
 			</div>
 		</div>

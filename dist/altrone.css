@@ -3840,7 +3840,7 @@ table.with-border td {
   top: 45%;
   left: 30%;
   display: none;
-  z-index: 3;
+  z-index: 5;
   font-family: 'PT Sans', 'Segoe UI', sans-serif;
   color: #333333;
 }
@@ -3907,7 +3907,7 @@ table.with-border td {
 }
 /* line 75, modal.less */
 .overlay {
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -3982,15 +3982,84 @@ table.with-border td {
   display: none;
   background-color: #f5f5f5;
   color: #333333;
-  padding: 0.5em 1em;
   box-sizing: border-box;
 }
-/* line 42, accordion.less */
+/* line 37, accordion.less */
+.accordion .item .content ul.list {
+  margin: 0px;
+}
+/* line 41, accordion.less */
+.accordion .item .content p {
+  padding: 0.5em 1em;
+  margin: 0px;
+  box-sizing: border-box;
+}
+/* line 51, accordion.less */
 .accordion.invert .item .header {
   background-color: #333333;
   color: #f5f5f5;
 }
-/* line 46, accordion.less */
+/* line 55, accordion.less */
 .accordion.invert .item .header:hover {
   background-color: #383838;
+}
+/* line 59, accordion.less */
+.accordion.invert .item .header.active {
+  background-color: #383838;
+}
+/* line 1, dropdown.less */
+.dropdown {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  min-width: 200px;
+  height: auto;
+  padding: 5px 0px;
+  background-color: #f5f5f5;
+  color: #333333;
+  font-family: 'PT Sans', 'Segoe UI', sans-serif;
+  position: absolute;
+  display: none;
+}
+/* line 14, dropdown.less */
+.dropdown li {
+  width: 100%;
+  padding: 0.2em 1em;
+  background-color: #f5f5f5;
+  color: #333333;
+  font-size: 1.2em;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+/* line 23, dropdown.less */
+.dropdown li:hover {
+  background-color: #e8e8e8;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 27, dropdown.less */
+.dropdown li:active {
+  background-color: #2185d0;
+  color: #ffffff;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+/* line 34, dropdown.less */
+.dropdown.invert {
+  background-color: #333333;
+  color: #f5f5f5;
+}
+/* line 38, dropdown.less */
+.dropdown.invert li {
+  background-color: #333333;
+  color: #f5f5f5;
+}
+/* line 42, dropdown.less */
+.dropdown.invert li:hover {
+  background-color: #404040;
+}
+/* line 46, dropdown.less */
+.dropdown.invert li:active {
+  background-color: #2185d0;
+  color: #ffffff;
 }
