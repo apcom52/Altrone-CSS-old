@@ -84,4 +84,10 @@ $(document).ready(function() {
 		}
 		$(this).addClass('active');
 	});
+
+	/* Button Toggle Plugin */
+	$('[data-button-toggle]').click(function() {
+		$(this).toggleClass('active');
+		console.log('toogle');
+	})
 });
