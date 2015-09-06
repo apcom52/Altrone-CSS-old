@@ -8,29 +8,29 @@
 	transition: all @sec linear;
 }
 
-.only-d { display: block; }
-.only-m, .only-t { display: none;}
+.only-d { display: block !important; }
+.only-m, .only-t { display: none !important;}
 
-.hide-d { display: none; }
-.hide-m { display: block; }
-.hide-t { display: block; }
+.hide-d { display: none !important; }
+.hide-m { display: block !important; }
+.hide-t { display: block !important; }
 
 @media (max-width: @tablet) {
-	.only-d, .only-m { display: none; }
-	.only-t { display: block; }
+	.only-d, .only-m { display: none !important; }
+	.only-t { display: block !important; }
 
-	.hide-d { display: block; }
-	.hide-m { display: block; }
-	.hide-t { display: none; }
+	.hide-d { display: block !important; }
+	.hide-m { display: block !important; }
+	.hide-t { display: none !important; }
 }
 
 @media (max-width: @mobile) {
-	.only-d, .only-t { display: none; }
-	.only-m { display: block; }
+	.only-d, .only-t { display: none !important; }
+	.only-m { display: block !important; }
 
-	.hide-d { display: block; }
-	.hide-m { display: none; }
-	.hide-t { display: block; }
+	.hide-d { display: block !important; }
+	.hide-m { display: none !important; }
+	.hide-t { display: block !important; }
 }
 
 .reg-bg { background-color: @red !important; }

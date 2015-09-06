@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -201,6 +202,47 @@
 			<input type="password" placeholder="Password" id="password3">
 			<input type="submit" class="olive" value="Sign In">
 		</form>
+	</div>
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3 class="centered">Переключатели</h3>
+		<div class="radio-group">
+			<input id="male" type="radio" name="gender" value="male"><label for="male">Male</label>
+			<input id="female" type="radio" name="gender" value="female"><label for="female">Female</label>
+			<input id="dontknow" type="radio" name="gender" value="dontknow"><label for="dontknow">I don't know</label>
+		</div>
+		<div class="radio-group inline">
+			<input id="male2" type="radio" name="gender2" value="male2"><label for="male2">Male</label>
+			<input id="female2" type="radio" name="gender2" value="female2"><label for="female2">Female</label>
+			<input id="dontknow2" type="radio" name="gender2" value="dontknow2"><label for="dontknow2">I don't know</label>
+		</div>
+		<div class="radio-group inline red">
+			<input id="male3" type="radio" name="gender3" value="male3"><label for="male3">Male</label>
+			<input id="female3" type="radio" name="gender3" value="female3"><label for="female3">Female</label>
+			<input id="dontknow3" type="radio" name="gender3" value="dontknow3"><label for="dontknow3">I don't know</label>
+		</div>
+		<div class="radio-group inline yellow">
+			<input id="male4" type="radio" name="gender4" value="male4"><label for="male4">Male</label>
+			<input id="female4" type="radio" name="gender4" value="female4"><label for="female4">Female</label>
+			<input id="dontknow4" type="radio" name="gender4" value="dontknow4"><label for="dontknow4">I don't know</label>
+		</div>
+		<div class="radio-group inline black">
+			<input id="male5" type="radio" name="gender5" value="male5"><label for="male5">Male</label>
+			<input id="female5" type="radio" name="gender5" value="female5"><label for="female5">Female</label>
+			<input id="dontknow5" type="radio" name="gender5" value="dontknow5"><label for="dontknow5">I don't know</label>
+		</div>
+	</div>
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3 class="centered">Флажки</h3>
+		<div class="checkbox-group">
+			<input id="apple" type="checkbox" name="gender" value="1"><label for="apple">Apple</label>
+			<input id="ham" type="checkbox" name="gender" value="2"><label for="ham">Ham</label>
+			<input id="tea" type="checkbox" name="gender" value="3"><label for="tea">Green Tea</label>
+		</div>
+		<div class="checkbox-group inline olive">
+			<input id="apple2" type="checkbox" name="gender" value="1"><label for="apple2">Apple</label>
+			<input id="ham2" type="checkbox" name="gender" value="2"><label for="ham2">Ham</label>
+			<input id="tea2" type="checkbox" name="gender" value="3"><label for="tea2">Green Tea</label>
+		</div>		
 	</div>
 </div>
 <h1>Вкладки</h1>
@@ -526,6 +568,7 @@
 		<div class="card">
 			<div class="header">
 				<h1>Управление заметкой</h1>
+				<span class="card-button pin-right"><i class="fa fa-th"></i></span>
 			</div>
 			<div class="content text">
 				<div class="list links">
@@ -894,7 +937,10 @@
 	</div>
 	<div class="col col-4 col-t-3 col-m-4">
 		<h2>Всплывающие подсказки</h2>
-		<a href="" data-tooltip="Пример всплывающей подсказки" id="tooltip1">Наведи на меня!</a>
+		<a href="" data-tooltip="Пример всплывающей подсказки">Наведи на меня!</a>
+		<a href="" data-tooltip="Top-Left" data-tooltip-position='top-left'>Я вверху и слева!</a>
+		<a href="" data-tooltip="Bottom-Left" data-tooltip-position='bottom-left'>Я снизу слева</a>
+		<a href="" data-tooltip="Bottom-Right" data-tooltip-position='bottom-right'>Я снизу справа</a>
 		<div class="tooltip"></div>
 		<h2>Выпадающее меню</h2>
 		<button class="teal icon ghost dd" data-dropdown-target="dropdown1">Редактирование <i class="fa fa-caret-down"></i></button><br>

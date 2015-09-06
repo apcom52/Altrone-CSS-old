@@ -30,13 +30,35 @@ $(document).ready(function() {
 
 	$('[data-tooltip]').mousemove(function(event) {
 		var title = $(this).data('tooltipTitle');
+		var position = $(this).data('tooltipPosition');
+		/*
+		Вверх-Право: -30, +5
+		Вверх-Слева: -30, width - 5
+		Вниз-справа: +30, +5
+		Вниз-Слева: -30, width - 5
+		 */
 		var title_html = '';
 		if (title) {
 			title_html = '<h1>' + title + '</h1>';
 		} else {
 		}
 		parent = $(this);
-		$('.tooltip').html(title_html + parent.data('tooltip')).css({'top': event.pageY - 30, 'left': event.pageX + 5}).fadeIn(150)
+		$('.tooltip').html(title_html + parent.data('tooltip'))
+		var y_shift = -30
+		var x_shift = 5
+		var wdt = $(this).width();
+		if (position == 'top-left') {
+			y_shift = -30;
+			x_shift = -wdt/2;
+		} else if (position == 'bottom-right') {
+			y_shift = 30;
+			x_shift = 5;
+		} else if (position == 'bottom-left') {
+			y_shift = 30;
+			x_shift = -wdt + 5;
+		}
+		$('.tooltip').css({'top': event.pageY + y_shift, 'left': event.pageX + x_shift}).fadeIn(150);
+		console.log(wdt);
 	})
 
 	$('[data-tooltip]').mouseout(function() {

@@ -89,3 +89,143 @@ input[type='text'], input[type='email'], input[type='password'], input[type='num
 		color: @d-gray;
 	}
 }
+
+.set-rg-color(@color) {
+	input[type=radio]:checked + label:before {
+		background-color: @color !important;			
+	}
+}
+
+.radio-group {
+	label {
+		display: inline-block;
+		width: ~'calc(100% - 10px - 1em)';
+		position: relative;
+		cursor: pointer;
+		font-size: 16px;
+		margin: 5px 0px;
+		.pt();
+
+		&:before {
+			content: '\2022';
+			display: inline-block;
+			position: absolute;			
+			width: 16px;
+			height: 16px;
+			box-sizing: border-box;
+			line-height: 1;
+			border-radius: 50%;
+			background-color: darken(@u-gray, 10%);
+			margin: 0px 5px;
+			position: relative;
+			top: 1px;
+			color: darken(@u-gray, 10%);
+		}
+	}
+
+	input[type=radio] {
+		display: none;	
+
+		&:checked + label:before {
+			content: '\2022';
+			color: @white;
+			text-align: center;
+			background-color: @blue;			
+			.anim(0.3s);	
+		}
+	}
+
+	&.inline {
+		label {
+			width: auto;
+			margin-left: 10px;
+
+			&:first-child {
+				margin-left: 0px;
+			}
+		}
+	}
+
+	&.red { .set-rg-color(@red); }
+	&.orange { .set-rg-color(@orange); }
+	&.yellow { .set-rg-color(@yellow); }
+	&.olive { .set-rg-color(@olive); }
+	&.green { .set-rg-color(@green); }
+	&.teal { .set-rg-color(@teal); }
+	&.blue { .set-rg-color(@blue); }
+	&.violet { .set-rg-color(@violet); }
+	&.purple { .set-rg-color(@purple); }
+	&.pink { .set-rg-color(@pink); }
+	&.brown { .set-rg-color(@brown); }
+	&.black { .set-rg-color(@d-gray); }
+}
+
+.set-chbg-color(@color) {
+	input[type=checkbox]:checked + label:before {
+		background-color: @color !important;			
+	}
+}
+
+.checkbox-group {
+	label {
+		display: inline-block;
+		width: ~'calc(100% - 10px - 1em)';
+		position: relative;
+		cursor: pointer;
+		font-size: 16px;
+		margin: 5px 0px;
+		.pt();
+
+		&:before {
+			content: '\2022';
+			display: inline-block;
+			position: absolute;			
+			width: 16px;
+			height: 16px;
+			box-sizing: border-box;
+			line-height: 1;
+			border-radius: 4px;
+			background-color: darken(@u-gray, 10%);
+			margin: 0px 5px;
+			position: relative;
+			top: 1px;
+			color: darken(@u-gray, 10%);
+		}
+	}
+
+	input[type=checkbox] {
+		display: none;	
+
+		&:checked + label:before {
+			content: '\2713';
+			color: @white;
+			text-align: center;
+			background-color: @blue;			
+			.anim(0.3s);	
+		}
+	}
+
+	&.inline {
+		label {
+			width: auto;
+			margin-left: 10px;
+
+			&:first-child {
+				margin-left: 0px;
+			}
+		}
+	}
+
+	&.red { .set-chbg-color(@red); }
+	&.orange { .set-chbg-color(@orange); }
+	&.yellow { .set-chbg-color(@yellow); }
+	&.olive { .set-chbg-color(@olive); }
+	&.green { .set-chbg-color(@green); }
+	&.teal { .set-chbg-color(@teal); }
+	&.blue { .set-chbg-color(@blue); }
+	&.violet { .set-chbg-color(@violet); }
+	&.purple { .set-chbg-color(@purple); }
+	&.pink { .set-chbg-color(@pink); }
+	&.brown { .set-chbg-color(@brown); }
+	&.black { .set-chbg-color(@d-gray); }
+}

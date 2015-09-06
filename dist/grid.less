@@ -1,6 +1,6 @@
 @media (max-width: @tablet) {
 	.col {
-		margin: 1% 0px !important;
+		margin: 0px !important;
 
 		&-t-1 { width: 16.66% !important;}
 		&-t-2 { width: 33.33% !important;}
@@ -20,7 +20,7 @@
 
 @media (max-width: @mobile) {
 	.col {
-		margin: 1% 0px !important;
+		margin: 0px !important;
 
 		&-m-1 { width: 25% !important;}
 		&-m-2 { width: 50% !important;}
@@ -38,7 +38,7 @@
 .container {
 	clear: both;
 	padding: 0px;
-	margin: 0px;
+	margin: 0px !important;
 	font-size: 0;
 
 	&.group {
@@ -57,10 +57,9 @@
 		vertical-align: top;
 		font-size: medium;
 		display: inline-block;
-		//float: left;
-		margin: 1% 0 1% 0%;
+		float: left;
+		margin: 0px;
 		box-sizing: border-box;
-		padding: 5px;
 
 
 
@@ -80,6 +79,10 @@
 		&-10 { width: 83.06%;	}
 		&-11{ width: 91.53%;	}
 		&-12 { width: 100%;	}
+
+		&.padding {
+			padding: 5px;
+		}
 	}
 }
 
