@@ -114,6 +114,37 @@ button, input[type='submit'], input[type='reset'], input[type='button'], .button
 		border: none;
 		color: @d-gray;
 	}
+	&.round {
+		border-radius: 50%;
+		width: 3em;
+		height: 3em;
+		border: none;
+		background-color: @u-gray;
+		color: @d-gray;
+
+		&.red { .round-button-color(@red); }
+		&.orange { .round-button-color(@orange); }
+		&.yellow { .round-button-color(@yellow); }
+		&.olive { .round-button-color(@olive); }
+		&.green { .round-button-color(@green); }
+		&.teal { .round-button-color(@teal); }
+		&.blue { .round-button-color(@blue); }
+		&.violet { .round-button-color(@violet); }
+		&.purple { .round-button-color(@purple); }
+		&.pink { .round-button-color(@pink); }
+		&.brown { .round-button-color(@brown); }
+		&.black { .round-button-color(@d-gray); }
+	}
+}
+
+.round-button-color(@color) {
+	background-color: @color;
+	color: @white;
+
+	&:hover, &:active, &:focus {
+		background-color: darken(@color, 10%);
+		.anim(0.3s);
+	}
 }
 
 .button-group {
