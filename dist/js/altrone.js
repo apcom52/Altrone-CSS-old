@@ -121,11 +121,17 @@ $(document).ready(function() {
 
 	$('[data-dropdown-target]').click(function() {
 		//$('.dropdown').slideUp(150);		
-		dropdown = $('#' + $(this).data('dropdownTarget'));
+		var dropdown = $('#' + $(this).data('dropdownTarget'));
 		if (!dropdown.is(':visible')) {
 			var position = $(this).position();
 			dropdown.css({'top': position.top + $(this).outerHeight() + 10, 'left': position.left});
-			dropdown.slideDown(150);	
+			dropdown.slideDown(150);
+			var parent = $(this);
+			$('#' + $(this).data('dropdownTarget') + ' > li').click(function() {				
+				if (parent.hasClass('hamburger')) {
+					parent.removeClass('active');
+				}
+			})	
 		}	
 	});
 

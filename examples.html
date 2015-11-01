@@ -529,6 +529,7 @@
 	<div class="col col-4 col-t-3 col-m-4">
 		<div class="card shadow-1 invert">
 			<div class="header">
+				<div class="hamburger close" data-dropdown-target="feed-card"><span>menu</span></div>
 				<h1>Лента</h1>
 				<div class="meta">Последняя активность пользовалей</div>
 			</div>
@@ -560,7 +561,12 @@
 						<div class="time">8 minutes ago</div>
 						<div class="text">Nullam maximus ac ipsum vel scelerisque. Curabitur congue faucibus urna id tempus. Quisque feugiat orci.</div>
 					</div>
-				</div>				
+				</div>	
+				<ul class="dropdown invert shadow-1" id="feed-card">
+					<li>Вся лента</li>
+					<li>Только важное</li>
+					<li>Моя лента</li>
+				</ul>			
 			</div>
 			<div class="footer centered">
 				<button class="olive ghost fit button">Загрузить еще</button>
@@ -922,30 +928,30 @@
 		<div class="modal" id="demo-modal1">
 			<div class="header">
 				<h1>Подтверждение удаления</h1>
-				<span class="right"><span class="closeModal"><i class="fa fa-remove"></i></span></span>
+				<span class="right"><span class="closeModal"><i class="ion-android-close"></i></span></span>
 			</div>
 			<div class="content">
 				<p>Вы действительно хотите удалить данный документ?</p>
 			</div>
 			<div class="footer">
-				<div class="right">
-					<button class="green">Да</button>
-					<button class="red">Нет</button>
+				<div class="button-group fit">
+					<button class="green icon ghost"><i class="ion-ios-checkmark"></i> Да</button>
+					<button class="red icon ghost"><i class="ion-ios-close closeModal"></i> Нет</button>
 				</div>
 			</div>
 		</div>
 		<div class="modal invert" id="demo-modal2">
 			<div class="header">
 				<h1>Подтверждение удаления</h1>
-				<span class="right"><span class="closeModal"><i class="fa fa-remove"></i></span></span>
+				<span class="right"><span class="closeModal"><i class="ion-android-close"></i></span></span>
 			</div>
 			<div class="content">
 				<p>Вы действительно хотите удалить данный документ?</p>
 			</div>
 			<div class="footer">
-				<div class="right">
-					<button class="green">Да</button>
-					<button class="red">Нет</button>
+				<div class="button-group fit">
+					<button class="green icon"><i class="ion-ios-checkmark"></i> Да</button>
+					<button class="icon"><i class="ion-ios-close closeModal"></i> Нет</button>
 				</div>
 			</div>
 		</div>
