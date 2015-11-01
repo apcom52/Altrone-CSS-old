@@ -128,7 +128,9 @@ $(document).ready(function() {
 			dropdown.slideDown(150);	
 		}	
 	});
-	/*$(':not(.dropdown), :not([data-dropdown-target=""])').click(function() {
-		$('.dropdown').slideUp(150);
-	})*/
+
+	/* Гамбургер-меню */
+	$('.hamburger').click(function() {
+		$(this).toggleClass('active');
+	})
 });

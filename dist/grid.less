@@ -101,3 +101,21 @@
 		align-items: top;
 	}
 }
+
+.masonry-grid(@col) {
+	-webkit-column-count: @col;
+	-moz-column-count: @col;
+	column-count: @col;
+}
+
+.masonry {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+	column-gap: 1em;
+
+	&.columns-3 { .masonry-grid(3);	}
+	&.columns-4 { .masonry-grid(4);	}
+	&.columns-5 { .masonry-grid(5);	}
+	&.columns-6 { .masonry-grid(6);	}
+}

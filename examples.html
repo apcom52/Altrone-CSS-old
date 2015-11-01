@@ -1,0 +1,1043 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<title>Altrone CSS</title>
+	<link rel="stylesheet" type="text/css" href="dist/altrone.css">
+	<script src="dist/js/jquery-2.1.4.min.js"></script>
+	<!--<script src="dist/js/altrone.modal.js"></script>-->
+	<script src="dist/js/altrone.js"></script>
+	<style>
+		.col-color {
+			background-color: #999;
+			border: 1px solid #666;
+			box-sizing: border-box;
+		}
+		.flex-grid.color .col {
+			background-color: #999;
+			border: 1px solid #666;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+<h1>Cетка</h1>
+<div class="container group">
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+	<div class="col col-1 col-color">.col .col-1</div>
+</div>
+<div class="container group">
+	<div class="col col-2 col-color">.col .col-2</div>
+	<div class="col col-2 col-color">.col .col-2</div>
+	<div class="col col-2 col-color">.col .col-2</div>
+	<div class="col col-2 col-color">.col .col-2</div>
+	<div class="col col-2 col-color">.col .col-2</div>
+	<div class="col col-2 col-color">.col .col-2</div>
+</div>
+<div class="container group">
+	<div class="col col-3 col-color">.col .col-3</div>
+	<div class="col col-3 col-color">.col .col-3</div>
+	<div class="col col-3 col-color col-color">.col .col-3</div>
+	<div class="col col-3 col-color">.col .col-3</div>
+</div>
+<div class="container group">
+	<div class="col col-4 col-color">.col .col-4</div>
+	<div class="col col-4 col-color">.col .col-4</div>
+	<div class="col col-4 col-color">.col .col-4</div>
+</div>
+<div class="container group">
+	<div class="col col-6 col-color">.col .col-6</div>
+	<div class="col col-6 col-color">.col .col-6</div>
+</div>
+<div class="container group">
+	<div class="col col-12 col-color">.col .col-12</div>
+</div>
+
+<h1>Flex-сетка</h1>
+<div class="flex-grid color column">
+	<div class="row">
+		<div class="col">Заголовок</div>
+	</div>
+	<div class="row is-column">
+		<div class="col">Левый столбец<br><br><br></div>
+		<div class="col">Центральный столбец</div>
+		<div class="col">Правый столбец</div>
+	</div>
+	<div class="row">
+		<div class="col">Подвал</div>
+	</div>
+</div>
+
+<h1>Кнопки</h1>
+<div class="container group">
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3>Обычное состояние</h3>
+		<button data-button-toggle="true">Обычная кнопка</button>
+		<button class="blue" data-button-toggle="true">Синяя кнопка</button>
+		<button class="green round-borders" data-button-toggle="true">Зеленая кнопка</button>
+		<button class="yellow" data-button-toggle="true">Желтая кнопка</button>
+		<button class="red no-border">Красная кнопка</button>
+		<button class="black">Черная кнопка</button>
+		<button class="olive round"><i class="fa fa-plus"></i></button>
+		<button class="teal round"><i class="fa fa-pencil"></i></button>
+		<button class="yellow round"><i class="fa fa-bar-chart"></i></button>
+		<button class="red round"><i class="fa fa-times"></i></button>
+	</div>
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3>Disabled состояние</h3>
+		<button class="disabled">Неактивная обычная кнопка</button>
+		<button class="blue disabled">Неактивная синяя кнопка</button>
+		<button class="olive disabled">Неактивная зеленая кнопка</button>
+		<button class="purple disabled">Неактивная фиолетовая кнопка</button>
+		<button class="brown" disabled>Неактивная коричневая кнопка</button>
+		<button class="black" disabled>Неактивная черная кнопка</button>
+	</div>
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3>Группа кнопок</h3>
+		<div class="button-group">
+			<button class="teal">New</button>
+			<button>Open</button>
+			<button>Save</button>
+			<button class="red">Close</button>
+		</div>
+		<br>
+		<div class="button-group">
+			<button><<</button>
+			<button>1</button>
+			<button>2</button>
+			<button>3</button>
+			<button>4</button>
+			<button>>></button>
+		</div><br>
+		<div class="button-group">
+			<button class="icon"><i class="icon-angle-left"></i></button>
+			<button class="icon"><i class="icon-angle-right"></i></button>
+		</div>
+		<div class="button-group pin">
+			<button class="icon"><i class="fa fa-angle-left"></i></button>
+			<button class="icon"><i class="fa fa-angle-right"></i></button>
+		</div>
+		<button class="purple icon"><i class="fa fa-refresh"></i></button>
+	</div>
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3>Fit кнопки</h3>
+		<button class="fit">Обычная жирная кнопка</button>
+		<button class="teal fit">Бирюзовая жирная кнопка</button>
+		<button class="olive fit">Зеленая жирная кнопка</button>
+		<button class="orange fit">Оранжевая жирная кнопка</button>
+		<button class="violet fit">Фиолетовая жирная кнопка</button>
+		<button class="pink icon fit"><i class="icon-play"></i></button>
+	</div>
+</div>
+<div class="container group">
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3>Размеры кнопок</h3>
+		<button class="small">Маленькая кнопка</button>
+		<button>Обычная кнопка</button>
+		<button class="big">Большая кнопка</button>
+		<button class="very-big">Очень большая кнопка</button>
+	</div>
+</div>
+<h1>Картинки</h1>
+<div class="container group">
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3>"Резиновая картинка"</h3>
+		<img src="http://eveningsends.com/wp-content/uploads/2014/09/wallpaper-of-the-yosemite-valley.jpg" class="responsive-img">
+	</div>
+	<div class="col col-3 col-t-2 col-m-4">
+		<h3>Скругленные углы</h3>
+		<img src="http://images.qwrt.ru/images/2014/04/25/%D0%9B%D1%83%D0%BD%D0%B0-NASA-%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F-518981.jpg" width="140" height="140" class="rounded-img">
+	</div>
+	<div class="col col-3 col-t-2 col-m-4">
+		<h3>Круглая картинка</h3>
+		<img src="http://images.qwrt.ru/images/2014/04/25/%D0%9B%D1%83%D0%BD%D0%B0-NASA-%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F-518981.jpg" width="140" height="140" class="circle-img">
+	</div>
+	<div class="col col-3 col-t-2 col-m-4">
+		<h3>Картинка с рамкой</h3>
+		<img src="http://images.qwrt.ru/images/2014/04/25/%D0%9B%D1%83%D0%BD%D0%B0-NASA-%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F-518981.jpg" width="140" height="140" class="thumbnail-img">
+	</div>
+</div>
+<h1>Утилиты</h1>
+<div class="only-d">Эта надпись видна только на десктопах</div>
+<div class="only-t">Эта надпись видна только на планшетах</div>
+<div class="only-m">Эта надпись видна только на мобильных устройствах</div>
+<h1>Формы</h1>
+<div class="container group">
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3 class="centered">Basic centered form</h3>
+		<form class="form center">
+			<label for="email1">Электронная почта:</label>
+			<input type="email" placeholder="E-mail" id="email1">
+			<label for="password1">Пароль:</label>
+			<input type="password" placeholder="Password" id="password1">
+			<input type="submit" class="black" value="Sign In">
+		</form>
+	</div>
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3 class="centered">Fit form</h3>
+		<form class="form fit invert">
+			<label for="email2">Ваше имя:</label>
+			<input type="email" placeholder="Имя" id="email2">
+			<label for="password2">Комментарий:</label>
+			<textarea placeholder="Комментарий" id="password2"></textarea>
+			<select>
+				<option>Male</option>
+				<option>Female</option>
+				<option>I don't know</option>
+			</select>
+			<input type="submit" class="green fit" value="Опубликовать">
+		</form>
+	</div>
+	<div class="col col-6 col-t-6 only-d only-t">
+		<h3 class="centered">Inline form</h3>
+		<form class="form inline">
+			<label for="email3">Почта:</label>
+			<input type="email" placeholder="E-mail" id="email3">
+			<label for="password3">Пароль:</label>
+			<input type="password" placeholder="Password" id="password3">
+			<input type="submit" class="olive" value="Sign In">
+		</form>
+	</div>
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3 class="centered">Переключатели</h3>
+		<div class="radio-group">
+			<input id="male" type="radio" name="gender" value="male"><label for="male">Male</label>
+			<input id="female" type="radio" name="gender" value="female"><label for="female">Female</label>
+			<input id="dontknow" type="radio" name="gender" value="dontknow"><label for="dontknow">I don't know</label>
+		</div>
+		<div class="radio-group inline">
+			<input id="male2" type="radio" name="gender2" value="male2"><label for="male2">Male</label>
+			<input id="female2" type="radio" name="gender2" value="female2"><label for="female2">Female</label>
+			<input id="dontknow2" type="radio" name="gender2" value="dontknow2"><label for="dontknow2">I don't know</label>
+		</div>
+		<div class="radio-group inline red">
+			<input id="male3" type="radio" name="gender3" value="male3"><label for="male3">Male</label>
+			<input id="female3" type="radio" name="gender3" value="female3"><label for="female3">Female</label>
+			<input id="dontknow3" type="radio" name="gender3" value="dontknow3"><label for="dontknow3">I don't know</label>
+		</div>
+		<div class="radio-group inline yellow">
+			<input id="male4" type="radio" name="gender4" value="male4"><label for="male4">Male</label>
+			<input id="female4" type="radio" name="gender4" value="female4"><label for="female4">Female</label>
+			<input id="dontknow4" type="radio" name="gender4" value="dontknow4"><label for="dontknow4">I don't know</label>
+		</div>
+		<div class="radio-group inline black">
+			<input id="male5" type="radio" name="gender5" value="male5"><label for="male5">Male</label>
+			<input id="female5" type="radio" name="gender5" value="female5"><label for="female5">Female</label>
+			<input id="dontknow5" type="radio" name="gender5" value="dontknow5"><label for="dontknow5">I don't know</label>
+		</div>
+	</div>
+	<div class="col col-3 col-t-3 col-m-4">
+		<h3 class="centered">Флажки</h3>
+		<div class="checkbox-group">
+			<input id="apple" type="checkbox" name="gender" value="1"><label for="apple">Apple</label>
+			<input id="ham" type="checkbox" name="gender" value="2"><label for="ham">Ham</label>
+			<input id="tea" type="checkbox" name="gender" value="3"><label for="tea">Green Tea</label>
+		</div>
+		<div class="checkbox-group inline olive">
+			<input id="apple2" type="checkbox" name="gender" value="1"><label for="apple2">Apple</label>
+			<input id="ham2" type="checkbox" name="gender" value="2"><label for="ham2">Ham</label>
+			<input id="tea2" type="checkbox" name="gender" value="3"><label for="tea2">Green Tea</label>
+		</div>		
+	</div>
+</div>
+<h1>Вкладки</h1>
+<div class="container grid">
+	<div class="col col-6 col-t-6 col-m-4">
+		<h3>Обычные вкладки</h3>
+		<ul class="tabs tabs-normal" data-tabs="true">
+			<li class="active">Подробности</li>
+			<li>Расписание</li>
+			<li>Контакты</li>
+		</ul>
+		<div style="background-color: #333; padding: 5px;">
+			<ul class="tabs tabs-normal invert" data-tabs="true">
+				<li class="active">Подробности</li>
+				<li>Расписание</li>
+				<li>Контакты</li>
+			</ul>
+		</div>
+	</div>
+	<div class="col col-6 col-t-6 col-m-4">
+		<h3>Вкладки в стиле iOS</h3>
+		<ul class="tabs mobile-tabs three" data-tabs="true">
+			<li>Подробности</a></li>
+			<li class="active">Расписание</li>
+			<li>Контакты</li>
+		</ul>
+		<div style="background-color: #333; padding: 5px 0px;">
+			<ul class="tabs invert mobile-tabs three" data-tabs="true">
+				<li>Подробности</li>
+				<li class="active">Расписание</li>
+				<li>Контакты</li>
+			</ul>
+		</div>
+		<h3>Flex-вкладки</h3>
+		<ul class="tabs mobile-tabs flex" data-tabs="true">
+			<li>Я</li>
+			<li>Ты</li>
+			<li>Он</li>
+			<li>Она</li>
+			<li>Вместе</li>
+			<li>Дружная</li>
+			<li>Семья!</li>
+		</ul>
+	</div>
+</div>
+<h1>Списки</h1>
+<div class="container grid">
+	<div class="col col-4 col-t-3 col-m-4">
+		<h3>Список-навигация</h3>
+		<ul class="list list-nav">
+			<li class="active">Главная</li>
+			<li>Расписание</li>
+			<li>Опросы</li>
+			<li>Заметки</li>
+			<li>Настройки</li>
+		</ul>
+		<h3>Список с иконками</h3>
+		<ul class="list list-nav icon">
+			<li class="active"><i class="ios ios-home"></i>Главная</li>
+			<li><i class="ios ios-calendar-full"></i>Расписание</li>
+			<li><i class="ios ios-list"></i>Опросы</li>
+			<li><i class="ios ios-book"></i>Заметки</li>
+			<li><i class="ios ios-cog"></i>Настройки</li>
+		</ul>
+	</div>
+	<div class="col col-4 col-t-3 col-m-4">
+		<h3>Списки с серым акцентным цветом</h3>
+		<ul class="list list-nav gray-accent">
+			<li class="active"><span class="red circle"></span>Красный цвет</li>
+			<li><span class="blue circle"></span>Синий цвет</li>
+			<li><span class="orange circle"></span>Оранжевый цвет</li>
+			<li><span class="purple circle"></span>Фиолетовый цвет</li>
+			<li><span class="olive circle"></span>Оливковый цвет</li>
+		</ul>
+		<h3>Списки-ссылки</h3>
+		<div class="list links">
+			<a href="">Создать</a>
+			<a href="">Открыть</a>
+			<a href="">Изменить</a>
+			<a href="">Настройки</a>
+			<a href="">Удалить</a>
+		</div>
+	</div>
+	<div class="col col-4 col-t-3 col-m-4">
+		<h3>Инвертированные цвета</h3>
+		<ul class="list list-nav icon invert">
+			<li><i class="fa fa-home"></i>Главная</li>
+			<li><i class="fa fa-calendar"></i>Расписание</li>
+			<li class="active"><i class="fa fa-list-ul"></i>Опросы</li>
+			<li>Заметки</li>
+			<li>Настройки</li>
+		</ul>
+		<div class="list links invert">
+			<a href="">Создать</a>
+			<a href="">Открыть</a>
+			<a href="">Изменить</a>
+			<a href="">Настройки</a>
+			<a href="">Удалить</a>
+		</div>
+		<ul class="list list-nav gray-accent invert">
+			<li class="active"><span class="red circle"></span>Красный цвет</li>
+			<li><span class="blue circle"></span>Синий цвет</li>
+			<li><span class="orange circle"></span>Оранжевый цвет</li>
+			<li><span class="purple circle"></span>Фиолетовый цвет</li>
+			<li><span class="olive circle"></span>Оливковый цвет</li>
+		</ul>
+	</div>
+</div>
+
+<h1>Progress-бары</h1>
+<div class="container grid">
+	<div class="col col-4 col-t-3 col-m-4">
+		<h3>Обычный прогресс-бар</h3>
+		<div class="progress"><span style="width:30%"></span></div>
+		<div class="progress red"><span style="width:25%"></span></div>
+		<div class="progress orange"><span style="width:20%"></span></div>
+		<div class="progress yellow"><span style="width:15%"></span></div>
+		<div class="progress olive"><span style="width:41%"></span></div>
+		<div class="progress green"><span style="width:57%"></span></div>
+		<div class="progress teal"><span style="width:33%"></span></div>
+		<div class="progress blue"><span style="width:27%"></span></div>
+		<div class="progress violet"><span style="width:64%"></span></div>
+		<div class="progress purple"><span style="width:32%"></span></div>
+		<div class="progress pink"><span style="width:35%"></span></div>
+		<div class="progress brown"><span style="width:18%"></span></div>
+	</div>
+	<div class="col col-4 col-t-3 col-m-4">
+		<h3>Светлые прогресс-бары</h3>
+		<div class="progress light"><span style="width:30%"></span></div>
+		<div class="progress light red"><span style="width:25%"></span></div>
+		<div class="progress light orange"><span style="width:20%"></span></div>
+		<div class="progress light yellow"><span style="width:15%"></span></div>
+		<div class="progress light olive"><span style="width:41%"></span></div>
+		<div class="progress light green"><span style="width:57%"></span></div>
+		<div class="progress light teal"><span style="width:33%"></span></div>
+		<div class="progress light blue"><span style="width:27%"></span></div>
+		<div class="progress light violet"><span style="width:64%"></span></div>
+		<div class="progress light purple"><span style="width:32%"></span></div>
+		<div class="progress light pink"><span style="width:35%"></span></div>
+		<div class="progress light brown"><span style="width:18%"></span></div>
+	</div>
+	<div class="col col-4 col-t-3 col-m-4">
+		<h3>Дополнительные классы</h3>
+		<p><code>.square</code> - убирает скругление краев у прогресс бара:<br>
+		<div class="progress red square"><span style="width:30%"></span></div></p>
+		<p><code>.fit</code> - прогресс-бар подстраивается под размер родительского блока (100px / 32px):<br>
+		<div class="parent" style="width: 100px; height: 32px;">
+			<div class="progress olive fit square"><span style="width:74%"></span></div></p>
+		</div>		
+		<div class="parent" style="width: 100px; height: 100px;">
+			<div class="progress pink fit"><span style="width:37%;"></span></div></p>
+		</div>		
+	</div>
+</div>
+
+<h1>MessageBox</h1>
+<div class="container grid">
+	<div class="col col-4 col-t-3 col-m-4">
+		<div class="alert">
+			<h1>Заголовок сообщения</h1>
+			<p>Текст сообщения</p>
+		</div>
+		<div class="alert red">
+			<h1>Заголовок сообщения</h1>
+			<p>Текст сообщения</p>
+		</div>
+		<div class="alert yellow">
+			<h1>Заголовок сообщения</h1>
+			<p>Текст сообщения</p>
+		</div>
+		<div class="alert orange">
+			<h1>Заголовок сообщения</h1>
+			<p>Текст сообщения</p>
+		</div>
+		
+	</div>
+	<div class="col col-4 col-t-3 col-m-4">
+		<div class="alert olive">
+			<h1>Заголовок сообщения</h1>
+			<p>Текст сообщения</p>
+		</div>
+		<div class="alert green">
+			<h1>Заголовок сообщения</h1>
+			<p>Текст сообщения</p>
+		</div>
+		<div class="alert teal">
+			<h1>Заголовок сообщения</h1>
+			<p>Текст сообщения</p>
+		</div>
+		<div class="alert blue">
+			<h1>Заголовок сообщения</h1>
+			<p>Текст сообщения</p>
+		</div>		
+	</div>
+	<div class="col col-4 col-t-3 col-m-4">
+		<div class="alert violet square">
+			<h1>Заголовок сообщения</h1>
+			<p>Текст сообщения</p>
+		</div>
+		<div class="alert purple square">
+			<h1>Заголовок сообщения</h1>
+			<p>Текст сообщения</p>
+		</div>
+		<div class="alert invert">
+			<h1>Заголовок сообщения</h1>
+			<p>Текст сообщения</p>
+		</div>
+		<div class="alert brown square">
+			<h1>Заголовок сообщения</h1>
+			<p>Текст сообщения</p>
+		</div>
+	</div>
+</div>
+
+<div class="container grid">
+	<div class="col col-4 col-t-3 col-m-4">
+		<h1>Иерархия</h1>
+		<ul class="breadcrumb">
+			<li><a href="#">Мои документы</a></li>
+			<li><a href="#">Изображения</a></li>
+			<li class="active">2015</li>
+		</ul>
+		<p><code>.arrow</code> - изменяет стиль разделителя на стрелку</p>
+		<ul class="breadcrumb arrow">
+			<li><a href="#">Мои документы</a></li>
+			<li><a href="#">Изображения</a></li>
+			<li class="active">2015</li>
+		</ul>
+		<div style="background-color: #333; padding: 5px 0px;">
+			<ul class="breadcrumb invert">
+				<li><a href="#">Мои документы</a></li>
+				<li><a href="#">Изображения</a></li>
+				<li class="active">2015</li>
+			</ul>
+		</div>
+	</div>
+	<div class="col col-4 col-t-3 col-m-4">
+		<h1>Индикаторы</h1>
+		<div class="label">NEW!</div>
+		<div class="label red">NEW!</div>
+		<div class="label orange">NEW!</div>
+		<div class="label yellow">NEW!</div>
+		<div class="label olive">NEW!</div>
+		<div class="label green">NEW!</div>
+		<div class="label teal">NEW!</div>
+		<div class="label blue">NEW!</div>
+		<div class="label violet">NEW!</div>
+		<div class="label purple">NEW!</div>
+		<div class="label pink">NEW!</div>
+		<div class="label brown">NEW!</div>
+		<h1>Новинка!<div class="label red">HOT!</div></h1>
+		<h2>Бейджики <div class="badge yellow">Пример</div> </h2>
+		<div class="badge">Badge</div>
+		<div class="badge red">Badge</div>
+		<div class="badge blue">Badge</div>
+		<div class="badge violet">Badge</div>
+		<div class="badge orange">Badge</div>
+		<div class="badge olive">Badge</div>
+		<div class="badge teal">Badge</div>
+		<div class="badge black">Badge</div>
+		<div class="badge black">?</div>
+	</div>
+
+	<div class="col col-4 col-t-3 col-m-4">
+		<h1>Теги</h1>
+		<div class="tag">Новинки!</div><div class="red tag">Новинки!</div><div class="teal tag">Новинки!</div><div class="brown tag">Новинки!</div><div class="yellow tag">Новинки!</div>
+		<h1>Цветные кружки</h1>
+		<span class="red circle"></span><span class="orange circle"></span><span class="yellow circle"></span><span class="olive circle"></span><span class="teal circle"></span><span class="blue circle"></span><span class="violet circle"></span>
+		<span class="purple square circle"></span><span class="brown square circle"></span><span class="black square circle"></span><span class="pink square circle"></span>
+	</div>
+</div>
+
+<h1>Карточки</h1>
+<div class="container group m-gray-bg">
+	<div class="col col-4 col-t-3 col-m-4">
+		<div class="card shadow-1 invert">
+			<div class="header">
+				<h1>Лента</h1>
+				<div class="meta">Последняя активность пользовалей</div>
+			</div>
+			<div class="content feed">
+				<div class="hamburger rotation"><span>toggle</span></div>
+				<div class="hamburger orange close"><span>toggle</span></div>
+				<div class="hamburger green left-arrow"><span>toggle</span></div>
+				<div class="hamburger teal right-arrow"><span>toggle</span></div>
+				<div class="item">
+					<img src="http://1avatara.ru/pic/game/game0001.gif" class="photo">
+					<div class="content">
+						<div class="author">Matt Bool</div>
+						<div class="time">8 minutes ago</div>
+						<div class="text">Привет всем! Как делишки?</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="http://1avatara.ru/pic/game/game0001.gif" class="photo">
+					<div class="content">
+						<div class="author">Matt Bool</div>
+						<div class="time">8 minutes ago</div>
+						<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in viverra odio. Nam eget hendrerit felis. Mauris mollis pellentesque odio vitae faucibus. Duis vitae velit massa. Donec mattis est mi, ac ornare magna auctor a. Suspendisse felis ipsum, tincidunt a ullamcorper id, lacinia sed ante. Fusce est urna, molestie in lorem in, imperdiet fringilla leo. Mauris nisi odio, porta sed ipsum eget, auctor sodales nisi. Nam eleifend eu nulla a pretium. Pellentesque erat ipsum, condimentum in turpis at, convallis suscipit mi. Aenean condimentum sit amet risus non ullamcorper. Vestibulum quis sagittis leo. Nam lacus dui, lacinia non feugiat sit amet, congue et lacus. Quisque molestie metus efficitur eleifend porttitor. Suspendisse vel mauris vehicula, sollicitudin nunc ut, convallis ligula. Nam quis pellentesque dolor, quis accumsan nunc.</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="http://1avatara.ru/pic/game/game0001.gif" class="photo">
+					<div class="content">
+						<div class="author">Matt Bool</div>
+						<div class="time">8 minutes ago</div>
+						<div class="text">Nullam maximus ac ipsum vel scelerisque. Curabitur congue faucibus urna id tempus. Quisque feugiat orci.</div>
+					</div>
+				</div>				
+			</div>
+			<div class="footer centered">
+				<button class="olive ghost fit button">Загрузить еще</button>
+			</div>
+		</div>
+	</div>
+	<div class="col col-4 col-t-3 col-m-4">
+		<div class="card shadow-2">
+			<div class="image-box">
+				<img src="http://www.thedesertreview.com/wp-content/upLoads/2015/08/12305_12567_Yosemite_Valley_md.jpg" class="cover">
+				<div class="content">
+					<h1>Yosemity National Park<span class="red square label">-10%</span></h1>
+					<p>Nullam maximus ac ipsum vel scelerisque. Curabitur congue faucibus urna id tempus. Quisque feugiat orci</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="card shadow-3">
+			<div class="header">
+				<h1>Управление заметкой</h1>
+				<span class="card-button pin-right"><div class="hamburger black close"><span>toggle</span></div></span>
+			</div>
+			<div class="content text">
+				<div class="list links">
+					<a href=''>Редактировать заметку</a>
+					<a href=''>Удалить заметку</a>
+				</div>			
+			</div>
+		</div>
+
+		<div class="card shadow-4">
+			<div class="header">
+				<div class="hamburger black close"><span>toggle</span></div><h1>Мои заметки</h1>
+			</div>
+			<div class="content text">
+				<div class="button-group">
+					<button class="olive">Создать заметку</button>
+					<button>Управление</button>
+					<button class="red ghost">Удалить все</button>
+				</div>			
+			</div>
+		</div>
+	</div>
+	<div class="col col-4 col-t-3 col-m-4">
+		<div class="card shadow-5">
+			<div class="header"><h1>Мои друзья</h1></div>
+			<div class="content feed">
+				<div class="item">
+					<img src="http://1avatara.ru/pic/game/game0001.gif" class="photo">
+					<div class="content">
+						<div class="author">Matt Bool</div>
+						<div class="meta-data">mattbool@mail.com</div>
+					</div>	
+				</div>	
+				<div class="item">
+					<img src="http://1avatara.ru/pic/game/game0001.gif" class="photo">
+					<div class="content">
+						<div class="author">Matt Bool</div>
+						<div class="meta-data">mattbool@mail.com</div>
+					</div>	
+				</div>	
+				<div class="item">
+					<img src="http://1avatara.ru/pic/game/game0001.gif" class="photo">
+					<div class="content">
+						<div class="author">Matt Bool</div>
+						<div class="meta-data">mattbool@mail.com</div>
+					</div>	
+				</div>			
+			</div>
+		</div>
+
+		<div class="card shadow-1">
+			<div class="header"><h1>Вложенные карточки</h1></div>
+			<div class="content feed">
+				<div class="card shadow-3">
+					<div class="header"><h1>Card #2</h1></div>
+					<div class="content text">
+						<div class="list links">
+							<a>Follow me</a>
+							<a>Help</a>
+							<a>Quit</a>
+						</div>
+					</div>
+					<div class="footer">
+						<p><i class="fa fa-chrome"></i>Special for Google Chrome!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card shadow-1 no-shadow invert">		
+			<div class="header">
+				<h1>Yosemite National Park</h1>
+				<div class="meta">Very beautiful place!</div>
+			</div>	
+			<img src="http://www.thedesertreview.com/wp-content/upLoads/2015/08/12305_12567_Yosemite_Valley_md.jpg" class="responsive-img">
+			<div class="content">	
+				<p>Nullam maximus ac ipsum vel scelerisque. Curabitur congue faucibus urna id tempus. Quisque feugiat orci</p>
+				<p>Nullam maximus ac ipsum vel scelerisque. Curabitur congue faucibus urna id tempus. Quisque feugiat orci</p>
+				<p>Nullam maximus ac ipsum vel scelerisque. Curabitur congue faucibus urna id tempus. Quisque feugiat orci</p>
+			</div>
+			<div class="footer">
+				<p>Только сегодня! Скидка <span class="red label">-10%!</span></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h1>Таблицы</h1>
+<div class="container group">
+	<div class="col col-4 col-t-6 col-m-4">
+		<table class="striped-2 centered with-border">
+			<tr>
+				<td>№</td>
+				<td>Страна</td>
+				<td>Столица</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Китай</td>
+				<td>Пекин</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Индия</td>
+				<td>Нью-Дели</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Таиланд</td>
+				<td>Бангкок</td>
+			</tr>
+		</table>
+	</div>
+	<div class="col col-4 col-t-6 col-m-4">
+		<table class="centered align-right">
+			<tr class="red">
+				<td>№</td>
+				<td>Страна</td>
+				<td>Столица</td>
+			</tr>
+			<tr>
+				<td class="blue">1</td>
+				<td class="teal">Китай</td>
+				<td class="olive">Пекин</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Индия</td>
+				<td>Нью-Дели</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Таиланд</td>
+				<td>Бангкок</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<h1>Панели навигации</h1>
+<div class="container group">
+	<div class="col col-12 col-t-6 col-m-4 no-padding">
+		<div class="taskbar">
+			<div class="items">
+				<div class="item logo align-left">Microsoft</div>
+				<div class="item">Store</div>
+				<div class="item">Windows</div>
+				<div class="item">Office</div>
+				<div class="item">Xbox</div>
+				<div class="item">Support</div>			
+				<div class="item full no-hover"><input type="text" placeholder="Cortana..." style="width: 100%;"></div>			
+			</div>
+		</div>
+		<div class="taskbar invert">
+			<div class="item">Добавить музыку</div>
+			<div class="item">Поиск</div>
+			<div class="item logo no-hover">Pied Piper</div>
+			<div class="item">О технологии</div>
+			<div class="item">Карта сайта</div>			
+		</div>
+		<div class="taskbar invert">
+			<div class="items">
+				<div class="item logo"><i class="ios ios-menu"></i></div>
+				<div class="item no-hover"><button>Добавить заметку</button></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h1>Боковая панель</h1>
+<div class="container group">
+	<div class="col col-4 col-t-6 col-m-4">
+		<div class="sidebar" style="min-height: 700px;">			
+			<div class="category">
+				<div class="title">Навигация</div>
+				<ul class="list list-nav">
+					<li>Главная</li>
+					<li>Расписание</li>
+					<li>Заметки</li>
+					<li>Опросы<span class="badge blue">+1</span></li>
+					<li>Мероприятия</li>
+					<li>Достижения</li>
+				</ul>
+			</div>		
+			<button class="green fit icon ghost"><i class="fa fa-cloud-upload"></i>Загрузить</button>
+			<div class="separator"></div>
+			<div class="category">
+				<div class="title">Теги</div>
+				<ul class="list list-nav gray-accent">
+					<li><span class="red circle"></span>Учебники</li>
+					<li><span class="blue circle"></span>Документы</li>
+					<li><span class="orange circle"></span>Методички</li>
+					<li><span class="purple circle"></span>Конспекты</li>
+					<li><span class="olive circle"></span>Прочее</li>
+					<li>Все теги</li>
+				</ul>
+			</div>	
+		</div>		
+	</div>
+	<div class="col col-4 col-t-6 col-m-4">
+		<div class="sidebar invert" style="min-height: 700px;">			
+			<div class="category">
+				<div class="title">Навигация</div>
+				<ul class="list list-nav invert">
+					<li>Главная</li>
+					<li>Расписание</li>
+					<li>Заметки</li>
+					<li>Опросы</li>
+					<li>Мероприятия</li>
+					<li>Достижения<span class="badge">+2</span></li>
+				</ul>
+			</div>		
+			<button class="green fit icon ghost"><i class="fa fa-cloud-upload"></i>Загрузить</button>
+			<div class="separator"></div>
+			<div class="category">
+				<div class="title">Теги</div>
+				<ul class="list list-nav invert">
+					<li><span class="red circle"></span>Учебники</li>
+					<li><span class="blue circle"></span>Документы</li>
+					<li><span class="orange circle"></span>Методички</li>
+					<li><span class="purple circle"></span>Конспекты</li>
+					<li><span class="olive circle"></span>Прочее</li>
+					<li>Все теги</li>
+				</ul>
+			</div>	
+		</div>		
+	</div>
+	<div class="col col-4 col-t-6 col-m-4">
+		<div class="sidebar invert" style="min-height: 700px;">			
+			<div class="category">
+				<div class="title">Поиск</div>
+				<form class="form fit invert">
+					<input type="text" class="round" placeholder="Поиск...">
+				</form>
+			</div>		
+			<div class="button-group fit">
+				<button class="green icon ghost"><i class="fa fa-cloud-upload"></i>Добавить</button>
+				<button class="teal icon ghost"><i class="fa fa-cloud-download"></i>Загрузить</button>
+			</div>			
+			<div class="separator"></div>
+			<div class="alert">
+				<h1>Новое уведомление!</h1>
+				<p>Сходить к зубному</p>
+			</div>
+			<div class="alert yellow">
+				<h1>Не удалось добавить документ</h1>
+				<p>Повторите попытку</p>
+			</div>
+			<div class="separator"></div>
+			<div class="card">
+				<div class="header"><h1>Мои друзья</h1></div>
+				<div class="content feed">
+					<div class="item">
+						<img src="http://1avatara.ru/pic/game/game0001.gif" class="photo">
+						<div class="content">
+							<div class="author">Matt Bool</div>
+							<div class="meta-data">mattbool@mail.com</div>
+						</div>	
+					</div>	
+					<div class="item">
+						<img src="http://1avatara.ru/pic/game/game0001.gif" class="photo">
+						<div class="content">
+							<div class="author">Matt Bool</div>
+							<div class="meta-data">mattbool@mail.com</div>
+						</div>	
+					</div>		
+				</div>
+			</div>
+			<div class="separator"></div>
+			<div class="accordion invert">
+				<div class="item">
+					<div class="header">Авторизация</div>
+					<div class="content">
+						<ul class="list list-nav invert">
+							<li>Вход</li>
+							<li>Регистрация</li>
+						</ul>
+					</div>
+				</div>
+				<div class="item">
+					<div class="header">Навигация</div>
+					<div class="content">
+						<ul class="list list-nav invert">
+							<li>Главная</li>
+							<li>Новости</li>
+							<li>Мои друзья</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>		
+	</div>
+</div>
+<h1>Информационные панели</h1>
+<div class="container group">
+	<div class="col col-3 col-t-3 col-m-4">
+		<div class="panel">
+			<div class="header">Заголовок панели</div>
+			<div class="content">А здесь находится ее контент</div>
+		</div>
+		<div class="panel red">			
+			<div class="content">А здесь находится ее контент</div>
+			<div class="footer">Подвал панели</div>
+		</div>
+	</div>
+	<div class="col col-3 col-t-3 col-m-4">
+		<div class="panel olive">
+			<div class="header">Заголовок панели</div>
+			<div class="content">А здесь находится ее контент</div>
+			<div class="footer">Подвал панели</div>
+		</div>
+		<div class="panel black">			
+			<div class="header">Заголовок панели</div>
+			<div class="footer">Подвал панели</div>
+		</div>
+	</div>
+	<div class="col col-3 col-t-3 col-m-4">
+		<div class="panel olive">
+			<div class="header">Новые сообщения <span class="badge">+1</span></div>
+			<div class="content">Привет, как дела?</div>
+			<div class="footer centered"><button class="olive small">Ответить</button><button class="small">Удалить</button></div>
+		</div>
+		<div class="panel black">			
+			<div class="header">Заголовок панели</div>
+			<div class="footer">Подвал панели</div>
+		</div>
+	</div>
+</div>
+<h1> = = = = Javascript (jQuery) Плагины = = = =</h1>
+<div class="container group">
+	<div class="col col-4 col-t-3 col-m-4">
+		<h2>Модальные окна</h2>
+		<button class="blue" id="modal1" data-tooltip="Щелкните, чтобы открыть обычное модальное окно" data-modal-href="demo-modal1" data-tooltip-title="Привет, мир!">Обычное модальное окно</button><br>
+		<button class="blue" id="modal2" data-modal-href="demo-modal2" data-overlay-disable="true">Темное модальное окно</button>
+		<div class="modal" id="demo-modal1">
+			<div class="header">
+				<h1>Подтверждение удаления</h1>
+				<span class="right"><span class="closeModal"><i class="fa fa-remove"></i></span></span>
+			</div>
+			<div class="content">
+				<p>Вы действительно хотите удалить данный документ?</p>
+			</div>
+			<div class="footer">
+				<div class="right">
+					<button class="green">Да</button>
+					<button class="red">Нет</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal invert" id="demo-modal2">
+			<div class="header">
+				<h1>Подтверждение удаления</h1>
+				<span class="right"><span class="closeModal"><i class="fa fa-remove"></i></span></span>
+			</div>
+			<div class="content">
+				<p>Вы действительно хотите удалить данный документ?</p>
+			</div>
+			<div class="footer">
+				<div class="right">
+					<button class="green">Да</button>
+					<button class="red">Нет</button>
+				</div>
+			</div>
+		</div>
+		<div class="overlay"></div>
+	</div>
+	<div class="col col-4 col-t-3 col-m-4">
+		<h2>Всплывающие подсказки</h2>
+		<a href="" data-tooltip="Пример всплывающей подсказки">Наведи на меня!</a>
+		<a href="" data-tooltip="Top-Left" data-tooltip-position='top-left'>Я вверху и слева!</a>
+		<a href="" data-tooltip="Bottom-Left" data-tooltip-position='bottom-left'>Я снизу слева</a>
+		<a href="" data-tooltip="Bottom-Right" data-tooltip-position='bottom-right'>Я снизу справа</a>
+		<div class="tooltip"></div>
+		<h2>Выпадающее меню</h2>
+		<button class="teal icon ghost dd" data-dropdown-target="dropdown1">Редактирование <i class="fa fa-caret-down"></i></button><br>
+		<button class="violet ghost icon" data-dropdown-target="dropdown2">Редактирование <i class="fa fa-caret-down"></i></button>
+		<ul class="dropdown" id="dropdown1">
+			<li>Вырезать</li>
+			<li>Копировать</li>
+			<li>Вставить</li>
+		</ul>
+		<ul class="dropdown invert" id="dropdown2">
+			<li>Вырезать</li>
+			<li>Копировать</li>
+			<li>Вставить</li>
+		</ul>
+	</div>
+	<div class="col col-4 col-t-3 col-m-4">
+		<h2>Accordion</h2>
+		<div class="accordion">
+			<div class="item">
+				<div class="header">Содержание</div>
+				<div class="content">
+					<p><ol>
+						<li>Что такое HTML?</li>
+						<li>Что такое CSS?</li>
+						<li>Что такое JavaScript?</li>
+						<li>Подробнее о jQuery</li>
+					</ol></p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="header">Сведения</div>
+				<div class="content">
+					<p><b>Автор публикации: </b> Leonard Mitte</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="header">Управление</div>
+				<div class="content">
+					<p><div class="button-group fit">
+						<button>Редактировать</button>
+						<button>Статистика</button>
+						<button>Удалить</button>
+					</div></p>
+				</div>
+			</div>
+		</div>
+		<div class="accordion invert" data-accordion-multi-selectable="true">
+			<div class="item">
+				<div class="header">Содержание</div>
+				<div class="content">
+					<p><ol>
+						<li>Что такое HTML?</li>
+						<li>Что такое CSS?</li>
+						<li>Что такое JavaScript?</li>
+						<li>Подробнее о jQuery</li>
+					</ol></p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="header">Сведения</div>
+				<div class="content">
+					<p><b>Автор публикации: </b> Leonard Mitte</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="header">Управление</div>
+				<div class="content">
+					<p><div class="button-group fit">
+						<button>Редактировать</button>
+						<button>Статистика</button>
+						<button>Удалить</button>
+					</div></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function() {
+		/*$('#modal1').modal();
+		$('#modal2').modal();
+		$('#modal2').tooltip();*/
+	});
+</script>
+</body>
+</html>

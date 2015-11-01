@@ -33,6 +33,12 @@
 	&.purple { .set-alert-color(@purple);	}
 	&.pink { .set-alert-color(@pink);	}
 	&.brown { .set-alert-color(@brown);	}
+	&.invert {
+		background-color: lighten(@d-gray, 10%);
+		border-color: @d-gray;
+		h1 { color: @white; }
+		p { color: @u-gray; }
+	}
 
 	&.square {
 		border-radius: 0px;
