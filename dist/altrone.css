@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:700,400);
 @import "icons3.css";
 @import "font-awesome.css";
-@import "line-icons.css";
+@import "ionicons.css";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -541,6 +541,12 @@ th {
 }
 .hidden {
   display: none;
+}
+.pin-left {
+  float: left !important;
+}
+.pin-right {
+  float: right !important;
 }
 /* Базовые классы */
 @media (max-width: 1024px) {
@@ -3555,83 +3561,56 @@ table.with-border td {
 }
 .taskbar {
   width: 100%;
-  display: table;
   background-color: #f5f5f5;
-  font-family: 'PT Sans', 'Segoe UI', sans-serif;
+  overflow: hidden;
   user-select: none;
-}
-.taskbar .item-list:after {
-  display: table-cell;
-  background-color: transparent;
-  width: 100%;
-}
-.taskbar .item {
-  display: table-cell;
-  white-space: nowrap;
-  vertical-align: middle;
   color: #333333;
-  cursor: pointer;
-  text-align: center;
-  padding: 8px 16px;
-  transition: all 0.3s linear;
+  font-family: 'PT Sans', 'Segoe UI', sans-serif;
 }
-.taskbar .item.logo {
-  font-size: 2em;
-  font-weight: bold;
-}
-.taskbar .item.align-left {
-  text-align: left;
-}
-.taskbar .item.align-right {
-  text-align: right;
-}
-.taskbar .item.full {
+.taskbar ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  overflow: hidden;
   width: 100%;
 }
-.taskbar .item.no-hover:hover {
-  background-color: #f5f5f5;
+.taskbar ul li {
+  padding: 1em 2em;
+  display: inline-block;
+  cursor: pointer;
+  color: #333333;
+  float: left;
+  transition: all 0.2s linear;
 }
-.taskbar .item:hover {
-  background-color: #e8e8e8;
+.taskbar ul li.hamburger-menu {
+  padding: 12px 2em;
+}
+.taskbar ul li.button-menu {
+  padding: 8px 2em;
+}
+.taskbar ul li.icon {
+  padding: 0.65em 2em;
+}
+.taskbar ul li.icon i {
+  font-size: 1.5em;
+}
+.taskbar ul li:hover {
+  color: #666666;
   transition: all 0.3s linear;
+}
+.taskbar ul li .button,
+.taskbar ul li button {
+  margin: 0px;
 }
 .taskbar.invert {
   background-color: #333333;
+  color: #ffffff;
 }
-.taskbar.invert .item {
-  color: #f5f5f5;
+.taskbar.invert ul li {
+  color: #ffffff;
 }
-.taskbar.invert .item.no-hover:hover {
-  background-color: #333333;
-}
-.taskbar.invert .item:hover {
-  background-color: #404040;
-}
-.taskbar.fixed {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-}
-.flex-taskbar {
-  display: flex;
-  background-color: #f5f5f5;
-  color: #333333;
-  font-family: 'PT Sans', 'Segoe UI', sans-serif;
-}
-.flex-taskbar .item {
-  flex: 1;
-  padding: 12px 16px;
-  align-items: center;
-}
-.flex-taskbar .item.logo {
-  font-size: 2em;
-  font-weight: bold;
-}
-.flex-taskbar .item:hover {
-  background-color: #e8e8e8;
-}
-.flex-taskbar .item.search input[type="text"] {
-  width: 100%;
+.taskbar.invert ul li:hover {
+  color: #999999;
 }
 .sidebar {
   width: 100%;
@@ -3805,7 +3784,7 @@ table.with-border td {
   margin: 0px;
   padding: 0px;
   width: 64px;
-  height: 32px;
+  height: 24px;
   font-size: 0;
   text-indent: -9999px;
   -webkit-appearance: none;

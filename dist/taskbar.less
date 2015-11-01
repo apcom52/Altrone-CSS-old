@@ -1,97 +1,64 @@
 .taskbar {
 	width: 100%;
-	display: table;
-	background-color: @u-gray;
-	.pt();
+	background-color: @u-gray;	
+	overflow: hidden;
 	user-select: none;
+	color: @d-gray;
+	.pt();
 
+	ul {
+		padding: 0px;
+		margin: 0px;
+		list-style-type: none;
+		overflow: hidden;
+		width: 100%;
 
-	.item-list {
-		&:after {
-			display: table-cell;
-			background-color: transparent;
-			width: 100%;
-		}
-	}
-	.item {
-		display: table-cell;
-		//width:1%;
-		white-space: nowrap;
-		vertical-align: middle;
-		color: @d-gray;
-		cursor: pointer;
-		text-align: center;
-		padding: 8px 16px;
-		.anim(0.3s);
+		li {			
+			padding: 1em 2em;
+			display: inline-block;
+			cursor: pointer;
+			color: @d-gray;
+			float: left;
+			.anim(0.2s);
 
-		&.logo {
-			font-size: 2em;
-			font-weight: bold;
-		}
+			&.hamburger-menu {
+				padding: 12px 2em;
+			}
 
-		&.align-left {	text-align: left;	}
-		&.align-right {	text-align: right;	}	
+			&.button-menu {
+				padding: 8px 2em;
+			}
 
-		&.full { width: 100%; }	
+			&.icon {
+				padding: 0.65em 2em;
 
-		&.no-hover {
+				i {
+					font-size: 1.5em;
+				}
+			}
+
 			&:hover {
-				background-color: @u-gray;
-			}			
-		}
+				color: @m-gray;
+				.anim(0.3s);
+			}
 
-		&:hover {
-			background-color: darken(@u-gray, 5%);
-			.anim(0.3s);
+			.button, button {
+				margin: 0px;
+			}
 		}
 	}
 
 	&.invert {
 		background-color: @d-gray;
+		color: @white;
 
-		.item {
-			color: @u-gray;		
-			&.no-hover {
+		ul {
+			li {
+				color: @white;
+
 				&:hover {
-					background-color: @d-gray;
+					color: @l-gray;
 				}
-			}	
-			&:hover {
-				background-color: lighten(@d-gray, 5%);
-			}
-		}
-	}
-
-	&.fixed {
-		position: fixed;
-		top: 0px;
-		left: 0px;
-	}
-}
-
-.flex-taskbar {
-	display: flex;
-	background-color: @u-gray;
-	color: @d-gray;
-	.pt();
-
-	.item {
-		flex: 1;
-		padding: 12px 16px;
-		align-items: center;
-
-		&.logo {
-			font-size: 2em;
-			font-weight: bold;
-		}
-
-		&:hover {
-			background-color: darken(@u-gray, 5%);
-		}
-
-		&.search {
-			input[type="text"] {
-				width: 100%;
 			}
 		}
 	}
