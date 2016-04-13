@@ -115,21 +115,27 @@ $(document).ready(function() {
 
 
 	/* Dropdown Plugin */
+	var menu_parent;
 	$('*:not(:has([data-dropdown-target]))').click(function() {
 		$('.dropdown').slideUp(150);
+		$('#' + $(this).data('dropdownTarget') + ' > li').click(function() {				
+			if (menu_parent.hasClass('hamburger')) {
+				menu_parent.removeClass('active');
+			}
+		})	
 	});
 
 	$('[data-dropdown-target]').click(function() {
-		//$('.dropdown').slideUp(150);		
+		$('.dropdown').slideUp(150);		
 		var dropdown = $('#' + $(this).data('dropdownTarget'));
 		if (!dropdown.is(':visible')) {
 			var position = $(this).position();
 			dropdown.css({'top': position.top + $(this).outerHeight() + 10, 'left': position.left});
 			dropdown.slideDown(150);
-			var parent = $(this);
+			var menu_parent = $(this);
 			$('#' + $(this).data('dropdownTarget') + ' > li').click(function() {				
-				if (parent.hasClass('hamburger')) {
-					parent.removeClass('active');
+				if (menu_parent.hasClass('hamburger')) {
+					menu_parent.removeClass('active');
 				}
 			})	
 		}	
@@ -138,5 +144,53 @@ $(document).ready(function() {
 	/* Гамбургер-меню */
 	$('.hamburger').click(function() {
 		$(this).toggleClass('active');
-	})
+	});
+
+	/* Toast-уведомления */
+	$('[data-toast-text]').click(function() {
+		var text = $(this).data('toastText');
+		var icon = $(this).data('toastIcon');
+		var color = $(this).data('toastColor');
+		var time = $(this).data('toastTime');
+
+		showToast(text, icon, color, time);
+	});
+
+	function showToast(text, icon, color, time) {	
+		$('.toast').hide();	
+		if (!time) {
+			time = 2.5;
+		}
+
+		var data = "";
+		if (icon) {
+			data += "<div class='icon'><i class='" + icon + "'></i></div>";
+		}
+		data += text;
+		if (color) {
+			$('.toast').addClass(color);
+		} else {
+			$('.toast').removeClass('red').removeClass('orange').removeClass('yellow').removeClass('olive').removeClass('green').removeClass('teal').removeClass('blue').removeClass('violet').removeClass('purple').removeClass('pink').removeClass('brown').removeClass('white');
+		}
+		$('.toast').html(data);
+		$('.toast').show();
+		$('.toast').css({ opacity: "0"});
+		
+		$('.toast').animate({			
+			opacity: "1",
+			bottom: "50px",
+		}, 500);
+
+		
+		setTimeout(function() {
+			$('.toast').animate({				
+				opacity: "0",
+				bottom: "75px",
+			}, 1000, function() {
+				$('.toast').hide();
+				$('.toast').css({ bottom: "0"});
+			});
+		}, (time + 1) * 1000);
+
+	}
 });

@@ -548,6 +548,9 @@ th {
 .pin-right {
   float: right !important;
 }
+a {
+  text-decoration: none;
+}
 /* Базовые классы */
 @media (max-width: 1024px) {
   .col {
@@ -2824,6 +2827,327 @@ table.with-border td {
   color: #1a69a4;
   transition: all 0.3s linear;
 }
+.listview .item:hover {
+  background-color: #c7e2f6;
+}
+.listview.invert .item:hover {
+  background-color: #103f62;
+}
+.listview.invert .item.active,
+.listview.invert .item:active,
+.listview .item.active,
+.listview .item:active {
+  color: #ffffff;
+  background-color: #2185d0;
+}
+.listview.invert .item.active .item-content .text,
+.listview.invert .item:active .item-content .text,
+.listview .item.active .item-content .text,
+.listview .item:active .item-content .text {
+  color: #f5f5f5;
+}
+.listview .item {
+  width: 100%;
+  color: #333333;
+  font-family: 'PT Sans', 'Segoe UI', sans-serif;
+  overflow: hidden;
+  padding: 0.5em;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  display: table;
+}
+.listview .item .icon {
+  position: relative;
+  font-size: 2em;
+  float: left;
+  padding: 0 0.5em;
+  box-sizing: border-box;
+  width: 15%;
+}
+.listview .item .item-content {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 80%;
+  padding: 0px;
+}
+.listview .item .item-content .title {
+  font-weight: bold;
+}
+.listview .item .item-content .text {
+  color: #666666;
+  font-size: 0.8em;
+}
+.listview .item .arrow {
+  font-size: 1.5em;
+  position: relative;
+  display: table-cell;
+  top: 12px;
+  left: 0px;
+  width: 5%;
+  transition: all 0.2s linear;
+}
+.listview .item:hover .arrow {
+  left: 10px;
+  transition: all 0.3s linear;
+}
+.listview.invert .item,
+.listview.invert .item {
+  background-color: #333333;
+  color: #f5f5f5;
+}
+.listview.invert .item .item-content .text,
+.listview.invert .item .item-content .text {
+  color: #999999;
+}
+.listview.red .item:hover {
+  background-color: #f8d7d7;
+}
+.listview.red.invert .item:hover {
+  background-color: #711313;
+}
+.listview.red.invert .item.active,
+.listview.red.invert .item:active,
+.listview.red .item.active,
+.listview.red .item:active {
+  color: #ffffff;
+  background-color: #db2828;
+}
+.listview.red.invert .item.active .item-content .text,
+.listview.red.invert .item:active .item-content .text,
+.listview.red .item.active .item-content .text,
+.listview.red .item:active .item-content .text {
+  color: #f5f5f5;
+}
+.listview.orange .item:hover {
+  background-color: #fdeadd;
+}
+.listview.orange.invert .item:hover {
+  background-color: #873a08;
+}
+.listview.orange.invert .item.active,
+.listview.orange.invert .item:active,
+.listview.orange .item.active,
+.listview.orange .item:active {
+  color: #ffffff;
+  background-color: #f2711c;
+}
+.listview.orange.invert .item.active .item-content .text,
+.listview.orange.invert .item:active .item-content .text,
+.listview.orange .item.active .item-content .text,
+.listview.orange .item:active .item-content .text {
+  color: #f5f5f5;
+}
+.listview.yellow .item:hover {
+  background-color: #fef3d1;
+}
+.listview.yellow.invert .item:hover {
+  background-color: #816102;
+}
+.listview.yellow.invert .item.active,
+.listview.yellow.invert .item:active,
+.listview.yellow .item.active,
+.listview.yellow .item:active {
+  color: #ffffff;
+  background-color: #fbbd08;
+}
+.listview.yellow.invert .item.active .item-content .text,
+.listview.yellow.invert .item:active .item-content .text,
+.listview.yellow .item.active .item-content .text,
+.listview.yellow .item:active .item-content .text {
+  color: #f5f5f5;
+}
+.listview.olive .item:hover {
+  background-color: #eff7b9;
+}
+.listview.olive.invert .item:hover {
+  background-color: #505a0b;
+}
+.listview.olive.invert .item.active,
+.listview.olive.invert .item:active,
+.listview.olive .item.active,
+.listview.olive .item:active {
+  color: #ffffff;
+  background-color: #b5cc18;
+}
+.listview.olive.invert .item.active .item-content .text,
+.listview.olive.invert .item:active .item-content .text,
+.listview.olive .item.active .item-content .text,
+.listview.olive .item:active .item-content .text {
+  color: #f5f5f5;
+}
+.listview.green .item:hover {
+  background-color: #b5f2c3;
+}
+.listview.green.invert .item:hover {
+  background-color: #0e4e1d;
+}
+.listview.green.invert .item.active,
+.listview.green.invert .item:active,
+.listview.green .item.active,
+.listview.green .item:active {
+  color: #ffffff;
+  background-color: #21ba45;
+}
+.listview.green.invert .item.active .item-content .text,
+.listview.green.invert .item:active .item-content .text,
+.listview.green .item.active .item-content .text,
+.listview.green .item:active .item-content .text {
+  color: #f5f5f5;
+}
+.listview.teal .item:hover {
+  background-color: #82fff9;
+}
+.listview.teal.invert .item:hover {
+  background-color: #003633;
+}
+.listview.teal.invert .item.active,
+.listview.teal.invert .item:active,
+.listview.teal .item.active,
+.listview.teal .item:active {
+  color: #ffffff;
+  background-color: #00b5ad;
+}
+.listview.teal.invert .item.active .item-content .text,
+.listview.teal.invert .item:active .item-content .text,
+.listview.teal .item.active .item-content .text,
+.listview.teal .item:active .item-content .text {
+  color: #f5f5f5;
+}
+.listview.blue .item:hover {
+  background-color: #c7e2f6;
+}
+.listview.blue.invert .item:hover {
+  background-color: #103f62;
+}
+.listview.blue.invert .item.active,
+.listview.blue.invert .item:active,
+.listview.blue .item.active,
+.listview.blue .item:active {
+  color: #ffffff;
+  background-color: #2185d0;
+}
+.listview.blue.invert .item.active .item-content .text,
+.listview.blue.invert .item:active .item-content .text,
+.listview.blue .item.active .item-content .text,
+.listview.blue .item:active .item-content .text {
+  color: #f5f5f5;
+}
+.listview.violet .item:hover {
+  background-color: #dfd6f4;
+}
+.listview.violet.invert .item:hover {
+  background-color: #321a64;
+}
+.listview.violet.invert .item.active,
+.listview.violet.invert .item:active,
+.listview.violet .item.active,
+.listview.violet .item:active {
+  color: #ffffff;
+  background-color: #6435c9;
+}
+.listview.violet.invert .item.active .item-content .text,
+.listview.violet.invert .item:active .item-content .text,
+.listview.violet .item.active .item-content .text,
+.listview.violet .item:active .item-content .text {
+  color: #f5f5f5;
+}
+.listview.purple .item:hover {
+  background-color: #ecd3f4;
+}
+.listview.purple.invert .item:hover {
+  background-color: #501962;
+}
+.listview.purple.invert .item.active,
+.listview.purple.invert .item:active,
+.listview.purple .item.active,
+.listview.purple .item:active {
+  color: #ffffff;
+  background-color: #a333c8;
+}
+.listview.purple.invert .item.active .item-content .text,
+.listview.purple.invert .item:active .item-content .text,
+.listview.purple .item.active .item-content .text,
+.listview.purple .item:active .item-content .text {
+  color: #f5f5f5;
+}
+.listview.pink .item:hover {
+  background-color: #fce9f4;
+}
+.listview.pink.invert .item:hover {
+  background-color: #851554;
+}
+.listview.pink.invert .item.active,
+.listview.pink.invert .item:active,
+.listview.pink .item.active,
+.listview.pink .item:active {
+  color: #ffffff;
+  background-color: #e03997;
+}
+.listview.pink.invert .item.active .item-content .text,
+.listview.pink.invert .item:active .item-content .text,
+.listview.pink .item.active .item-content .text,
+.listview.pink .item:active .item-content .text {
+  color: #f5f5f5;
+}
+.listview.brown .item:hover {
+  background-color: #e9d4c7;
+}
+.listview.brown.invert .item:hover {
+  background-color: #492d1c;
+}
+.listview.brown.invert .item.active,
+.listview.brown.invert .item:active,
+.listview.brown .item.active,
+.listview.brown .item:active {
+  color: #ffffff;
+  background-color: #a5673f;
+}
+.listview.brown.invert .item.active .item-content .text,
+.listview.brown.invert .item:active .item-content .text,
+.listview.brown .item.active .item-content .text,
+.listview.brown .item:active .item-content .text {
+  color: #f5f5f5;
+}
+.listview.black .item:hover {
+  background-color: #999999;
+}
+.listview.black.invert .item:hover {
+  background-color: #000000;
+}
+.listview.black.invert .item.active,
+.listview.black.invert .item:active,
+.listview.black .item.active,
+.listview.black .item:active {
+  color: #ffffff;
+  background-color: #333333;
+}
+.listview.black.invert .item.active .item-content .text,
+.listview.black.invert .item:active .item-content .text,
+.listview.black .item.active .item-content .text,
+.listview.black .item:active .item-content .text {
+  color: #f5f5f5;
+}
+.listview.white .item:hover {
+  background-color: #ffffff;
+}
+.listview.white.invert .item:hover {
+  background-color: #bfbfbf;
+}
+.listview.white.invert .item.active,
+.listview.white.invert .item:active,
+.listview.white .item.active,
+.listview.white .item:active {
+  color: #ffffff;
+  background-color: #ffffff;
+}
+.listview.white.invert .item.active .item-content .text,
+.listview.white.invert .item:active .item-content .text,
+.listview.white .item.active .item-content .text,
+.listview.white .item:active .item-content .text {
+  color: #f5f5f5;
+}
 .circle {
   width: 1em;
   height: 1em;
@@ -3447,6 +3771,7 @@ table.with-border td {
 .card .content {
   width: 100%;
   font-weight: normal;
+  overflow: hidden;
 }
 .card .content.text {
   width: 100%;
@@ -3460,7 +3785,7 @@ table.with-border td {
 .card .content.feed {
   padding: 5px 0px;
 }
-.card .content.feed .item {
+.card .content.feed .feed-item {
   position: relative;
   width: 100%;
   padding: 10px 15px;
@@ -3468,11 +3793,11 @@ table.with-border td {
   background-color: #ffffff;
   transition: all 0.2s linear;
 }
-.card .content.feed .item:hover {
+.card .content.feed .feed-item:hover {
   background-color: #f5f5f5;
   transition: all 0.2s linear;
 }
-.card .content.feed .item .photo {
+.card .content.feed .feed-item .photo {
   width: 2.5em;
   height: 2.5em;
   margin: 0em 0.5em;
@@ -3480,22 +3805,22 @@ table.with-border td {
   float: left;
   border-radius: 4px;
 }
-.card .content.feed .item .content .author {
+.card .content.feed .feed-item .feed-content .author {
   color: #333333;
   font-weight: bold;
   display: inline-block;
 }
-.card .content.feed .item .content .time {
+.card .content.feed .feed-item .feed-content .time {
   display: inline-block;
   color: #666666;
   font-size: 0.8em;
 }
-.card .content.feed .item .content .meta-data {
+.card .content.feed .feed-item .feed-content .meta-data {
   display: block;
   color: #666666;
   font-size: 0.8em;
 }
-.card .content.feed .item .content .text {
+.card .content.feed .feed-item .feed-content .text {
   margin-left: 3.5em;
   color: #333333;
   font-weight: 500;
@@ -4251,4 +4576,73 @@ table.with-border td {
 .dropdown.invert li:active {
   background-color: #2185d0;
   color: #ffffff;
+}
+.toast {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  left: 30%;
+  right: 30%;
+  width: 40%;
+  width: auto;
+  text-align: center;
+  font-size: 0.9em;
+  background-color: #333333;
+  border-radius: 1em;
+  padding: 10px 20px;
+  color: #f5f5f5;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+.toast .icon {
+  font-size: 1.5em;
+}
+.toast.red {
+  background-color: #db2828;
+  color: #ffffff;
+}
+.toast.orange {
+  background-color: #f2711c;
+  color: #ffffff;
+}
+.toast.yellow {
+  background-color: #fbbd08;
+  color: #ffffff;
+}
+.toast.olive {
+  background-color: #b5cc18;
+  color: #ffffff;
+}
+.toast.green {
+  background-color: #21ba45;
+  color: #ffffff;
+}
+.toast.teal {
+  background-color: #00b5ad;
+  color: #ffffff;
+}
+.toast.blue {
+  background-color: #2185d0;
+  color: #ffffff;
+}
+.toast.violet {
+  background-color: #6435c9;
+  color: #ffffff;
+}
+.toast.purple {
+  background-color: #a333c8;
+  color: #ffffff;
+}
+.toast.pink {
+  background-color: #e03997;
+  color: #ffffff;
+}
+.toast.brown {
+  background-color: #a5673f;
+  color: #ffffff;
+}
+.toast.white {
+  background-color: #f5f5f5;
+  color: #333333;
 }

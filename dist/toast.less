@@ -1,0 +1,40 @@
+.toast {
+	display: none;
+	position: fixed;
+	bottom: 0px;
+	left: 30%;
+	right: 30%;
+	width: 40%;
+	width: auto;
+	text-align: center;
+	font-size: 0.9em;
+	background-color: @d-gray;
+	border-radius: 1em;
+	padding: 10px 20px;
+	color: @u-gray;
+	.anim(0.3s);
+	cursor: pointer;
+	.shadow-2();
+
+	.icon {
+		font-size: 1.5em;
+	}
+
+	&.red { .change-toast-color(@red); }
+	&.orange { .change-toast-color(@orange); }
+	&.yellow { .change-toast-color(@yellow); }
+	&.olive { .change-toast-color(@olive); }
+	&.green { .change-toast-color(@green); }
+	&.teal { .change-toast-color(@teal); }
+	&.blue { .change-toast-color(@blue); }
+	&.violet { .change-toast-color(@violet); }
+	&.purple { .change-toast-color(@purple); }
+	&.pink { .change-toast-color(@pink); }
+	&.brown { .change-toast-color(@brown); }
+	&.white { .change-toast-color(@u-gray, @d-gray); }
+}
+
+.change-toast-color(@color, @fg-color: @white) {
+	background-color: @color;
+	color: @fg-color;
+}
